@@ -45,6 +45,22 @@ async function loadAll() {
   }
 }
 
+// --- Timezone: always display IST, regardless of the viewer's own browser
+// timezone (a visitor outside India should still see IST, not their local
+// time) --------------------------------------------------------------------
+
+function formatIST(isoString) {
+  if (!isoString) return "—";
+  const date = new Date(isoString);
+  if (isNaN(date.getTime())) return "—";
+  const formatted = new Intl.DateTimeFormat("en-IN", {
+    timeZone: "Asia/Kolkata",
+    day: "2-digit", month: "short", year: "numeric",
+    hour: "2-digit", minute: "2-digit", hour12: true,
+  }).format(date);
+  return `${formatted} IST`;
+}
+
 // --- Rendering: vitals bar -------------------------------------------------
 
 function overallStatusColor() {
@@ -61,8 +77,8 @@ function renderVitalsBar() {
   const color = overallStatusColor();
 
   document.getElementById("status-dot").className = `status-dot status-color-${color}`;
-  document.getElementById("last-run").textContent = s.generated_at ? new Date(s.generated_at).toLocaleString() : "—";
-  document.getElementById("next-run").textContent = s.next_scheduled_run ? new Date(s.next_scheduled_run).toLocaleString() : "—";
+  document.getElementById("last-run").textContent = formatIST(s.generated_at);
+  document.getElementById("next-run").textContent = formatIST(s.next_scheduled_run);
   document.getElementById("run-status").textContent = (s.last_run_status || "never_run").replace(/_/g, " ");
 
   const running = document.getElementById("running-count");
