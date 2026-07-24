@@ -1,8 +1,13 @@
 name: GoodMonk Performance Monitor
 
+# Runs every hour, on the hour (GitHub Actions cron is always UTC — but an
+# "every hour" schedule is identical in every timezone, so no IST offset
+# math is needed here; the timezone conversion happens inside the Python
+# code, which stamps every timestamp in IST regardless of what time the
+# runner itself thinks it is). Also runnable manually from the Actions tab.
 on:
   schedule:
-    - cron: "30 3 * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
     inputs:
       no_resume:
