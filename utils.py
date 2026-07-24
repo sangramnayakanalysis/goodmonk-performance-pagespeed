@@ -4,6 +4,14 @@ utils.py
 Small, dependency-free helpers shared across modules: a retry decorator
 with backoff + rate-limit awareness, JSON read/write helpers, and time
 formatting.
+
+Timezone handling: every "now" helper here is IST-aware (Asia/Kolkata),
+via now_ist(). This matters because plain `datetime.now()` (what this
+file used before) returns the HOST MACHINE's local time — which is UTC
+on a GitHub Actions runner but could be anything on a developer's own
+machine, so Sheets rows and dashboard timestamps would silently drift
+between environments. now_ist() always returns the same IST wall-clock
+time regardless of what timezone the machine it's running on is set to.
 """
 
 from __future__ import annotations
@@ -15,6 +23,7 @@ from functools import wraps
 from pathlib import Path
 from typing import Any, Callable, TypeVar
 
+from config import TIMEZONE
 from logger import get_logger
 
 log = get_logger("utils")
@@ -82,13 +91,23 @@ def write_json(path: Path, data: Any) -> None:
     tmp.replace(path)  # atomic on POSIX — dashboard never reads a half-written file
 
 
+def now_ist() -> datetime:
+    """Current time as a timezone-aware datetime in Asia/Kolkata (IST),
+    regardless of the host machine's own local timezone."""
+    return datetime.now(TIMEZONE)
+
+
 def now_date_str() -> str:
-    return datetime.now().strftime("%Y-%m-%d")
+    return now_ist().strftime("%Y-%m-%d")
 
 
 def now_time_str() -> str:
-    return datetime.now().strftime("%H:%M:%S")
+    return now_ist().strftime("%H:%M:%S")
 
 
 def now_iso() -> str:
-    return datetime.now().isoformat(timespec="seconds")
+    """ISO-8601 timestamp with an explicit +05:30 offset, e.g.
+    '2026-07-24T16:30:00+05:30' — unambiguous regardless of where it's
+    read back (Sheets, dashboard JSON, email), since the offset travels
+    with the value."""
+    return now_ist().isoformat(timespec="seconds")
