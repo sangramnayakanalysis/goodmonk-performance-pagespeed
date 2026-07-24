@@ -11,19 +11,23 @@ This is what the GitHub Actions workflow calls. It:
   1. Runs the PageSpeed Insights batch (scheduler.run_batch)
   2. Rebuilds the dashboard JSON from fresh Sheets data (dashboard_data.build_all)
   3. Sends the summary email (email_report.send_report)
-  4. Clears run state on a fully successful run, so tomorrow starts clean
+  4. Clears run state on a fully successful run, so the next run starts clean
+
+Timezone: next_run is computed in IST via utils.now_ist() — see that
+module's docstring for why plain datetime.now() isn't used.
 """
 
 from __future__ import annotations
 
 import argparse
 import sys
-from datetime import datetime, timedelta
+from datetime import timedelta
 
 import dashboard_data
 import email_report
 import scheduler
 from logger import get_logger, setup_logging
+from utils import now_ist
 
 log = get_logger("main")
 
@@ -47,8 +51,11 @@ def main() -> int:
     failed = sum(1 for r in results if not r.success)
     status = "completed" if failed == 0 else "completed_with_failures"
 
-    # Next run: 9:00 AM IST daily, matching the GitHub Actions schedule.
-    next_run = (datetime.now() + timedelta(days=1)).replace(hour=9, minute=0, second=0, microsecond=0)
+    # Next run: the workflow now runs every hour (cron "0 * * * *"), so the
+    # next run is simply the next top-of-the-hour boundary in IST — e.g. a
+    # run finishing at 14:07 IST reports 15:00 IST as next_scheduled_run.
+    now = now_ist()
+    next_run = (now.replace(minute=0, second=0, microsecond=0) + timedelta(hours=1))
 
     try:
         dashboard_data.build_all(last_run_status=status, next_run_iso=next_run.isoformat())
