@@ -13,6 +13,7 @@ from __future__ import annotations
 import os
 from dataclasses import dataclass
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from dotenv import load_dotenv
 
@@ -38,6 +39,16 @@ def _env(key: str, default: str | None = None, required: bool = False) -> str:
             f"Copy .env.example to .env and fill it in."
         )
     return value
+
+
+# --- Timezone ----------------------------------------------------------------
+# Every timestamp the project produces (Sheets rows, dashboard JSON, email
+# reports, log files) is stamped in this timezone — never the host
+# machine's own local time (which is UTC on a GitHub Actions runner but
+# could be anything locally). See utils.now_ist() / now_iso() / etc.,
+# which are the only functions that should ever be used to get "now".
+TIMEZONE_NAME = _env("TIMEZONE", "Asia/Kolkata")
+TIMEZONE = ZoneInfo(TIMEZONE_NAME)
 
 
 # --- Google PageSpeed Insights ----------------------------------------------
