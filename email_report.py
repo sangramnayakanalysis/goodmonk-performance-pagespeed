@@ -66,7 +66,7 @@ def _build_html(results: list[PageResult]) -> str:
     return f"""
     <div style="font-family:Segoe UI,Arial,sans-serif;max-width:640px;margin:auto;color:#1B2233;">
       <h2 style="margin-bottom:4px;">GoodMonk Performance Report</h2>
-      <p style="color:#6B7488;margin-top:0;">{now_iso()}</p>
+      <p style="color:#6B7488;margin-top:0;">{now_iso()} IST</p>
 
       <div style="display:flex;gap:12px;margin:16px 0;">
         <div style="flex:1;background:#F5F7FB;border-radius:10px;padding:14px;text-align:center;">
