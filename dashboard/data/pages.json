@@ -21,8 +21,8 @@
       "_url": "https://www.goodmonk.in/"
     },
     "status_color": "red",
-    "total_runs": 2,
-    "failed_runs": 0
+    "total_runs": 3,
+    "failed_runs": 1
   },
   {
     "name": "Shop All",
@@ -30,15 +30,15 @@
     "url": "https://www.goodmonk.in/collections/all",
     "latest": {
       "Date": "2026-07-24",
-      "Time": "19:14:52",
-      "Performance Score": 37,
+      "Time": "19:22:21",
+      "Performance Score": 42,
       "Grade": "F",
-      "LCP": 7.68,
-      "Onload": 3.47,
-      "Fully Loaded": 6.75,
+      "LCP": 23.12,
+      "Onload": 5.71,
+      "Fully Loaded": 10,
       "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 1.49,
+      "TBT": 0.56,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fcollections%2Fall&form_factor=mobile",
       "Status": "OK",
       "_page_name": "Shop All",
@@ -46,7 +46,7 @@
       "_url": "https://www.goodmonk.in/collections/all"
     },
     "status_color": "red",
-    "total_runs": 2,
+    "total_runs": 3,
     "failed_runs": 0
   },
   {
@@ -55,15 +55,15 @@
     "url": "https://www.goodmonk.in/products/good-monk",
     "latest": {
       "Date": "2026-07-24",
-      "Time": "19:14:18",
-      "Performance Score": 37,
+      "Time": "19:22:25",
+      "Performance Score": 43,
       "Grade": "F",
-      "LCP": 19.66,
-      "Onload": 5.42,
-      "Fully Loaded": 11.15,
-      "TTFB": 0.03,
+      "LCP": 6.23,
+      "Onload": 3.24,
+      "Fully Loaded": 5.88,
+      "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 0.82,
+      "TBT": 1.15,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk&form_factor=mobile",
       "Status": "OK",
       "_page_name": "FNM",
@@ -71,7 +71,7 @@
       "_url": "https://www.goodmonk.in/products/good-monk"
     },
     "status_color": "red",
-    "total_runs": 2,
+    "total_runs": 3,
     "failed_runs": 0
   },
   {
@@ -96,8 +96,8 @@
       "_url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix"
     },
     "status_color": "red",
-    "total_runs": 2,
-    "failed_runs": 0
+    "total_runs": 3,
+    "failed_runs": 1
   },
   {
     "name": "Fiber Fix",
@@ -105,15 +105,15 @@
     "url": "https://www.goodmonk.in/products/fiber-fix",
     "latest": {
       "Date": "2026-07-24",
-      "Time": "19:15:35",
-      "Performance Score": 35,
+      "Time": "19:22:55",
+      "Performance Score": 38,
       "Grade": "F",
-      "LCP": 18.07,
-      "Onload": 5.36,
-      "Fully Loaded": 11.98,
+      "LCP": 22.36,
+      "Onload": 5.27,
+      "Fully Loaded": 12.21,
       "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 0.96,
+      "TBT": 0.72,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Ffiber-fix&form_factor=mobile",
       "Status": "OK",
       "_page_name": "Fiber Fix",
@@ -121,7 +121,7 @@
       "_url": "https://www.goodmonk.in/products/fiber-fix"
     },
     "status_color": "red",
-    "total_runs": 2,
+    "total_runs": 3,
     "failed_runs": 0
   },
   {
@@ -130,15 +130,15 @@
     "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-mixed-berries",
     "latest": {
       "Date": "2026-07-24",
-      "Time": "19:14:54",
-      "Performance Score": 43,
+      "Time": "19:23:06",
+      "Performance Score": 32,
       "Grade": "F",
-      "LCP": 9.78,
-      "Onload": 2.71,
-      "Fully Loaded": 9.3,
-      "TTFB": 0.04,
+      "LCP": 20.06,
+      "Onload": 5.13,
+      "Fully Loaded": 12.98,
+      "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 0.79,
+      "TBT": 1.21,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Finstant-fruit-drink-mix-mixed-berries&form_factor=mobile",
       "Status": "OK",
       "_page_name": "Berries",
@@ -146,7 +146,7 @@
       "_url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-mixed-berries"
     },
     "status_color": "red",
-    "total_runs": 2,
+    "total_runs": 3,
     "failed_runs": 0
   },
   {
@@ -155,15 +155,15 @@
     "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-orange",
     "latest": {
       "Date": "2026-07-24",
-      "Time": "19:14:54",
-      "Performance Score": 34,
+      "Time": "19:24:05",
+      "Performance Score": 36,
       "Grade": "F",
-      "LCP": 18.94,
-      "Onload": 5.31,
-      "Fully Loaded": 12.74,
-      "TTFB": 0.01,
+      "LCP": 22.37,
+      "Onload": 4.97,
+      "Fully Loaded": 13.16,
+      "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 1.02,
+      "TBT": 0.87,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Finstant-fruit-drink-mix-orange&form_factor=mobile",
       "Status": "OK",
       "_page_name": "Orange",
@@ -171,7 +171,7 @@
       "_url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-orange"
     },
     "status_color": "red",
-    "total_runs": 2,
+    "total_runs": 3,
     "failed_runs": 0
   },
   {
@@ -180,15 +180,15 @@
     "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-pineapple",
     "latest": {
       "Date": "2026-07-24",
-      "Time": "19:15:31",
-      "Performance Score": 33,
+      "Time": "19:24:16",
+      "Performance Score": 35,
       "Grade": "F",
-      "LCP": 20.09,
-      "Onload": 5.43,
-      "Fully Loaded": 14.19,
+      "LCP": 8.25,
+      "Onload": 2.71,
+      "Fully Loaded": 7.64,
       "TTFB": 0.02,
-      "CLS": 0,
-      "TBT": 1.05,
+      "CLS": 0.255,
+      "TBT": 0.63,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Finstant-fruit-drink-mix-pineapple&form_factor=mobile",
       "Status": "OK",
       "_page_name": "Pineapple",
@@ -196,7 +196,7 @@
       "_url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-pineapple"
     },
     "status_color": "red",
-    "total_runs": 2,
+    "total_runs": 3,
     "failed_runs": 0
   },
   {
@@ -205,15 +205,15 @@
     "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-natural-mango-powder-50-less-sugar-with-8-vitamins-minerals",
     "latest": {
       "Date": "2026-07-24",
-      "Time": "19:15:34",
-      "Performance Score": 36,
+      "Time": "19:24:29",
+      "Performance Score": 27,
       "Grade": "F",
-      "LCP": 18.91,
-      "Onload": 5.06,
-      "Fully Loaded": 12.2,
+      "LCP": 15.38,
+      "Onload": 4.5,
+      "Fully Loaded": 12.04,
       "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 0.9,
+      "TBT": 4.73,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Finstant-fruit-drink-mix-natural-mango-powder-50-less-sugar-with-8-vitamins-minerals&form_factor=mobile",
       "Status": "OK",
       "_page_name": "Mango",
@@ -221,7 +221,7 @@
       "_url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-natural-mango-powder-50-less-sugar-with-8-vitamins-minerals"
     },
     "status_color": "red",
-    "total_runs": 3,
+    "total_runs": 4,
     "failed_runs": 0
   },
   {
@@ -246,8 +246,8 @@
       "_url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-assorted"
     },
     "status_color": "red",
-    "total_runs": 3,
-    "failed_runs": 0
+    "total_runs": 4,
+    "failed_runs": 1
   },
   {
     "name": "Milk Mix Strawberry",
@@ -255,15 +255,15 @@
     "url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-strawberry",
     "latest": {
       "Date": "2026-07-24",
-      "Time": "19:15:59",
-      "Performance Score": 38,
+      "Time": "19:25:26",
+      "Performance Score": 22,
       "Grade": "F",
-      "LCP": 6.83,
-      "Onload": 3.53,
-      "Fully Loaded": 8.07,
+      "LCP": 10.77,
+      "Onload": 3.16,
+      "Fully Loaded": 15.14,
       "TTFB": 0.02,
-      "CLS": 0,
-      "TBT": 1.28,
+      "CLS": 0.169,
+      "TBT": 13.88,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-superhero-milk-mix-strawberry&form_factor=mobile",
       "Status": "OK",
       "_page_name": "Milk Mix Strawberry",
@@ -271,7 +271,7 @@
       "_url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-strawberry"
     },
     "status_color": "red",
-    "total_runs": 3,
+    "total_runs": 4,
     "failed_runs": 0
   },
   {
@@ -296,8 +296,8 @@
       "_url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-vanilla"
     },
     "status_color": "red",
-    "total_runs": 2,
-    "failed_runs": 0
+    "total_runs": 3,
+    "failed_runs": 1
   },
   {
     "name": "Milk Mix Chocolate",
@@ -321,8 +321,8 @@
       "_url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix"
     },
     "status_color": "red",
-    "total_runs": 2,
-    "failed_runs": 0
+    "total_runs": 3,
+    "failed_runs": 1
   },
   {
     "name": "Slimbiotics",
@@ -330,15 +330,15 @@
     "url": "https://www.goodmonk.in/products/good-monk-slimbiotics",
     "latest": {
       "Date": "2026-07-24",
-      "Time": "19:16:26",
-      "Performance Score": 29,
+      "Time": "19:25:36",
+      "Performance Score": 43,
       "Grade": "F",
-      "LCP": 13.06,
-      "Onload": 5.33,
-      "Fully Loaded": 11.56,
+      "LCP": 28.26,
+      "Onload": 10.74,
+      "Fully Loaded": 11.18,
       "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 1.98,
+      "TBT": 0.51,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-slimbiotics&form_factor=mobile",
       "Status": "OK",
       "_page_name": "Slimbiotics",
@@ -346,7 +346,7 @@
       "_url": "https://www.goodmonk.in/products/good-monk-slimbiotics"
     },
     "status_color": "red",
-    "total_runs": 2,
+    "total_runs": 3,
     "failed_runs": 0
   },
   {
@@ -355,15 +355,15 @@
     "url": "https://www.goodmonk.in/products/good-monk-weight-management-program",
     "latest": {
       "Date": "2026-07-24",
-      "Time": "19:16:51",
-      "Performance Score": 36,
+      "Time": "19:25:54",
+      "Performance Score": 48,
       "Grade": "F",
-      "LCP": 7.29,
-      "Onload": 3.02,
-      "Fully Loaded": 7.71,
-      "TTFB": 0.02,
+      "LCP": 7.65,
+      "Onload": 3.53,
+      "Fully Loaded": 7.41,
+      "TTFB": 0.01,
       "CLS": 0,
-      "TBT": 1.87,
+      "TBT": 0.56,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-weight-management-program&form_factor=mobile",
       "Status": "OK",
       "_page_name": "Weight Management",
@@ -371,7 +371,7 @@
       "_url": "https://www.goodmonk.in/products/good-monk-weight-management-program"
     },
     "status_color": "red",
-    "total_runs": 3,
+    "total_runs": 4,
     "failed_runs": 0
   },
   {
@@ -380,15 +380,15 @@
     "url": "https://www.goodmonk.in/products/plant-protein-for-rotis",
     "latest": {
       "Date": "2026-07-24",
-      "Time": "19:20:02",
-      "Performance Score": 39,
-      "Grade": "F",
-      "LCP": 21.65,
-      "Onload": 5.57,
-      "Fully Loaded": 10.57,
+      "Time": "19:26:39",
+      "Performance Score": 51,
+      "Grade": "D",
+      "LCP": 6.9,
+      "Onload": 3.68,
+      "Fully Loaded": 7.21,
       "TTFB": 0.03,
       "CLS": 0,
-      "TBT": 0.72,
+      "TBT": 0.47,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fplant-protein-for-rotis&form_factor=mobile",
       "Status": "OK",
       "_page_name": "Plant Protein Roti",
@@ -396,7 +396,7 @@
       "_url": "https://www.goodmonk.in/products/plant-protein-for-rotis"
     },
     "status_color": "red",
-    "total_runs": 5,
+    "total_runs": 6,
     "failed_runs": 2
   }
 ]
