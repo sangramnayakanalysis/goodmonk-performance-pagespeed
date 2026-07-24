@@ -92,6 +92,11 @@ def build_all(last_run_status: str = "completed", next_run_iso: str | None = Non
         default=None,
     )
 
+    # generated_at and next_scheduled_run are both IST timestamps (with an
+    # explicit +05:30 offset baked into the ISO string) — generated_at via
+    # utils.now_iso(), next_scheduled_run passed in from main.py's
+    # now_ist()-based calculation. The dashboard JS renders both explicitly
+    # in Asia/Kolkata regardless of the viewer's own browser timezone.
     summary = {
         "generated_at": now_iso(),
         "last_run_status": last_run_status,
