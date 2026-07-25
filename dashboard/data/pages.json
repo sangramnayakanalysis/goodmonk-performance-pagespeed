@@ -5,15 +5,15 @@
     "url": "https://www.goodmonk.in/",
     "latest": {
       "Date": "2026-07-25",
-      "Time": "20:07:55",
-      "Performance Score": 37,
+      "Time": "23:28:52",
+      "Performance Score": 36,
       "Grade": "F",
-      "LCP": 23.11,
-      "Onload": 5.15,
-      "Fully Loaded": 13.41,
-      "TTFB": 0.03,
+      "LCP": 22.15,
+      "Onload": 5.13,
+      "Fully Loaded": 12.39,
+      "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 0.8,
+      "TBT": 0.9,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2F&form_factor=mobile",
       "Status": "OK",
       "_page_name": "Homepage",
@@ -21,7 +21,7 @@
       "_url": "https://www.goodmonk.in/"
     },
     "status_color": "red",
-    "total_runs": 9,
+    "total_runs": 10,
     "failed_runs": 4
   },
   {
@@ -55,15 +55,15 @@
     "url": "https://www.goodmonk.in/products/good-monk",
     "latest": {
       "Date": "2026-07-25",
-      "Time": "17:33:12",
-      "Performance Score": 43,
+      "Time": "23:29:00",
+      "Performance Score": 21,
       "Grade": "F",
-      "LCP": 25.82,
-      "Onload": 8.47,
-      "Fully Loaded": 11.35,
-      "TTFB": 0.02,
-      "CLS": 0,
-      "TBT": 0.52,
+      "LCP": 7.49,
+      "Onload": 3.39,
+      "Fully Loaded": 8.16,
+      "TTFB": 0.03,
+      "CLS": 0.27,
+      "TBT": 1.67,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk&form_factor=mobile",
       "Status": "OK",
       "_page_name": "FNM",
@@ -71,7 +71,7 @@
       "_url": "https://www.goodmonk.in/products/good-monk"
     },
     "status_color": "red",
-    "total_runs": 6,
+    "total_runs": 7,
     "failed_runs": 1
   },
   {
@@ -80,15 +80,15 @@
     "url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix",
     "latest": {
       "Date": "2026-07-25",
-      "Time": "20:07:57",
-      "Performance Score": 40,
+      "Time": "23:28:52",
+      "Performance Score": 29,
       "Grade": "F",
-      "LCP": 21.22,
-      "Onload": 5.28,
-      "Fully Loaded": 10.75,
+      "LCP": 17.83,
+      "Onload": 5.46,
+      "Fully Loaded": 11.47,
       "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 0.65,
+      "TBT": 1.85,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-50-nutrition-mix&form_factor=mobile",
       "Status": "OK",
       "_page_name": "H50+",
@@ -96,7 +96,7 @@
       "_url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix"
     },
     "status_color": "red",
-    "total_runs": 12,
+    "total_runs": 13,
     "failed_runs": 7
   },
   {
@@ -246,8 +246,8 @@
       "_url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-assorted"
     },
     "status_color": "red",
-    "total_runs": 10,
-    "failed_runs": 4
+    "total_runs": 11,
+    "failed_runs": 5
   },
   {
     "name": "Milk Mix Strawberry",
