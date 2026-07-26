@@ -1,6 +1,7 @@
 {
-  "updated_at": "2026-07-26T16:51:39+05:30",
+  "updated_at": "2026-07-26T18:51:12+05:30",
   "completed_sheet_names": [
+    "Assorted",
     "Berries",
     "FF",
     "FNM",
@@ -12,135 +13,52 @@
     "Mango",
     "Orange",
     "Pineapple",
+    "Plant Protein Roti",
     "Shop_All",
     "Weight Management"
   ],
   "last_results": [
     {
-      "page_name": "Shop All",
-      "sheet_name": "Shop_All",
-      "url": "https://www.goodmonk.in/collections/all",
-      "metrics": {
-        "performance_score": 51.0,
-        "grade": "D",
-        "lcp": 22.51,
-        "onload": 5.43,
-        "fully_loaded": 11.24,
-        "ttfb": 0.02,
-        "cls": 0,
-        "tbt": 0.27,
-        "inp": 0.2,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fcollections%2Fall&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
-      "page_name": "H50+",
-      "sheet_name": "H50+",
-      "url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix",
-      "metrics": {
-        "performance_score": 48.0,
-        "grade": "F",
-        "lcp": 28.1,
-        "onload": 6.11,
-        "fully_loaded": 10.85,
-        "ttfb": 0.02,
-        "cls": 0,
-        "tbt": 0.34,
-        "inp": 0.33,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-50-nutrition-mix&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
-      "page_name": "FNM",
-      "sheet_name": "FNM",
-      "url": "https://www.goodmonk.in/products/good-monk",
-      "metrics": {
-        "performance_score": 43.0,
-        "grade": "F",
-        "lcp": 20.6,
-        "onload": 5.35,
-        "fully_loaded": 10.82,
-        "ttfb": 0.01,
-        "cls": 0,
-        "tbt": 0.53,
-        "inp": 0.31,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
-      "page_name": "Mango",
-      "sheet_name": "Mango",
-      "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-natural-mango-powder-50-less-sugar-with-8-vitamins-minerals",
-      "metrics": {
-        "performance_score": 39.0,
-        "grade": "F",
-        "lcp": 10.59,
-        "onload": 2.93,
-        "fully_loaded": 10.38,
-        "ttfb": 0.02,
-        "cls": 0.0,
-        "tbt": 1.07,
-        "inp": 0.21,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Finstant-fruit-drink-mix-natural-mango-powder-50-less-sugar-with-8-vitamins-minerals&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
-      "page_name": "Homepage",
-      "sheet_name": "Homepage",
-      "url": "https://www.goodmonk.in/",
-      "metrics": {
-        "performance_score": 39.0,
-        "grade": "F",
-        "lcp": 16.55,
-        "onload": 4.88,
-        "fully_loaded": 10.76,
-        "ttfb": 0.02,
-        "cls": 0.0,
-        "tbt": 0.72,
-        "inp": 0.23,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2F&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
       "page_name": "Assorted",
       "sheet_name": "Assorted",
       "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-assorted",
       "metrics": {
-        "performance_score": null,
-        "grade": "N/A",
-        "lcp": null,
-        "onload": null,
-        "fully_loaded": null,
-        "ttfb": null,
-        "cls": null,
-        "tbt": null,
-        "inp": null,
-        "report_url": null,
+        "performance_score": 50.0,
+        "grade": "D",
+        "lcp": 16.81,
+        "onload": 4.89,
+        "fully_loaded": 11.44,
+        "ttfb": 0.03,
+        "cls": 0,
+        "tbt": 0.3,
+        "inp": 0.28,
+        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Finstant-fruit-drink-mix-assorted&form_factor=mobile",
         "status": "OK",
         "error_message": ""
       },
-      "success": false,
-      "error_message": "runPagespeed(https://www.goodmonk.in/products/instant-fruit-drink-mix-assorted): request timed out after 30s"
+      "success": true,
+      "error_message": ""
+    },
+    {
+      "page_name": "Plant Protein Roti",
+      "sheet_name": "Plant Protein Roti",
+      "url": "https://www.goodmonk.in/products/plant-protein-for-rotis",
+      "metrics": {
+        "performance_score": 31.0,
+        "grade": "F",
+        "lcp": 18.63,
+        "onload": 5.46,
+        "fully_loaded": 11.52,
+        "ttfb": 0.02,
+        "cls": 0,
+        "tbt": 1.32,
+        "inp": 0.32,
+        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fplant-protein-for-rotis&form_factor=mobile",
+        "status": "OK",
+        "error_message": ""
+      },
+      "success": true,
+      "error_message": ""
     },
     {
       "page_name": "Slimbiotics",
@@ -161,28 +79,7 @@
         "error_message": ""
       },
       "success": false,
-      "error_message": "runPagespeed(https://www.goodmonk.in/products/good-monk-slimbiotics): server error 500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Lighthouse returned error: Something went wrong.\",\n    \"errors\": [\n      {\n        \"message\": \"Lighthouse returned error: Something went wrong.\",\n        \"domain\": \"lighthouse\",\n        \"reason\": \"lighthouseError\"\n      }\n    ]\n  }\n}\n"
-    },
-    {
-      "page_name": "Plant Protein Roti",
-      "sheet_name": "Plant Protein Roti",
-      "url": "https://www.goodmonk.in/products/plant-protein-for-rotis",
-      "metrics": {
-        "performance_score": null,
-        "grade": "N/A",
-        "lcp": null,
-        "onload": null,
-        "fully_loaded": null,
-        "ttfb": null,
-        "cls": null,
-        "tbt": null,
-        "inp": null,
-        "report_url": null,
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": false,
-      "error_message": "runPagespeed(https://www.goodmonk.in/products/plant-protein-for-rotis): request timed out after 30s"
+      "error_message": "runPagespeed(https://www.goodmonk.in/products/good-monk-slimbiotics): request timed out after 30s"
     }
   ]
 }
