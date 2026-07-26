@@ -1,9 +1,10 @@
 {
-  "updated_at": "2026-07-27T03:30:17+05:30",
+  "updated_at": "2026-07-27T04:36:38+05:30",
   "completed_sheet_names": [
     "Assorted",
     "FF",
     "FNM",
+    "H50+",
     "Homepage",
     "MM_Chocolate",
     "MM_Strawberry",
@@ -18,46 +19,25 @@
   ],
   "last_results": [
     {
-      "page_name": "Pineapple",
-      "sheet_name": "Pineapple",
-      "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-pineapple",
+      "page_name": "H50+",
+      "sheet_name": "H50+",
+      "url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix",
       "metrics": {
-        "performance_score": 48.0,
+        "performance_score": 42.0,
         "grade": "F",
-        "lcp": 9.92,
-        "onload": 3.38,
-        "fully_loaded": 10.45,
-        "ttfb": 0.01,
+        "lcp": 8.38,
+        "onload": 3.39,
+        "fully_loaded": 7.36,
+        "ttfb": 0.02,
         "cls": 0.0,
-        "tbt": 0.47,
-        "inp": 0.28,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Finstant-fruit-drink-mix-pineapple&form_factor=mobile",
+        "tbt": 0.85,
+        "inp": 0.33,
+        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-50-nutrition-mix&form_factor=mobile",
         "status": "OK",
         "error_message": ""
       },
       "success": true,
       "error_message": ""
-    },
-    {
-      "page_name": "H50+",
-      "sheet_name": "H50+",
-      "url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix",
-      "metrics": {
-        "performance_score": null,
-        "grade": "N/A",
-        "lcp": null,
-        "onload": null,
-        "fully_loaded": null,
-        "ttfb": null,
-        "cls": null,
-        "tbt": null,
-        "inp": null,
-        "report_url": null,
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": false,
-      "error_message": "runPagespeed(https://www.goodmonk.in/products/good-monk-50-nutrition-mix): request timed out after 30s"
     },
     {
       "page_name": "Berries",
