@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27T01:43:04+05:30",
+  "updated_at": "2026-07-27T03:30:17+05:30",
   "completed_sheet_names": [
     "Assorted",
     "FF",
@@ -10,6 +10,7 @@
     "MM_Vanilla",
     "Mango",
     "Orange",
+    "Pineapple",
     "Plant Protein Roti",
     "Shop_All",
     "Slimbiotics",
@@ -17,83 +18,20 @@
   ],
   "last_results": [
     {
-      "page_name": "Homepage",
-      "sheet_name": "Homepage",
-      "url": "https://www.goodmonk.in/",
+      "page_name": "Pineapple",
+      "sheet_name": "Pineapple",
+      "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-pineapple",
       "metrics": {
-        "performance_score": 43.0,
+        "performance_score": 48.0,
         "grade": "F",
-        "lcp": 26.05,
-        "onload": 5.17,
-        "fully_loaded": 13.27,
-        "ttfb": 0.02,
-        "cls": 0,
-        "tbt": 0.5,
-        "inp": 0.23,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2F&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
-      "page_name": "Fiber Fix",
-      "sheet_name": "FF",
-      "url": "https://www.goodmonk.in/products/fiber-fix",
-      "metrics": {
-        "performance_score": 34.0,
-        "grade": "F",
-        "lcp": 20.91,
-        "onload": 5.2,
-        "fully_loaded": 11.17,
-        "ttfb": 0.02,
-        "cls": 0,
-        "tbt": 1.0,
-        "inp": 0.27,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Ffiber-fix&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
-      "page_name": "FNM",
-      "sheet_name": "FNM",
-      "url": "https://www.goodmonk.in/products/good-monk",
-      "metrics": {
-        "performance_score": 32.0,
-        "grade": "F",
-        "lcp": 16.75,
-        "onload": 5.21,
-        "fully_loaded": 10.27,
-        "ttfb": 0.02,
-        "cls": 0,
-        "tbt": 1.33,
-        "inp": 0.31,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
-      "page_name": "Shop All",
-      "sheet_name": "Shop_All",
-      "url": "https://www.goodmonk.in/collections/all",
-      "metrics": {
-        "performance_score": 36.0,
-        "grade": "F",
-        "lcp": 8.28,
-        "onload": 3.23,
-        "fully_loaded": 9.48,
-        "ttfb": 0.02,
-        "cls": 0.009,
-        "tbt": 1.36,
-        "inp": 0.2,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fcollections%2Fall&form_factor=mobile",
+        "lcp": 9.92,
+        "onload": 3.38,
+        "fully_loaded": 10.45,
+        "ttfb": 0.01,
+        "cls": 0.0,
+        "tbt": 0.47,
+        "inp": 0.28,
+        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Finstant-fruit-drink-mix-pineapple&form_factor=mobile",
         "status": "OK",
         "error_message": ""
       },
@@ -122,69 +60,6 @@
       "error_message": "runPagespeed(https://www.goodmonk.in/products/good-monk-50-nutrition-mix): request timed out after 30s"
     },
     {
-      "page_name": "Orange",
-      "sheet_name": "Orange",
-      "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-orange",
-      "metrics": {
-        "performance_score": 36.0,
-        "grade": "F",
-        "lcp": 21.66,
-        "onload": 5.13,
-        "fully_loaded": 12.1,
-        "ttfb": 0.02,
-        "cls": 0,
-        "tbt": 0.84,
-        "inp": 0.32,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Finstant-fruit-drink-mix-orange&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
-      "page_name": "Assorted",
-      "sheet_name": "Assorted",
-      "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-assorted",
-      "metrics": {
-        "performance_score": 35.0,
-        "grade": "F",
-        "lcp": 18.31,
-        "onload": 5.49,
-        "fully_loaded": 12.9,
-        "ttfb": 0.01,
-        "cls": 0,
-        "tbt": 0.92,
-        "inp": 0.28,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Finstant-fruit-drink-mix-assorted&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
-      "page_name": "Mango",
-      "sheet_name": "Mango",
-      "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-natural-mango-powder-50-less-sugar-with-8-vitamins-minerals",
-      "metrics": {
-        "performance_score": 46.0,
-        "grade": "F",
-        "lcp": 28.32,
-        "onload": 5.96,
-        "fully_loaded": 12.5,
-        "ttfb": 0.02,
-        "cls": 0,
-        "tbt": 0.42,
-        "inp": 0.21,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Finstant-fruit-drink-mix-natural-mango-powder-50-less-sugar-with-8-vitamins-minerals&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
       "page_name": "Berries",
       "sheet_name": "Berries",
       "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-mixed-berries",
@@ -204,153 +79,6 @@
       },
       "success": false,
       "error_message": "runPagespeed(https://www.goodmonk.in/products/instant-fruit-drink-mix-mixed-berries): request timed out after 30s"
-    },
-    {
-      "page_name": "Milk Mix Strawberry",
-      "sheet_name": "MM_Strawberry",
-      "url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-strawberry",
-      "metrics": {
-        "performance_score": 37.0,
-        "grade": "F",
-        "lcp": 6.83,
-        "onload": 2.93,
-        "fully_loaded": 9.84,
-        "ttfb": 0.02,
-        "cls": 0.262,
-        "tbt": 0.5,
-        "inp": 0.29,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-superhero-milk-mix-strawberry&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
-      "page_name": "Pineapple",
-      "sheet_name": "Pineapple",
-      "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-pineapple",
-      "metrics": {
-        "performance_score": null,
-        "grade": "N/A",
-        "lcp": null,
-        "onload": null,
-        "fully_loaded": null,
-        "ttfb": null,
-        "cls": null,
-        "tbt": null,
-        "inp": null,
-        "report_url": null,
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": false,
-      "error_message": "runPagespeed(https://www.goodmonk.in/products/instant-fruit-drink-mix-pineapple): request timed out after 30s"
-    },
-    {
-      "page_name": "Milk Mix Vanilla",
-      "sheet_name": "MM_Vanilla",
-      "url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-vanilla",
-      "metrics": {
-        "performance_score": 38.0,
-        "grade": "F",
-        "lcp": 7.84,
-        "onload": 3.17,
-        "fully_loaded": 8.0,
-        "ttfb": 0.01,
-        "cls": 0.0,
-        "tbt": 1.31,
-        "inp": 0.29,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-superhero-milk-mix-vanilla&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
-      "page_name": "Slimbiotics",
-      "sheet_name": "Slimbiotics",
-      "url": "https://www.goodmonk.in/products/good-monk-slimbiotics",
-      "metrics": {
-        "performance_score": 33.0,
-        "grade": "F",
-        "lcp": 18.55,
-        "onload": 5.36,
-        "fully_loaded": 10.52,
-        "ttfb": 0.02,
-        "cls": 0,
-        "tbt": 1.17,
-        "inp": 0.28,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-slimbiotics&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
-      "page_name": "Plant Protein Roti",
-      "sheet_name": "Plant Protein Roti",
-      "url": "https://www.goodmonk.in/products/plant-protein-for-rotis",
-      "metrics": {
-        "performance_score": 26.0,
-        "grade": "F",
-        "lcp": 6.6,
-        "onload": 3.31,
-        "fully_loaded": 7.54,
-        "ttfb": 0.02,
-        "cls": 0.262,
-        "tbt": 1.24,
-        "inp": 0.32,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fplant-protein-for-rotis&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
-      "page_name": "Weight Management",
-      "sheet_name": "Weight Management",
-      "url": "https://www.goodmonk.in/products/good-monk-weight-management-program",
-      "metrics": {
-        "performance_score": 39.0,
-        "grade": "F",
-        "lcp": 12.9,
-        "onload": 4.74,
-        "fully_loaded": 9.46,
-        "ttfb": 0.01,
-        "cls": 0.0,
-        "tbt": 0.74,
-        "inp": 0.29,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-weight-management-program&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
-      "page_name": "Milk Mix Chocolate",
-      "sheet_name": "MM_Chocolate",
-      "url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix",
-      "metrics": {
-        "performance_score": 50.0,
-        "grade": "D",
-        "lcp": 14.94,
-        "onload": 4.89,
-        "fully_loaded": 10.55,
-        "ttfb": 0.01,
-        "cls": 0.0,
-        "tbt": 0.31,
-        "inp": 0.27,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-superhero-milk-mix&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
     }
   ]
 }
