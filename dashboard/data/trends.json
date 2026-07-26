@@ -17,6 +17,12 @@
       "avg_score": 39.71,
       "avg_lcp": 16.02,
       "avg_fully_loaded": 10.48
+    },
+    {
+      "period": "2026-07-27",
+      "avg_score": 37.31,
+      "avg_lcp": 16.0,
+      "avg_fully_loaded": 10.58
     }
   ],
   "weekly": [
@@ -25,14 +31,20 @@
       "avg_score": 38.76,
       "avg_lcp": 15.54,
       "avg_fully_loaded": 10.41
+    },
+    {
+      "period": "2026-W31",
+      "avg_score": 37.31,
+      "avg_lcp": 16.0,
+      "avg_fully_loaded": 10.58
     }
   ],
   "monthly": [
     {
       "period": "2026-07",
-      "avg_score": 38.76,
-      "avg_lcp": 15.54,
-      "avg_fully_loaded": 10.41
+      "avg_score": 38.66,
+      "avg_lcp": 15.58,
+      "avg_fully_loaded": 10.43
     }
   ]
 }
