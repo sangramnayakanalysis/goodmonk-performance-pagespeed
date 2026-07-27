@@ -37,12 +37,21 @@ def main() -> int:
     parser.add_argument("--no-resume", action="store_true", help="Ignore saved run state; test every page.")
     parser.add_argument("--workers", type=int, default=None, help="Override MAX_WORKERS for this run.")
     parser.add_argument("--skip-email", action="store_true", help="Skip sending the summary email.")
+    tier_group = parser.add_mutually_exclusive_group()
+    tier_group.add_argument("--priority", action="store_true",
+                             help="Run only the 6 priority pages (Homepage, Shop All, H50+, FNM, "
+                                  "Plant Protein Roti, Fiber Fix). Meant for the hourly schedule.")
+    tier_group.add_argument("--secondary", action="store_true",
+                             help="Run only the secondary (non-priority) pages. Meant for the "
+                                  "once-daily 2 AM IST schedule.")
     args = parser.parse_args()
 
-    setup_logging()
-    log.info("=== GoodMonk Performance Command Center run starting ===")
+    tier = "priority" if args.priority else "secondary" if args.secondary else "all"
 
-    results = scheduler.run_batch(resume=not args.no_resume, workers=args.workers)
+    setup_logging()
+    log.info("=== GoodMonk Performance Command Center run starting (tier=%s) ===", tier)
+
+    results = scheduler.run_batch(resume=not args.no_resume, workers=args.workers, tier=tier)
 
     if not results:
         log.info("No results produced (nothing to run, or everything was already completed). Exiting.")
@@ -51,11 +60,17 @@ def main() -> int:
     failed = sum(1 for r in results if not r.success)
     status = "completed" if failed == 0 else "completed_with_failures"
 
-    # Next run: the workflow now runs every hour (cron "0 * * * *"), so the
-    # next run is simply the next top-of-the-hour boundary in IST — e.g. a
-    # run finishing at 14:07 IST reports 15:00 IST as next_scheduled_run.
+    # Next run: priority/all pages run every hour (cron "0 * * * *"), so
+    # next_scheduled_run is simply the next top-of-the-hour boundary in
+    # IST. Secondary pages instead run once daily at 2 AM IST — see
+    # .github/workflows/monitor.yml.
     now = now_ist()
-    next_run = (now.replace(minute=0, second=0, microsecond=0) + timedelta(hours=1))
+    if tier == "secondary":
+        next_run = now.replace(hour=2, minute=0, second=0, microsecond=0)
+        if next_run <= now:
+            next_run += timedelta(days=1)
+    else:
+        next_run = (now.replace(minute=0, second=0, microsecond=0) + timedelta(hours=1))
 
     try:
         dashboard_data.build_all(last_run_status=status, next_run_iso=next_run.isoformat())
