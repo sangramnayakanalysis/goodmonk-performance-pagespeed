@@ -66,19 +66,20 @@ def _lower_is_better_tier(value: Optional[float], green_max: float, amber_max: f
     return "red"
 
 
-_TIER_ORDER = {"green": 0, "yellow": 1, "red": 2, "grey": 0}
-
-
-def _status_color(score: Optional[float], lcp: Optional[float]) -> str:
-    """Overall page/KPI classification: the worse of the Score tier and the
-    LCP tier (a page with a green score but a badly-blown LCP still needs
-    attention). None score (no successful run yet) is "grey" (unknown),
-    distinct from "red" (critical)."""
+def _status_color(score: Optional[float]) -> str:
+    """Overall page/KPI classification — Score tier ONLY, per the manager
+    spec's worked example (16 real scores -> Healthy 0 / Warning 5 /
+    Critical 11, derived purely from the Score list). LCP/CLS/TTFB/TBT are
+    shown independently per-metric on the page card (see _metric_tiers)
+    but must NOT blend into overall/KPI status — an earlier "worst of
+    Score and LCP" version of this function meant that because every
+    page's real LCP is currently >4s, EVERY page came out red regardless
+    of score, silently reproducing the exact "all Critical" bug the
+    manager reported even after the threshold fix. None (no successful
+    run yet) is "grey" (unknown), distinct from "red" (critical)."""
     if score is None:
         return "grey"
-    score_tier = _score_tier(score)
-    lcp_tier = _lower_is_better_tier(lcp, config.LCP_GREEN_MAX, config.LCP_AMBER_MAX) if lcp is not None else "green"
-    return max([score_tier, lcp_tier], key=lambda t: _TIER_ORDER[t])
+    return _score_tier(score)
 
 
 def _metric_tiers(latest: Optional[dict]) -> dict:
@@ -210,14 +211,13 @@ def build_all(last_run_status: str = "completed", next_run_iso: str | None = Non
         latest = ok_rows[-1] if ok_rows else None
 
         score = _f(latest["Performance Score"]) if latest else None
-        lcp = _f(latest.get("LCP")) if latest else None
 
         page_entries.append({
             "name": page.name,
             "sheet_name": page.sheet_name,
             "url": page.url,
             "latest": latest,
-            "status_color": _status_color(score, lcp),
+            "status_color": _status_color(score),
             "metric_tiers": _metric_tiers(latest),
             "score_trend": _score_trend(ok_rows),
             "top_opportunities": _parse_opportunities(latest),
