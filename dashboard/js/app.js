@@ -48,28 +48,71 @@ const state = {
 // --- Data loading ---------------------------------------------------------
 
 async function fetchJSON(path) {
-  const res = await fetch(`${DATA_BASE}/${path}?t=${Date.now()}`, { cache: "no-store" });
-  if (!res.ok) throw new Error(`Failed to load ${path}: ${res.status}`);
-  return res.json();
+  let res;
+  try {
+    res = await fetch(`${DATA_BASE}/${path}?t=${Date.now()}`, { cache: "no-store" });
+  } catch (networkErr) {
+    // fetch() itself threw — no response at all (offline, DNS failure, CORS
+    // block, connection reset). Distinct from a bad HTTP status below.
+    throw new Error(`${path}: network error (${networkErr.message})`);
+  }
+  if (!res.ok) throw new Error(`${path}: HTTP ${res.status}`);
+  try {
+    return await res.json();
+  } catch (parseErr) {
+    // Server responded but the body wasn't valid JSON — e.g. GitHub Pages
+    // serving its own 404 HTML page for a missing file, or a genuinely
+    // malformed data file.
+    throw new Error(`${path}: response wasn't valid JSON (${parseErr.message})`);
+  }
 }
 
 async function loadAll() {
-  try {
-    const [summary, pages, trends, history] = await Promise.all([
-      fetchJSON("summary.json"),
-      fetchJSON("pages.json"),
-      fetchJSON("trends.json"),
-      fetchJSON("history.json"),
-    ]);
-    state.summary = summary;
-    state.pages = pages;
-    state.trends = trends;
-    state.history = history;
-    renderAll();
-  } catch (e) {
-    console.error("Dashboard data load failed:", e);
-    document.getElementById("load-error").style.display = "block";
+  const results = await Promise.allSettled([
+    fetchJSON("summary.json"),
+    fetchJSON("pages.json"),
+    fetchJSON("trends.json"),
+    fetchJSON("history.json"),
+  ]);
+  const [summaryR, pagesR, trendsR, historyR] = results;
+  const failures = results
+    .map((r, i) => (r.status === "rejected" ? { file: ["summary.json", "pages.json", "trends.json", "history.json"][i], reason: r.reason } : null))
+    .filter(Boolean);
+
+  if (failures.length) {
+    failures.forEach(f => console.error(`Dashboard data load failed for ${f.file}:`, f.reason));
   }
+
+  // Keep whatever loaded successfully; a failed file falls back to the
+  // last known-good value instead of wiping out data that DID load. This
+  // also means a transient failure on an auto-refresh doesn't blank out
+  // an already-rendered dashboard.
+  if (summaryR.status === "fulfilled") state.summary = summaryR.value;
+  if (pagesR.status === "fulfilled") state.pages = pagesR.value;
+  if (trendsR.status === "fulfilled") state.trends = trendsR.value;
+  if (historyR.status === "fulfilled") state.history = historyR.value;
+
+  const haveAnyData = state.summary || state.pages.length || state.history.length;
+  const errorEl = document.getElementById("load-error");
+
+  if (failures.length === 0) {
+    errorEl.style.display = "none";
+  } else if (haveAnyData) {
+    // Partial failure with something already on screen — show a small,
+    // specific warning instead of the old all-or-nothing blank state.
+    errorEl.textContent = `Some dashboard data didn't refresh (${failures.map(f => f.file).join(", ")}) — showing the last successful load. Check the browser console for details.`;
+    errorEl.style.color = "var(--accent-amber)";
+    errorEl.style.display = "block";
+  } else {
+    // Nothing has ever loaded successfully — name the actual failure
+    // instead of a generic "before first run" guess, since that message
+    // is misleading once the workflow has run many times.
+    errorEl.textContent = `Couldn't load dashboard data: ${failures.map(f => `${f.file} — ${f.reason.message}`).join("; ")}. If the workflow has run before, this usually means a GitHub Pages deploy hasn't finished propagating yet (try refreshing in a minute) or the Pages site's visibility/auth settings are blocking this request — check the Network tab for the actual response.`;
+    errorEl.style.color = "var(--accent-red)";
+    errorEl.style.display = "block";
+  }
+
+  if (haveAnyData) renderAll();
 }
 
 // --- Timezone: always display IST, regardless of the viewer's own browser
@@ -497,7 +540,6 @@ function renderAll() {
   populatePageSelector();
   renderTrendCharts();
   renderHistoryTable();
-  document.getElementById("load-error").style.display = "none";
 }
 
 function initControls() {
