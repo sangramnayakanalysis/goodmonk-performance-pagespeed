@@ -62,6 +62,11 @@ class Metrics:
     report_url: Optional[str] = None
     status: str = "OK"                     # "OK" | "Error"
     error_message: str = ""
+    # Top 5 Lighthouse diagnostic opportunities ("why is this page slow"),
+    # sorted by potential savings descending. Each item:
+    #   {"title": str, "display_value": str, "savings": float, "unit": str}
+    # Persisted to Sheets column M as JSON (see google_sheet.append_result).
+    top_opportunities: list[dict] = field(default_factory=list)
 
 
 @dataclass
@@ -190,6 +195,35 @@ def _audit_seconds(audits: dict, audit_id: str) -> Optional[float]:
     return round(value / 1000, 2)
 
 
+def _extract_top_opportunities(audits: dict, limit: int = 5) -> list[dict]:
+    """Pulls Lighthouse's "opportunity" audits (the diagnostic detail Google
+    already computes for why a page is slow — e.g. "Reduce unused
+    JavaScript — saves 1,107 KiB") out of the raw audits dict. Filters to
+    details.type == "opportunity" with a positive numericValue (savings),
+    sorts by savings descending, and keeps the top `limit`. This data was
+    always in the API response but was previously discarded — see the
+    July 2026 manager review, fix #4."""
+    opportunities = []
+    for audit in audits.values():
+        if not isinstance(audit, dict):
+            continue
+        details = audit.get("details") or {}
+        if details.get("type") != "opportunity":
+            continue
+        savings = audit.get("numericValue")
+        if not savings or savings <= 0:
+            continue
+        opportunities.append({
+            "title": audit.get("title", ""),
+            "display_value": audit.get("displayValue", ""),
+            "savings": round(savings, 2),
+            "unit": audit.get("numericUnit", ""),
+        })
+
+    opportunities.sort(key=lambda o: o["savings"], reverse=True)
+    return opportunities[:limit]
+
+
 def extract_metrics(data: dict, url: str) -> Metrics:
     lighthouse = data.get("lighthouseResult")
     if not lighthouse:
@@ -224,6 +258,7 @@ def extract_metrics(data: dict, url: str) -> Metrics:
             inp=inp,
             report_url=_build_report_url(url),
             status="OK",
+            top_opportunities=_extract_top_opportunities(audits),
         )
     except (KeyError, TypeError, AttributeError) as e:
         return Metrics(status="Error", error_message=f"Malformed PageSpeed response: {e}", report_url=_build_report_url(url))
