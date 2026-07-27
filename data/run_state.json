@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-07-27T21:50:09+05:30",
+  "updated_at": "2026-07-27T12:01:28+05:30",
   "completed_sheet_names": [
     "Assorted",
-    "Berries",
     "FF",
     "FNM",
     "H50+",
     "Homepage",
     "MM_Chocolate",
     "MM_Strawberry",
+    "MM_Vanilla",
     "Mango",
     "Orange",
     "Pineapple",
@@ -19,51 +19,9 @@
   ],
   "last_results": [
     {
-      "page_name": "Slimbiotics",
-      "sheet_name": "Slimbiotics",
-      "url": "https://www.goodmonk.in/products/good-monk-slimbiotics",
-      "metrics": {
-        "performance_score": 42.0,
-        "grade": "F",
-        "lcp": 25.11,
-        "onload": 5.77,
-        "fully_loaded": 11.33,
-        "ttfb": 0.02,
-        "cls": 0,
-        "tbt": 0.57,
-        "inp": 0.28,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-slimbiotics&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
-      "page_name": "Assorted",
-      "sheet_name": "Assorted",
-      "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-assorted",
-      "metrics": {
-        "performance_score": 34.0,
-        "grade": "F",
-        "lcp": 17.49,
-        "onload": 5.77,
-        "fully_loaded": 12.78,
-        "ttfb": 0.02,
-        "cls": 0,
-        "tbt": 0.95,
-        "inp": 0.28,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Finstant-fruit-drink-mix-assorted&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
-    },
-    {
-      "page_name": "Milk Mix Vanilla",
-      "sheet_name": "MM_Vanilla",
-      "url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-vanilla",
+      "page_name": "Berries",
+      "sheet_name": "Berries",
+      "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-mixed-berries",
       "metrics": {
         "performance_score": null,
         "grade": "N/A",
@@ -79,28 +37,7 @@
         "error_message": ""
       },
       "success": false,
-      "error_message": "runPagespeed(https://www.goodmonk.in/products/good-monk-superhero-milk-mix-vanilla): request timed out after 30s"
-    },
-    {
-      "page_name": "Fiber Fix",
-      "sheet_name": "FF",
-      "url": "https://www.goodmonk.in/products/fiber-fix",
-      "metrics": {
-        "performance_score": 14.0,
-        "grade": "F",
-        "lcp": 12.98,
-        "onload": 5.1,
-        "fully_loaded": 10.04,
-        "ttfb": 0.02,
-        "cls": 0.262,
-        "tbt": 3.2,
-        "inp": 0.27,
-        "report_url": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Ffiber-fix&form_factor=mobile",
-        "status": "OK",
-        "error_message": ""
-      },
-      "success": true,
-      "error_message": ""
+      "error_message": "runPagespeed(https://www.goodmonk.in/products/instant-fruit-drink-mix-mixed-berries): request timed out after 30s"
     }
   ]
 }
