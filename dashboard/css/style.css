@@ -240,10 +240,29 @@ a:hover { text-decoration: underline; }
   font-family: var(--font-mono);
 }
 
+/* --- Trend controls (page selector + granularity toggle) ---------------- */
+.trend-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#page-selector {
+  font-family: var(--font-body);
+  font-size: 13px;
+  padding: 7px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--hairline);
+  background: var(--panel-alt);
+  color: var(--text);
+  cursor: pointer;
+}
+
 /* --- Page vitals grid --------------------------------------------------- */
 .pages-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 14px;
 }
 
@@ -290,6 +309,58 @@ a:hover { text-decoration: underline; }
   font-size: 12px;
   color: var(--text-muted);
   margin-top: 8px;
+}
+
+.page-card .pc-score-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.page-card .pc-trend {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+}
+.pc-trend-up { color: var(--accent-teal); }
+.pc-trend-down { color: var(--accent-red); }
+.pc-trend-flat { color: var(--text-faint); }
+
+.page-card .pc-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px 10px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.page-card .pc-top-issue {
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--text-muted);
+  border-top: 1px dashed var(--hairline);
+  padding-top: 8px;
+}
+
+.page-card .pc-opportunities {
+  margin-top: 8px;
+}
+
+.page-card .pc-opp-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-faint);
+  margin-bottom: 4px;
+}
+
+.page-card .pc-opportunities ul {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.6;
 }
 
 .page-card .pc-footer {
@@ -434,6 +505,9 @@ footer {
   .brand h1 { font-size: 16px; }
   .kpi-card .kpi-value { font-size: 20px; }
   .history-table th, .history-table td { padding: 8px 10px; }
+  .trend-controls { width: 100%; }
+  #page-selector { flex: 1; }
+  .page-card .pc-metrics-grid { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
