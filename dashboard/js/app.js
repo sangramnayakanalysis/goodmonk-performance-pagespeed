@@ -339,18 +339,38 @@ function buildLineChart(canvasId, labels, datasets, benchmarkKey) {
 
 function getActiveSeries() {
   const granularityData = state.trends[state.granularity];
-  // Defensive fallback for the old (pre-per-page) trends.json shape, in
-  // case this loads before the first rebuild lands.
-  if (Array.isArray(granularityData)) return granularityData;
-  if (!granularityData) return [];
-  if (state.selectedPage === "__overall__") return granularityData.overall || [];
-  return (granularityData.pages && granularityData.pages[state.selectedPage]) || [];
+
+  if (!granularityData) return { series: [], stale: false };
+
+  if (Array.isArray(granularityData)) {
+    // Old pre-per-page trends.json shape (from before the per-page trends
+    // fix was deployed) is still what's committed. It only has one
+    // overall-average series — there is no real per-page data in it yet.
+    // Silently falling back to that same overall array for every page
+    // selection is exactly what caused "every page shows identical data"
+    // — so instead of doing that, return nothing for a specific page and
+    // let renderTrendCharts show an explicit notice. "All Pages" can
+    // still be served from this shape.
+    if (state.selectedPage === "__overall__") return { series: granularityData, stale: false };
+    return { series: [], stale: true };
+  }
+
+  if (state.selectedPage === "__overall__") return { series: granularityData.overall || [], stale: false };
+  return { series: (granularityData.pages && granularityData.pages[state.selectedPage]) || [], stale: false };
 }
 
 function renderTrendCharts() {
   const theme = chartTheme();
-  const series = getActiveSeries();
+  const { series, stale } = getActiveSeries();
   const labels = series.map(s => s.period);
+
+  const notice = document.getElementById("trend-stale-notice");
+  if (stale) {
+    notice.textContent = `Per-page trend history for "${state.selectedPage}" isn't in the current data yet — it appears after the next scheduled run regenerates trends.json. Showing "All Pages" until then.`;
+    notice.style.display = "block";
+  } else {
+    notice.style.display = "none";
+  }
 
   buildLineChart("chart-score", labels, [{
     label: "Avg Score", data: series.map(s => s.avg_score),
@@ -396,7 +416,7 @@ function renderHistoryTable() {
     const badgeColor = isOk ? "var(--accent-teal)" : "var(--accent-red)";
     return `
     <tr>
-      <td>${escapeHTML(r.Date || "")} ${escapeHTML(r.Time || "")}</td>
+      <td>${escapeHTML(r.Date || "")} ${escapeHTML(r.Time || "")} IST</td>
       <td>${escapeHTML(r._page_name || r._sheet_name || "")}</td>
       <td>${r["Performance Score"] ?? "—"}</td>
       <td>${escapeHTML(r["Grade"] ?? "—")}</td>
