@@ -105,15 +105,15 @@
     "url": "https://www.goodmonk.in/products/fiber-fix",
     "latest": {
       "Date": "2026-07-27",
-      "Time": "01:39:49",
-      "Performance Score": 34,
+      "Time": "21:50:08",
+      "Performance Score": 14,
       "Grade": "F",
-      "LCP": 20.91,
-      "Onload": 5.2,
-      "Fully Loaded": 11.17,
+      "LCP": 12.98,
+      "Onload": 5.1,
+      "Fully Loaded": 10.04,
       "TTFB": 0.02,
-      "CLS": 0,
-      "TBT": 1,
+      "CLS": 0.262,
+      "TBT": 3.2,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Ffiber-fix&form_factor=mobile",
       "Status": "OK",
       "_page_name": "Fiber Fix",
@@ -121,7 +121,7 @@
       "_url": "https://www.goodmonk.in/products/fiber-fix"
     },
     "status_color": "red",
-    "total_runs": 15,
+    "total_runs": 16,
     "failed_runs": 4
   },
   {
@@ -230,15 +230,15 @@
     "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-assorted",
     "latest": {
       "Date": "2026-07-27",
-      "Time": "01:41:05",
-      "Performance Score": 35,
+      "Time": "21:49:11",
+      "Performance Score": 34,
       "Grade": "F",
-      "LCP": 18.31,
-      "Onload": 5.49,
-      "Fully Loaded": 12.9,
-      "TTFB": 0.01,
+      "LCP": 17.49,
+      "Onload": 5.77,
+      "Fully Loaded": 12.78,
+      "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 0.92,
+      "TBT": 0.95,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Finstant-fruit-drink-mix-assorted&form_factor=mobile",
       "Status": "OK",
       "_page_name": "Assorted",
@@ -246,7 +246,7 @@
       "_url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-assorted"
     },
     "status_color": "red",
-    "total_runs": 21,
+    "total_runs": 22,
     "failed_runs": 9
   },
   {
@@ -296,8 +296,8 @@
       "_url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-vanilla"
     },
     "status_color": "red",
-    "total_runs": 18,
-    "failed_runs": 7
+    "total_runs": 19,
+    "failed_runs": 8
   },
   {
     "name": "Milk Mix Chocolate",
@@ -330,15 +330,15 @@
     "url": "https://www.goodmonk.in/products/good-monk-slimbiotics",
     "latest": {
       "Date": "2026-07-27",
-      "Time": "01:42:15",
-      "Performance Score": 33,
+      "Time": "21:49:05",
+      "Performance Score": 42,
       "Grade": "F",
-      "LCP": 18.55,
-      "Onload": 5.36,
-      "Fully Loaded": 10.52,
+      "LCP": 25.11,
+      "Onload": 5.77,
+      "Fully Loaded": 11.33,
       "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 1.17,
+      "TBT": 0.57,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-slimbiotics&form_factor=mobile",
       "Status": "OK",
       "_page_name": "Slimbiotics",
@@ -346,7 +346,7 @@
       "_url": "https://www.goodmonk.in/products/good-monk-slimbiotics"
     },
     "status_color": "red",
-    "total_runs": 21,
+    "total_runs": 22,
     "failed_runs": 10
   },
   {
