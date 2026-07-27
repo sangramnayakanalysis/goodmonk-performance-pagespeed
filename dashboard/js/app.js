@@ -9,12 +9,39 @@
 const DATA_BASE = "data";
 const REFRESH_MS = 30_000;
 
+// Priority pages (mirrors config.PAGES_PRIORITY) shown first in the page
+// selector dropdown — these are the 6 commercial pages from the July 2026
+// manager review.
+const PRIORITY_PAGE_ORDER = ["Homepage", "Shop All", "H50+", "FNM", "Plant Protein Roti", "Fiber Fix"];
+
+// Benchmark reference lines for the trend charts (fix #2). Keep these in
+// sync with config.py's BENCHMARK_* constants — this is a static JS file
+// with no server templating, so the values are duplicated here on purpose.
+const BENCHMARKS = {
+  score: [
+    { value: 60, label: "Our Target", colorVar: "--accent-teal" },
+    { value: 90, label: "Google Good", colorVar: "--accent-blue" },
+  ],
+  lcp: [
+    { value: 2.5, label: "Good", colorVar: "--accent-teal" },
+    { value: 4, label: "Poor", colorVar: "--accent-red" },
+  ],
+  speedIndex: [
+    { value: 3.4, label: "Good", colorVar: "--accent-teal" },
+    { value: 5.8, label: "Poor", colorVar: "--accent-red" },
+  ],
+};
+
+// Traffic-light color lookup shared by KPIs, page cards, and metric chips.
+const TIER_COLOR = { green: "var(--accent-teal)", yellow: "var(--accent-amber)", red: "var(--accent-red)", grey: "var(--text-faint)" };
+
 const state = {
   summary: null,
   pages: [],
-  trends: { daily: [], weekly: [], monthly: [] },
+  trends: { daily: { overall: [], pages: {} }, weekly: { overall: [], pages: {} }, monthly: { overall: [], pages: {} } },
   history: [],
   granularity: "daily",
+  selectedPage: "__overall__",
   charts: {},
 };
 
@@ -59,6 +86,25 @@ function formatIST(isoString) {
     hour: "2-digit", minute: "2-digit", hour12: true,
   }).format(date);
   return `${formatted} IST`;
+}
+
+// --- Small helpers ----------------------------------------------------------
+
+function escapeHTML(str) {
+  if (str === null || str === undefined) return "";
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function resolveCSSVar(varExpr) {
+  // Canvas (used by Chart.js annotations) can't resolve var(--x) itself —
+  // this pulls the actual computed color so benchmark lines render.
+  const match = /var\((--[a-zA-Z0-9-]+)\)/.exec(varExpr);
+  const name = match ? match[1] : varExpr;
+  return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || varExpr;
 }
 
 // --- Rendering: vitals bar -------------------------------------------------
@@ -131,12 +177,25 @@ function renderKPIs() {
   el.innerHTML = kpis.map(k => `
     <div class="kpi-card">
       <div class="kpi-label">${k.label}</div>
-      <div class="kpi-value" style="${k.color ? `color:${k.color}` : ""}; ${k.sub ? "font-size:16px;" : ""}">${k.value}</div>
+      <div class="kpi-value" style="${k.color ? `color:${k.color}` : ""}; ${k.sub ? "font-size:16px;" : ""}">${escapeHTML(k.value)}</div>
     </div>
   `).join("");
 }
 
-// --- Rendering: page vitals grid -------------------------------------------
+// --- Rendering: page vitals grid (fix #5 — expanded cards) -----------------
+
+function trendArrowHTML(delta) {
+  if (delta === null || delta === undefined) return `<span class="pc-trend pc-trend-flat">—</span>`;
+  if (delta > 0) return `<span class="pc-trend pc-trend-up">↑ +${delta}</span>`;
+  if (delta < 0) return `<span class="pc-trend pc-trend-down">↓ ${delta}</span>`;
+  return `<span class="pc-trend pc-trend-flat">→ 0</span>`;
+}
+
+function metricChip(label, value, unit, tier) {
+  const color = TIER_COLOR[tier] || TIER_COLOR.grey;
+  const display = (value === null || value === undefined) ? "—" : `${value}${unit}`;
+  return `<span style="color:${color}">${label} ${display}</span>`;
+}
 
 function renderPagesGrid() {
   const el = document.getElementById("pages-grid");
@@ -146,17 +205,39 @@ function renderPagesGrid() {
   }
   el.innerHTML = state.pages.map(p => {
     const latest = p.latest || {};
-    const color = { green: "var(--accent-teal)", yellow: "var(--accent-amber)", red: "var(--accent-red)", grey: "var(--text-faint)" }[p.status_color];
+    const tiers = p.metric_tiers || {};
+    const overallColor = TIER_COLOR[p.status_color] || TIER_COLOR.grey;
+
+    const tbt = latest["TBT"];
+    const tbtMs = (tbt === null || tbt === undefined || tbt === "") ? null : Math.round(tbt * 1000);
+
+    const opportunities = Array.isArray(p.top_opportunities) ? p.top_opportunities : [];
+    const topOpportunities = opportunities.slice(0, 3);
+    const topIssue = opportunities[0];
+
     return `
-    <div class="page-card" style="color:${color}">
+    <div class="page-card" style="color:${overallColor}">
       <div class="pc-head">
-        <div class="pc-name" style="color:var(--text)">${p.name}</div>
-        <div class="pc-score" style="color:${color}">${latest["Performance Score"] ?? "—"}</div>
+        <div class="pc-name" style="color:var(--text)">${escapeHTML(p.name)}</div>
+        <div class="pc-score-wrap">
+          <div class="pc-score" style="color:${overallColor}">${latest["Performance Score"] ?? "—"}</div>
+          ${trendArrowHTML(p.score_trend)}
+        </div>
       </div>
-      <div class="pc-metrics">
-        <span>LCP ${latest["LCP"] ?? "—"}s</span>
-        <span>Grade ${latest["Grade"] ?? "—"}</span>
+      <div class="pc-metrics-grid">
+        ${metricChip("LCP", latest["LCP"] ?? null, "s", tiers.lcp)}
+        ${metricChip("CLS", latest["CLS"] ?? null, "", tiers.cls)}
+        ${metricChip("TTFB", latest["TTFB"] ?? null, "s", tiers.ttfb)}
+        ${metricChip("TBT", tbtMs, "ms", tiers.tbt)}
       </div>
+      ${topIssue ? `<div class="pc-top-issue">Top issue: ${escapeHTML(topIssue.title)}${topIssue.display_value ? ` (${escapeHTML(topIssue.display_value)})` : ""}</div>` : ""}
+      ${topOpportunities.length ? `
+      <div class="pc-opportunities">
+        <div class="pc-opp-title">Why is this page slow?</div>
+        <ul>
+          ${topOpportunities.map(o => `<li>${escapeHTML(o.title)}${o.display_value ? ` — ${escapeHTML(o.display_value)}` : ""}</li>`).join("")}
+        </ul>
+      </div>` : ""}
       <div class="pc-footer">
         <span>${p.total_runs} runs · ${p.failed_runs} failed</span>
         ${latest["Report URL"] ? `<a href="${latest["Report URL"]}" target="_blank" rel="noopener">Report ↗</a>` : ""}
@@ -165,7 +246,27 @@ function renderPagesGrid() {
   }).join("");
 }
 
-// --- Rendering: trend charts (Chart.js) ------------------------------------
+// --- Rendering: page selector (fix #3) --------------------------------------
+
+function populatePageSelector() {
+  const sel = document.getElementById("page-selector");
+  const previous = state.selectedPage;
+
+  const names = state.pages.map(p => p.name);
+  const priority = PRIORITY_PAGE_ORDER.filter(n => names.includes(n));
+  const rest = names.filter(n => !PRIORITY_PAGE_ORDER.includes(n));
+  const ordered = [...priority, ...rest];
+
+  const options = [`<option value="__overall__">All Pages (overall)</option>`]
+    .concat(ordered.map(n => `<option value="${escapeHTML(n)}">${escapeHTML(n)}</option>`));
+  sel.innerHTML = options.join("");
+
+  // Keep the previous selection if that page still exists, else fall back.
+  sel.value = (previous === "__overall__" || ordered.includes(previous)) ? previous : "__overall__";
+  state.selectedPage = sel.value;
+}
+
+// --- Rendering: trend charts (Chart.js + annotation plugin) ----------------
 
 function chartTheme() {
   const styles = getComputedStyle(document.documentElement);
@@ -178,10 +279,44 @@ function chartTheme() {
   };
 }
 
-function buildLineChart(canvasId, labels, datasets) {
+function benchmarkAnnotations(key) {
+  const lines = BENCHMARKS[key] || [];
+  const annotations = {};
+  lines.forEach((line, i) => {
+    const color = resolveCSSVar(`var(${line.colorVar})`);
+    annotations[`${key}_benchmark_${i}`] = {
+      type: "line",
+      yMin: line.value,
+      yMax: line.value,
+      borderColor: color,
+      borderWidth: 1.5,
+      borderDash: [6, 4],
+      label: {
+        display: true,
+        content: `${line.label} (${line.value})`,
+        position: "end",
+        backgroundColor: "transparent",
+        color: color,
+        font: { size: 10, family: "JetBrains Mono" },
+        yAdjust: -8,
+      },
+    };
+  });
+  return annotations;
+}
+
+function buildLineChart(canvasId, labels, datasets, benchmarkKey) {
   const ctx = document.getElementById(canvasId).getContext("2d");
   if (state.charts[canvasId]) state.charts[canvasId].destroy();
   const theme = chartTheme();
+
+  // Defensive: the annotation plugin should self-register from its CDN
+  // script tag, but register it explicitly if that hasn't happened yet
+  // (e.g. script load ordering) so benchmark lines never silently vanish.
+  if (window.Chart && window["chartjs-plugin-annotation"] && !Chart.registry.plugins.get("annotation")) {
+    Chart.register(window["chartjs-plugin-annotation"]);
+  }
+
   state.charts[canvasId] = new Chart(ctx, {
     type: "line",
     data: { labels, datasets },
@@ -189,7 +324,10 @@ function buildLineChart(canvasId, labels, datasets) {
       responsive: true,
       maintainAspectRatio: false,
       interaction: { mode: "index", intersect: false },
-      plugins: { legend: { labels: { color: theme.text, font: { family: "Inter", size: 11 } } } },
+      plugins: {
+        legend: { labels: { color: theme.text, font: { family: "Inter", size: 11 } } },
+        annotation: { annotations: benchmarkKey ? benchmarkAnnotations(benchmarkKey) : {} },
+      },
       scales: {
         x: { ticks: { color: theme.text, font: { size: 10 } }, grid: { color: theme.grid } },
         y: { ticks: { color: theme.text, font: { size: 10 } }, grid: { color: theme.grid } },
@@ -199,23 +337,33 @@ function buildLineChart(canvasId, labels, datasets) {
   });
 }
 
+function getActiveSeries() {
+  const granularityData = state.trends[state.granularity];
+  // Defensive fallback for the old (pre-per-page) trends.json shape, in
+  // case this loads before the first rebuild lands.
+  if (Array.isArray(granularityData)) return granularityData;
+  if (!granularityData) return [];
+  if (state.selectedPage === "__overall__") return granularityData.overall || [];
+  return (granularityData.pages && granularityData.pages[state.selectedPage]) || [];
+}
+
 function renderTrendCharts() {
   const theme = chartTheme();
-  const series = state.trends[state.granularity] || [];
+  const series = getActiveSeries();
   const labels = series.map(s => s.period);
 
   buildLineChart("chart-score", labels, [{
     label: "Avg Score", data: series.map(s => s.avg_score),
     borderColor: theme.teal, backgroundColor: theme.teal + "33", fill: true,
-  }]);
+  }], "score");
   buildLineChart("chart-lcp", labels, [{
     label: "Avg LCP (s)", data: series.map(s => s.avg_lcp),
     borderColor: theme.amber, backgroundColor: theme.amber + "33", fill: true,
-  }]);
+  }], "lcp");
   buildLineChart("chart-load", labels, [{
-    label: "Avg Fully Loaded (s)", data: series.map(s => s.avg_fully_loaded),
+    label: "Avg Speed Index (s)", data: series.map(s => s.avg_fully_loaded),
     borderColor: theme.blue, backgroundColor: theme.blue + "33", fill: true,
-  }]);
+  }], "speedIndex");
 
   document.querySelectorAll(".granularity-toggle button").forEach(btn => {
     btn.classList.toggle("active", btn.dataset.granularity === state.granularity);
@@ -248,13 +396,13 @@ function renderHistoryTable() {
     const badgeColor = isOk ? "var(--accent-teal)" : "var(--accent-red)";
     return `
     <tr>
-      <td>${r.Date || ""} ${r.Time || ""}</td>
-      <td>${r._page_name || r._sheet_name || ""}</td>
+      <td>${escapeHTML(r.Date || "")} ${escapeHTML(r.Time || "")}</td>
+      <td>${escapeHTML(r._page_name || r._sheet_name || "")}</td>
       <td>${r["Performance Score"] ?? "—"}</td>
-      <td>${r["Grade"] ?? "—"}</td>
+      <td>${escapeHTML(r["Grade"] ?? "—")}</td>
       <td>${r["LCP"] ?? "—"}</td>
       <td>${r["Fully Loaded"] ?? "—"}</td>
-      <td><span class="badge" style="background:${badgeColor}22;color:${badgeColor}">${r.Status || "—"}</span></td>
+      <td><span class="badge" style="background:${badgeColor}22;color:${badgeColor}">${escapeHTML(r.Status || "—")}</span></td>
       <td>${r["Report URL"] ? `<a href="${r["Report URL"]}" target="_blank" rel="noopener">View</a>` : "—"}</td>
     </tr>`;
   }).join("");
@@ -326,6 +474,7 @@ function renderAll() {
   renderVitalsBar();
   renderKPIs();
   renderPagesGrid();
+  populatePageSelector();
   renderTrendCharts();
   renderHistoryTable();
   document.getElementById("load-error").style.display = "none";
@@ -338,6 +487,10 @@ function initControls() {
   document.getElementById("export-csv").addEventListener("click", exportCSV);
   document.getElementById("export-excel").addEventListener("click", exportExcel);
   document.getElementById("refresh-now").addEventListener("click", loadAll);
+  document.getElementById("page-selector").addEventListener("change", (e) => {
+    state.selectedPage = e.target.value;
+    renderTrendCharts();
+  });
 
   document.querySelectorAll(".granularity-toggle button").forEach(btn => {
     btn.addEventListener("click", () => {
