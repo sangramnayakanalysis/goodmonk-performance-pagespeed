@@ -90,9 +90,20 @@ def _get_or_create_sheet(sheet_name: str) -> gspread.Worksheet:
     return ws
 
 
+def _col_letter(n: int) -> str:
+    """1-indexed column number -> spreadsheet column letter (1 -> A, 13 -> M)."""
+    letters = ""
+    while n > 0:
+        n, remainder = divmod(n - 1, 26)
+        letters = chr(65 + remainder) + letters
+    return letters
+
+
 def _ensure_header(ws: gspread.Worksheet):
 
     expected = config.HISTORY_HEADERS
+    last_col = _col_letter(len(expected))
+    header_range = f"A1:{last_col}1"
 
     current = ws.row_values(1)
 
@@ -101,13 +112,13 @@ def _ensure_header(ws: gspread.Worksheet):
         ws.resize(cols=len(expected))
 
         ws.update(
-            "A1:L1",
+            header_range,
             [expected],
             value_input_option="RAW",
         )
 
         ws.format(
-            "A1:L1",
+            header_range,
             {
                 "textFormat": {
                     "bold": True
@@ -140,6 +151,8 @@ def append_result(sheet_name: str, metrics: Metrics):
 
         metrics.report_url,             # K
         "OK",                           # L
+
+        json.dumps(metrics.top_opportunities) if metrics.top_opportunities else "",  # M
     ]
 
     row.extend([""] * (len(config.HISTORY_HEADERS) - len(row)))
