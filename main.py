@@ -11,10 +11,32 @@ This is what the GitHub Actions workflow calls. It:
   1. Runs the PageSpeed Insights batch (scheduler.run_batch)
   2. Rebuilds the dashboard JSON from fresh Sheets data (dashboard_data.build_all)
   3. Sends the summary email (email_report.send_report)
-  4. Clears run state on a fully successful run, so the next run starts clean
+  4. Clears run state so the next scheduled run starts clean
 
 Timezone: next_run is computed in IST via utils.now_ist() — see that
 module's docstring for why plain datetime.now() isn't used.
+
+IMPORTANT — resume-state lifetime (bug fixed here): run_state.json exists
+ONLY to survive a mid-batch crash (process killed partway through a
+batch) — it is NOT meant to make a later scheduled run skip pages that
+succeeded in an *earlier* run. Previously, clear_run_state() only ran
+when every page in that batch succeeded (`failed == 0`), and the whole
+dashboard-rebuild/email/clear block was skipped entirely whenever
+run_batch() returned no results (e.g. every page in the requested tier
+was already marked "completed" from a past run). In practice this meant:
+one page timing out on an old, since-removed run (with `failed > 0`)
+left its sibling pages permanently marked "completed"; once the
+priority/secondary tiers were introduced, ALL 6 priority pages already
+matched that stale "completed" set, so every hourly run computed an
+empty page list, returned early, and skipped dashboard_data.build_all()
++ clear_run_state() — while still exiting 0 (success). GitHub Actions
+showed dozens of green runs; the dashboard never moved. Reaching the end
+of main() at all (this function returning normally) means the process
+did NOT crash, so run_state is now always cleared here regardless of
+whether this batch had 0, some, or all pages fail — and the dashboard is
+always rebuilt from whatever is currently in Sheets, even on a batch
+with nothing new to test, so the dashboard can never go stale just
+because a given hour happened to have nothing left to run.
 """
 
 from __future__ import annotations
@@ -53,12 +75,13 @@ def main() -> int:
 
     results = scheduler.run_batch(resume=not args.no_resume, workers=args.workers, tier=tier)
 
-    if not results:
-        log.info("No results produced (nothing to run, or everything was already completed). Exiting.")
-        return 0
-
     failed = sum(1 for r in results if not r.success)
-    status = "completed" if failed == 0 else "completed_with_failures"
+    if not results:
+        status = "completed_no_new_pages"
+        log.info("No new pages to test this run (nothing pending, or everything in this tier was "
+                 "already completed earlier) — rebuilding the dashboard from current Sheets data anyway.")
+    else:
+        status = "completed" if failed == 0 else "completed_with_failures"
 
     # Next run: priority/all pages run every hour (cron "0 * * * *"), so
     # next_scheduled_run is simply the next top-of-the-hour boundary in
@@ -72,16 +95,24 @@ def main() -> int:
     else:
         next_run = (now.replace(minute=0, second=0, microsecond=0) + timedelta(hours=1))
 
+    # Rebuild the dashboard unconditionally — even a "nothing new to test"
+    # run still reflects whatever is currently in Sheets, so the dashboard
+    # can never silently go stale just because this particular invocation
+    # had no new pages to test.
     try:
         dashboard_data.build_all(last_run_status=status, next_run_iso=next_run.isoformat())
     except Exception as e:  # noqa: BLE001 — dashboard regeneration must never fail the whole run
         log.error("Failed to rebuild dashboard data: %s", e)
 
-    if not args.skip_email:
+    if results and not args.skip_email:
         email_report.send_report(results)
 
-    if failed == 0:
-        scheduler.clear_run_state()
+    # Reaching this point means the process ran to a normal, non-crashed
+    # completion (0, some, or all pages may have failed to fetch — that's
+    # recorded in Sheets/dashboard already) — so there is nothing left to
+    # "resume." Always clear, so the next scheduled run starts clean
+    # instead of silently inheriting a stale completed-pages set forever.
+    scheduler.clear_run_state()
 
     log.info("=== Run finished. %d/%d pages succeeded. ===", len(results) - failed, len(results))
     return 0 if failed == 0 else 1
