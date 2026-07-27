@@ -126,9 +126,11 @@ Edit `.env`:
 Run a batch locally:
 
 ```bash
-python main.py                # normal run (resumes an interrupted run if any)
+python main.py                # normal run — every page (original behavior)
 python main.py --no-resume    # force a full clean run of every page
 python main.py --workers 8    # more concurrency
+python main.py --priority     # only the 6 priority pages (hourly schedule)
+python main.py --secondary    # only the remaining pages (daily 2 AM IST schedule)
 ```
 
 Preview the dashboard locally (any static file server works):
