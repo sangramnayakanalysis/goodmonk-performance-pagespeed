@@ -69,10 +69,13 @@
   <!-- Trend charts -->
   <div class="section-head">
     <h2>Performance Trends</h2>
-    <div class="granularity-toggle">
-      <button data-granularity="daily" class="active">Daily</button>
-      <button data-granularity="weekly">Weekly</button>
-      <button data-granularity="monthly">Monthly</button>
+    <div class="trend-controls">
+      <select id="page-selector" title="Show trend for one page"></select>
+      <div class="granularity-toggle">
+        <button data-granularity="daily" class="active">Daily</button>
+        <button data-granularity="weekly">Weekly</button>
+        <button data-granularity="monthly">Monthly</button>
+      </div>
     </div>
   </div>
   <section class="charts-grid">
@@ -85,7 +88,7 @@
       <canvas id="chart-lcp"></canvas>
     </div>
     <div class="chart-card">
-      <h3>Load Time Trend</h3>
+      <h3>Speed Index Trend</h3>
       <canvas id="chart-load"></canvas>
     </div>
   </section>
@@ -129,6 +132,7 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/3.0.1/chartjs-plugin-annotation.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
