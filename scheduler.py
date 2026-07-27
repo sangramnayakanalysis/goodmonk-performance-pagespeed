@@ -30,6 +30,17 @@ log = get_logger("scheduler")
 STATE_FILE = config.DATA_DIR / "run_state.json"
 
 
+def _pages_for_tier(tier: str) -> list[config.Page]:
+    """tier: "all" (default, unchanged behavior), "priority" (6 commercial
+    pages, run hourly), or "secondary" (remaining pages, run daily). See
+    config.PAGES_PRIORITY / config.PAGES_SECONDARY."""
+    if tier == "priority":
+        return list(config.PAGES_PRIORITY)
+    if tier == "secondary":
+        return list(config.PAGES_SECONDARY)
+    return list(config.PAGES)
+
+
 def _load_completed_sheet_names() -> set[str]:
     state = read_json(STATE_FILE, default={})
     return set(state.get("completed_sheet_names", []))
@@ -45,10 +56,15 @@ def _save_state(completed: set[str], results: list[PageResult]) -> None:
     })
 
 
-def run_batch(resume: bool = True, workers: int | None = None) -> list[PageResult]:
+def run_batch(resume: bool = True, workers: int | None = None, tier: str = "all") -> list[PageResult]:
     """
-    Runs PageSpeed Insights audits for every page in config.PAGES
+    Runs PageSpeed Insights audits for every page in the selected tier
     concurrently.
+
+    tier: "all" (default — every page in config.PAGES, original
+    behavior), "priority" (the 6 commercial pages, meant to run hourly),
+    or "secondary" (the remaining pages, meant to run once daily) — see
+    config.PAGES_PRIORITY / config.PAGES_SECONDARY and _pages_for_tier().
 
     resume=True (default): pages already marked completed in the local
     run-state file from an interrupted run today are skipped, so a
@@ -58,13 +74,14 @@ def run_batch(resume: bool = True, workers: int | None = None) -> list[PageResul
     each day is a fresh baseline).
     """
     workers = workers or config.MAX_WORKERS
-    pages = list(config.PAGES)
+    pages = _pages_for_tier(tier)
 
+    total_in_tier = len(pages)
     completed = _load_completed_sheet_names() if resume else set()
     if completed:
         pages = [p for p in pages if p.sheet_name not in completed]
         log.info("Resuming: skipping %d already-completed page(s) from a prior interrupted run.",
-                  len(config.PAGES) - len(pages))
+                  total_in_tier - len(pages))
 
     if not pages:
         log.info("Nothing to do — all pages already completed for this run.")
@@ -125,6 +142,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run the GoodMonk PageSpeed Insights batch directly.")
     parser.add_argument("--no-resume", action="store_true", help="Ignore any saved run state; run everything.")
     parser.add_argument("--workers", type=int, default=None, help="Override MAX_WORKERS for this run.")
+    tier_group = parser.add_mutually_exclusive_group()
+    tier_group.add_argument("--priority", action="store_true", help="Run only the 6 priority pages.")
+    tier_group.add_argument("--secondary", action="store_true", help="Run only the secondary pages.")
     args = parser.parse_args()
 
-    run_batch(resume=not args.no_resume, workers=args.workers)
+    tier = "priority" if args.priority else "secondary" if args.secondary else "all"
+    run_batch(resume=not args.no_resume, workers=args.workers, tier=tier)
