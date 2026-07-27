@@ -25,9 +25,9 @@ log = get_logger("email_report")
 def _score_color(score) -> str:
     if score is None:
         return "#94A3B8"
-    if score >= config.ALERT_SCORE_THRESHOLD:
+    if score >= config.SCORE_GREEN_MIN:
         return "#2FB673"
-    if score >= config.ALERT_SCORE_THRESHOLD - 15:
+    if score >= config.SCORE_AMBER_MIN:
         return "#E8A93B"
     return "#E05252"
 
