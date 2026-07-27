@@ -138,6 +138,7 @@ PAGES: list[Page] = [
     Page("FNM", "https://www.goodmonk.in/products/good-monk", "FNM"),
     Page("H50+", "https://www.goodmonk.in/products/good-monk-50-nutrition-mix", "H50+"),
     Page("Fiber Fix", "https://www.goodmonk.in/products/fiber-fix", "FF"),
+    Page("Plant Protein Roti", "https://www.goodmonk.in/products/plant-protein-for-rotis", "Plant Protein Roti"),
     Page("Berries", "https://www.goodmonk.in/products/instant-fruit-drink-mix-mixed-berries", "Berries"),
     Page("Orange", "https://www.goodmonk.in/products/instant-fruit-drink-mix-orange", "Orange"),
     Page("Pineapple", "https://www.goodmonk.in/products/instant-fruit-drink-mix-pineapple", "Pineapple"),
@@ -148,7 +149,6 @@ PAGES: list[Page] = [
     Page("Milk Mix Chocolate", "https://www.goodmonk.in/products/good-monk-superhero-milk-mix", "MM_Chocolate"),
     Page("Slimbiotics", "https://www.goodmonk.in/products/good-monk-slimbiotics", "Slimbiotics"),
     Page("Weight Management", "https://www.goodmonk.in/products/good-monk-weight-management-program", "Weight Management"),
-    Page("Plant Protein Roti", "https://www.goodmonk.in/products/plant-protein-for-rotis", "Plant Protein Roti"),
 ]
 
 # --- Priority vs secondary tiers (API quota reduction) ----------------------
