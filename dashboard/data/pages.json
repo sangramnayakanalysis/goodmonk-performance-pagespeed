@@ -20,7 +20,16 @@
       "_sheet_name": "Homepage",
       "_url": "https://www.goodmonk.in/"
     },
-    "status_color": "red",
+    "status_color": "yellow",
+    "metric_tiers": {
+      "score": "yellow",
+      "lcp": "red",
+      "cls": "green",
+      "ttfb": "green",
+      "tbt": "yellow"
+    },
+    "score_trend": 6,
+    "top_opportunities": [],
     "total_runs": 17,
     "failed_runs": 6
   },
@@ -46,6 +55,15 @@
       "_url": "https://www.goodmonk.in/collections/all"
     },
     "status_color": "red",
+    "metric_tiers": {
+      "score": "red",
+      "lcp": "red",
+      "cls": "green",
+      "ttfb": "green",
+      "tbt": "red"
+    },
+    "score_trend": -5,
+    "top_opportunities": [],
     "total_runs": 14,
     "failed_runs": 3
   },
@@ -71,6 +89,15 @@
       "_url": "https://www.goodmonk.in/products/good-monk"
     },
     "status_color": "red",
+    "metric_tiers": {
+      "score": "red",
+      "lcp": "red",
+      "cls": "green",
+      "ttfb": "green",
+      "tbt": "red"
+    },
+    "score_trend": -7,
+    "top_opportunities": [],
     "total_runs": 13,
     "failed_runs": 2
   },
@@ -95,7 +122,16 @@
       "_sheet_name": "H50+",
       "_url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix"
     },
-    "status_color": "red",
+    "status_color": "yellow",
+    "metric_tiers": {
+      "score": "yellow",
+      "lcp": "red",
+      "cls": "green",
+      "ttfb": "green",
+      "tbt": "red"
+    },
+    "score_trend": -3,
+    "top_opportunities": [],
     "total_runs": 23,
     "failed_runs": 12
   },
@@ -121,6 +157,15 @@
       "_url": "https://www.goodmonk.in/products/fiber-fix"
     },
     "status_color": "red",
+    "metric_tiers": {
+      "score": "red",
+      "lcp": "red",
+      "cls": "green",
+      "ttfb": "green",
+      "tbt": "red"
+    },
+    "score_trend": -9,
+    "top_opportunities": [],
     "total_runs": 14,
     "failed_runs": 3
   },
@@ -146,6 +191,15 @@
       "_url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-mixed-berries"
     },
     "status_color": "red",
+    "metric_tiers": {
+      "score": "red",
+      "lcp": "red",
+      "cls": "red",
+      "ttfb": "green",
+      "tbt": "red"
+    },
+    "score_trend": 9,
+    "top_opportunities": [],
     "total_runs": 19,
     "failed_runs": 9
   },
@@ -171,6 +225,15 @@
       "_url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-orange"
     },
     "status_color": "red",
+    "metric_tiers": {
+      "score": "red",
+      "lcp": "red",
+      "cls": "green",
+      "ttfb": "green",
+      "tbt": "red"
+    },
+    "score_trend": -1,
+    "top_opportunities": [],
     "total_runs": 13,
     "failed_runs": 2
   },
@@ -195,7 +258,16 @@
       "_sheet_name": "Pineapple",
       "_url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-pineapple"
     },
-    "status_color": "red",
+    "status_color": "yellow",
+    "metric_tiers": {
+      "score": "yellow",
+      "lcp": "red",
+      "cls": "green",
+      "ttfb": "green",
+      "tbt": "yellow"
+    },
+    "score_trend": 25,
+    "top_opportunities": [],
     "total_runs": 18,
     "failed_runs": 7
   },
@@ -220,7 +292,16 @@
       "_sheet_name": "Mango",
       "_url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-natural-mango-powder-50-less-sugar-with-8-vitamins-minerals"
     },
-    "status_color": "red",
+    "status_color": "yellow",
+    "metric_tiers": {
+      "score": "yellow",
+      "lcp": "red",
+      "cls": "green",
+      "ttfb": "green",
+      "tbt": "yellow"
+    },
+    "score_trend": -7,
+    "top_opportunities": [],
     "total_runs": 15,
     "failed_runs": 3
   },
@@ -246,6 +327,15 @@
       "_url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-assorted"
     },
     "status_color": "red",
+    "metric_tiers": {
+      "score": "red",
+      "lcp": "red",
+      "cls": "green",
+      "ttfb": "green",
+      "tbt": "red"
+    },
+    "score_trend": -6,
+    "top_opportunities": [],
     "total_runs": 20,
     "failed_runs": 8
   },
@@ -271,6 +361,15 @@
       "_url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-strawberry"
     },
     "status_color": "red",
+    "metric_tiers": {
+      "score": "red",
+      "lcp": "red",
+      "cls": "red",
+      "ttfb": "green",
+      "tbt": "yellow"
+    },
+    "score_trend": 20,
+    "top_opportunities": [],
     "total_runs": 15,
     "failed_runs": 3
   },
@@ -296,6 +395,15 @@
       "_url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-vanilla"
     },
     "status_color": "red",
+    "metric_tiers": {
+      "score": "red",
+      "lcp": "red",
+      "cls": "green",
+      "ttfb": "green",
+      "tbt": "red"
+    },
+    "score_trend": 9,
+    "top_opportunities": [],
     "total_runs": 17,
     "failed_runs": 6
   },
@@ -320,7 +428,16 @@
       "_sheet_name": "MM_Chocolate",
       "_url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix"
     },
-    "status_color": "red",
+    "status_color": "yellow",
+    "metric_tiers": {
+      "score": "yellow",
+      "lcp": "red",
+      "cls": "green",
+      "ttfb": "green",
+      "tbt": "yellow"
+    },
+    "score_trend": 12,
+    "top_opportunities": [],
     "total_runs": 12,
     "failed_runs": 1
   },
@@ -346,6 +463,15 @@
       "_url": "https://www.goodmonk.in/products/good-monk-slimbiotics"
     },
     "status_color": "red",
+    "metric_tiers": {
+      "score": "red",
+      "lcp": "red",
+      "cls": "green",
+      "ttfb": "green",
+      "tbt": "red"
+    },
+    "score_trend": 0,
+    "top_opportunities": [],
     "total_runs": 20,
     "failed_runs": 9
   },
@@ -371,6 +497,15 @@
       "_url": "https://www.goodmonk.in/products/good-monk-weight-management-program"
     },
     "status_color": "red",
+    "metric_tiers": {
+      "score": "red",
+      "lcp": "red",
+      "cls": "green",
+      "ttfb": "green",
+      "tbt": "red"
+    },
+    "score_trend": -1,
+    "top_opportunities": [],
     "total_runs": 16,
     "failed_runs": 4
   },
@@ -396,6 +531,15 @@
       "_url": "https://www.goodmonk.in/products/plant-protein-for-rotis"
     },
     "status_color": "red",
+    "metric_tiers": {
+      "score": "red",
+      "lcp": "red",
+      "cls": "red",
+      "ttfb": "green",
+      "tbt": "red"
+    },
+    "score_trend": -23,
+    "top_opportunities": [],
     "total_runs": 19,
     "failed_runs": 7
   }
