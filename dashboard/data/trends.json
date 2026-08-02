@@ -63,9 +63,9 @@
       },
       {
         "period": "2026-08-03",
-        "avg_score": 40.18,
-        "avg_lcp": 15.05,
-        "avg_fully_loaded": 10.71
+        "avg_score": 40.0,
+        "avg_lcp": 15.64,
+        "avg_fully_loaded": 10.72
       }
     ],
     "pages": {
@@ -194,9 +194,9 @@
         },
         {
           "period": "2026-08-03",
-          "avg_score": 61.0,
-          "avg_lcp": 6.92,
-          "avg_fully_loaded": 7.86
+          "avg_score": 48.5,
+          "avg_lcp": 11.75,
+          "avg_fully_loaded": 9.07
         }
       ],
       "FNM": [
@@ -327,6 +327,12 @@
           "avg_score": 38.78,
           "avg_lcp": 14.09,
           "avg_fully_loaded": 10.67
+        },
+        {
+          "period": "2026-08-03",
+          "avg_score": 42.0,
+          "avg_lcp": 21.22,
+          "avg_fully_loaded": 11.22
         }
       ],
       "Fiber Fix": [
@@ -1103,9 +1109,9 @@
       },
       {
         "period": "2026-W32",
-        "avg_score": 40.18,
-        "avg_lcp": 15.05,
-        "avg_fully_loaded": 10.71
+        "avg_score": 40.0,
+        "avg_lcp": 15.64,
+        "avg_fully_loaded": 10.72
       }
     ],
     "pages": {
@@ -1138,9 +1144,9 @@
         },
         {
           "period": "2026-W32",
-          "avg_score": 61.0,
-          "avg_lcp": 6.92,
-          "avg_fully_loaded": 7.86
+          "avg_score": 48.5,
+          "avg_lcp": 11.75,
+          "avg_fully_loaded": 9.07
         }
       ],
       "FNM": [
@@ -1175,6 +1181,12 @@
           "avg_score": 41.05,
           "avg_lcp": 13.71,
           "avg_fully_loaded": 10.0
+        },
+        {
+          "period": "2026-W32",
+          "avg_score": 42.0,
+          "avg_lcp": 21.22,
+          "avg_fully_loaded": 11.22
         }
       ],
       "Fiber Fix": [
@@ -1412,8 +1424,8 @@
       {
         "period": "2026-08",
         "avg_score": 39.01,
-        "avg_lcp": 14.15,
-        "avg_fully_loaded": 11.01
+        "avg_lcp": 14.23,
+        "avg_fully_loaded": 11.0
       }
     ],
     "pages": {
@@ -1440,9 +1452,9 @@
         },
         {
           "period": "2026-08",
-          "avg_score": 40.38,
-          "avg_lcp": 11.67,
-          "avg_fully_loaded": 9.26
+          "avg_score": 40.07,
+          "avg_lcp": 12.02,
+          "avg_fully_loaded": 9.33
         }
       ],
       "FNM": [
@@ -1468,9 +1480,9 @@
         },
         {
           "period": "2026-08",
-          "avg_score": 42.77,
-          "avg_lcp": 13.7,
-          "avg_fully_loaded": 10.18
+          "avg_score": 42.71,
+          "avg_lcp": 14.23,
+          "avg_fully_loaded": 10.25
         }
       ],
       "Fiber Fix": [
