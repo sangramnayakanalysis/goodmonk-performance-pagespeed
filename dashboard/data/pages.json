@@ -4,37 +4,37 @@
     "sheet_name": "Homepage",
     "url": "https://www.goodmonk.in/",
     "latest": {
-      "Date": "2026-08-07",
-      "Time": "22:24:12",
-      "Performance Score": 41,
+      "Date": "2026-08-08",
+      "Time": "00:26:34",
+      "Performance Score": 29,
       "Grade": "F",
-      "LCP": 26.78,
-      "Onload": 5.7,
-      "Fully Loaded": 14.87,
+      "LCP": 17.26,
+      "Onload": 5.13,
+      "Fully Loaded": 15.59,
       "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 0.57,
+      "TBT": 1.61,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2F&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,053\\u00a0KiB\", \"savings\": 4500, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 41\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 21, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,027\\u00a0KiB\", \"savings\": 1050, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 41\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 22, \"unit\": \"millisecond\"}]",
       "_page_name": "Homepage",
       "_sheet_name": "Homepage",
       "_url": "https://www.goodmonk.in/"
     },
-    "status_color": "yellow",
+    "status_color": "red",
     "metric_tiers": {
-      "score": "yellow",
+      "score": "red",
       "lcp": "red",
       "cls": "green",
       "ttfb": "green",
-      "tbt": "yellow"
+      "tbt": "red"
     },
-    "score_trend": 7,
+    "score_trend": -18,
     "top_opportunities": [
       {
         "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 2,053\u00a0KiB",
-        "savings": 4500,
+        "display_value": "Est savings of 2,027\u00a0KiB",
+        "savings": 1050,
         "unit": "millisecond"
       },
       {
@@ -46,11 +46,11 @@
       {
         "title": "Initial server response time was short",
         "display_value": "Root document took 20\u00a0ms",
-        "savings": 21,
+        "savings": 22,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 117,
+    "total_runs": 118,
     "failed_runs": 27
   },
   {
@@ -58,19 +58,19 @@
     "sheet_name": "Shop_All",
     "url": "https://www.goodmonk.in/collections/all",
     "latest": {
-      "Date": "2026-08-07",
-      "Time": "23:19:57",
-      "Performance Score": 33,
+      "Date": "2026-08-08",
+      "Time": "00:25:50",
+      "Performance Score": 32,
       "Grade": "F",
-      "LCP": 20.4,
-      "Onload": 5.59,
-      "Fully Loaded": 10.91,
+      "LCP": 19.71,
+      "Onload": 5.63,
+      "Fully Loaded": 10.83,
       "TTFB": 0.01,
       "CLS": 0,
-      "TBT": 1.15,
+      "TBT": 1.17,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fcollections%2Fall&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,072\\u00a0KiB\", \"savings\": 2630, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 55\\u00a0KiB\", \"savings\": 360, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 15, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,072\\u00a0KiB\", \"savings\": 3430, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 55\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 15, \"unit\": \"millisecond\"}]",
       "_page_name": "Shop All",
       "_sheet_name": "Shop_All",
       "_url": "https://www.goodmonk.in/collections/all"
@@ -83,18 +83,18 @@
       "ttfb": "green",
       "tbt": "red"
     },
-    "score_trend": -13,
+    "score_trend": -11,
     "top_opportunities": [
       {
         "title": "Reduce unused JavaScript",
         "display_value": "Est savings of 2,072\u00a0KiB",
-        "savings": 2630,
+        "savings": 3430,
         "unit": "millisecond"
       },
       {
         "title": "Reduce unused CSS",
         "display_value": "Est savings of 55\u00a0KiB",
-        "savings": 360,
+        "savings": 150,
         "unit": "millisecond"
       },
       {
@@ -104,7 +104,7 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 116,
+    "total_runs": 117,
     "failed_runs": 25
   },
   {
@@ -152,27 +152,27 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 114,
-    "failed_runs": 27
+    "total_runs": 115,
+    "failed_runs": 28
   },
   {
     "name": "H50+",
     "sheet_name": "H50+",
     "url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix",
     "latest": {
-      "Date": "2026-08-07",
-      "Time": "22:24:50",
-      "Performance Score": 30,
+      "Date": "2026-08-08",
+      "Time": "00:26:05",
+      "Performance Score": 33,
       "Grade": "F",
-      "LCP": 18.8,
-      "Onload": 5.46,
-      "Fully Loaded": 11.12,
+      "LCP": 7.51,
+      "Onload": 3.16,
+      "Fully Loaded": 9.54,
       "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 1.54,
+      "TBT": 2.21,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-50-nutrition-mix&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,010\\u00a0KiB\", \"savings\": 1500, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 41\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 18, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,021\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 20, \"unit\": \"millisecond\"}]",
       "_page_name": "H50+",
       "_sheet_name": "H50+",
       "_url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix"
@@ -185,28 +185,22 @@
       "ttfb": "green",
       "tbt": "red"
     },
-    "score_trend": -6,
+    "score_trend": -19,
     "top_opportunities": [
       {
         "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 2,010\u00a0KiB",
-        "savings": 1500,
-        "unit": "millisecond"
-      },
-      {
-        "title": "Reduce unused CSS",
-        "display_value": "Est savings of 41\u00a0KiB",
+        "display_value": "Est savings of 2,021\u00a0KiB",
         "savings": 150,
         "unit": "millisecond"
       },
       {
         "title": "Initial server response time was short",
         "display_value": "Root document took 20\u00a0ms",
-        "savings": 18,
+        "savings": 20,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 112,
+    "total_runs": 113,
     "failed_runs": 30
   },
   {
@@ -260,8 +254,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 118,
-    "failed_runs": 25
+    "total_runs": 119,
+    "failed_runs": 26
   },
   {
     "name": "Plant Protein Roti",
@@ -308,8 +302,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 120,
-    "failed_runs": 31
+    "total_runs": 121,
+    "failed_runs": 32
   },
   {
     "name": "Berries",
