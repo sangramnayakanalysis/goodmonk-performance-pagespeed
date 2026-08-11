@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T23:22:47+05:30",
+  "generated_at": "2026-08-12T00:04:33+05:30",
   "business_score": 19.9,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -12,8 +12,8 @@
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
   "critical_issues_count": 11,
-  "checkout_failures_today": 8,
-  "pages_slower_than_yesterday": 6,
+  "checkout_failures_today": 1,
+  "pages_slower_than_yesterday": 0,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
     "page_count": 12
@@ -52,6 +52,11 @@
   ],
   "top_failed_journeys": [
     {
+      "run_id": "2bc00ee7",
+      "finished_at": "2026-08-12T00:04:31+05:30",
+      "failed_step": "Images Loaded"
+    },
+    {
       "run_id": "f73fe515",
       "finished_at": "2026-08-11T23:09:29+05:30",
       "failed_step": "Images Loaded"
@@ -69,11 +74,6 @@
     {
       "run_id": "ae73c78f",
       "finished_at": "2026-08-11T20:14:13+05:30",
-      "failed_step": "Images Loaded"
-    },
-    {
-      "run_id": "c9ca6e38",
-      "finished_at": "2026-08-11T19:10:36+05:30",
       "failed_step": "Images Loaded"
     }
   ],
@@ -129,6 +129,32 @@
         "Slimbiotics": 44,
         "Weight Management": 31
       }
+    },
+    {
+      "date": "2026-08-12",
+      "business_score": 19.9,
+      "average_score": 38.43,
+      "critical_count": 11,
+      "journey_success_pct": 0.0,
+      "checkout_failures_today": 1,
+      "page_scores": {
+        "Homepage": 44,
+        "Shop All": 33,
+        "FNM": 34,
+        "H50+": 43,
+        "Fiber Fix": 33,
+        "Plant Protein Roti": 29,
+        "Berries": 44,
+        "Orange": 36,
+        "Pineapple": 39,
+        "Mango": 38,
+        "Assorted": 17,
+        "Milk Mix Strawberry": 49,
+        "Milk Mix Vanilla": 35,
+        "Milk Mix Chocolate": 22,
+        "Slimbiotics": 44,
+        "Weight Management": 31
+      }
     }
   ],
   "weekly_trend": [
@@ -165,6 +191,32 @@
       "critical_count": 11,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 8,
+      "page_scores": {
+        "Homepage": 44,
+        "Shop All": 33,
+        "FNM": 34,
+        "H50+": 43,
+        "Fiber Fix": 33,
+        "Plant Protein Roti": 29,
+        "Berries": 44,
+        "Orange": 36,
+        "Pineapple": 39,
+        "Mango": 38,
+        "Assorted": 17,
+        "Milk Mix Strawberry": 49,
+        "Milk Mix Vanilla": 35,
+        "Milk Mix Chocolate": 22,
+        "Slimbiotics": 44,
+        "Weight Management": 31
+      }
+    },
+    {
+      "date": "2026-08-12",
+      "business_score": 19.9,
+      "average_score": 38.43,
+      "critical_count": 11,
+      "journey_success_pct": 0.0,
+      "checkout_failures_today": 1,
       "page_scores": {
         "Homepage": 44,
         "Shop All": 33,
