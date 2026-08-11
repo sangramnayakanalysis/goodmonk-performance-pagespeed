@@ -131,7 +131,24 @@ def main() -> int:
     scheduler.clear_run_state()
 
     log.info("=== Run finished. %d/%d pages succeeded. ===", len(results) - failed, len(results))
-    return 0 if failed == 0 else 1
+
+    # Exit code semantics (changed): only exit 1 when EVERY page in this
+    # batch failed — that's a real systemic problem worth a loud red
+    # annotation (bad/expired API key, PageSpeed Insights fully down,
+    # total quota exhaustion). A handful of pages failing while most
+    # succeed is normal/expected on the hourly tier (transient API
+    # rate-limiting — see pages.json's per-page failed_runs/total_runs)
+    # and does NOT mean anything broke: the dashboard rebuild, email, and
+    # Sheets append above already ran unconditionally regardless of this
+    # return value, exactly as before. Previously ANY single failed page
+    # exited 1, which made nearly every run show a red "error" annotation
+    # in the Actions UI even though nothing was actually wrong — this
+    # made a genuinely serious all-pages-down failure look identical to
+    # a normal, self-healing partial failure. Now the two are visually
+    # distinguishable at a glance.
+    if results and failed == len(results):
+        return 1
+    return 0
 
 
 if __name__ == "__main__":

@@ -96,27 +96,25 @@ jobs:
       - name: Report run outcome
         run: |
           # NOTE on this step's exit code: "Run PageSpeed Insights
-          # monitoring batch" (above) has continue-on-error: true and can
-          # legitimately exit 1 — main.py returns 1 whenever ANY page's
-          # PageSpeed Insights API call failed this run (network
-          # timeout, transient 429/quota, etc.), which is a genuine,
-          # useful signal worth NOT hiding. This is by design (see
-          # main.py's module docstring) — it does not mean the run
-          # crashed, and it does not affect the dashboard JSON's
-          # validity (dashboard_data.build_all() always runs against
-          # whatever IS in Sheets, regardless of this run's failures).
-          # A page failing occasionally is expected; if a LOT of pages
-          # fail on most runs, it usually means the PageSpeed Insights
-          # API is being rate-limited — check pages.json's per-page
-          # total_runs/failed_runs ratio, and consider raising
-          # RATE_LIMIT_WAIT_SECONDS or lowering MAX_WORKERS in config.py.
+          # monitoring batch" (above) has continue-on-error: true. As of
+          # this version, main.py only returns exit 1 when EVERY page in
+          # the run's tier failed (a real systemic problem — bad/expired
+          # API key, PageSpeed Insights fully down, total quota
+          # exhaustion). A handful of pages failing while most succeed no
+          # longer exits 1 — that's expected/normal on the hourly tier
+          # (transient API rate-limiting) and the dashboard rebuild,
+          # email, and Sheets append all already ran unconditionally
+          # above regardless of this step's outcome either way. If you
+          # DO see this step actually fail now, it means the run
+          # genuinely got zero usable data this time — check
+          # GOOGLE_PAGESPEED_API_KEY and PageSpeed Insights API status.
           if [ "${{ steps.run.outcome }}" = "success" ]; then
-            echo "✅ All pages processed successfully (tier: ${{ steps.tier.outputs.flag }})."
-            echo "### ✅ PageSpeed run: all pages succeeded (tier: ${{ steps.tier.outputs.flag }})" >> "$GITHUB_STEP_SUMMARY"
+            echo "✅ PageSpeed run completed (tier: ${{ steps.tier.outputs.flag }}) — see run.log for any individual page failures."
+            echo "### ✅ PageSpeed run: completed (tier: ${{ steps.tier.outputs.flag }})" >> "$GITHUB_STEP_SUMMARY"
           else
-            echo "⚠️ Run finished with one or more failed pages (tier: ${{ steps.tier.outputs.flag }}) — this is non-fatal and expected occasionally; the dashboard still updates below."
-            echo "### ⚠️ PageSpeed run: one or more pages failed to fetch this run (tier: ${{ steps.tier.outputs.flag }})" >> "$GITHUB_STEP_SUMMARY"
-            echo "This is non-fatal — dashboard data below still updates from whatever succeeded. If this happens on most runs, it usually means the PageSpeed Insights API is rate-limiting; see this step's log comment for tuning options." >> "$GITHUB_STEP_SUMMARY"
+            echo "🛑 PageSpeed run: EVERY page in this batch failed to fetch (tier: ${{ steps.tier.outputs.flag }}) — this is a real problem, not routine noise."
+            echo "### 🛑 PageSpeed run: every page failed (tier: ${{ steps.tier.outputs.flag }})" >> "$GITHUB_STEP_SUMMARY"
+            echo "Check GOOGLE_PAGESPEED_API_KEY validity and the PageSpeed Insights API status — dashboard data below is unchanged from the last successful run." >> "$GITHUB_STEP_SUMMARY"
           fi
 
       - name: Commit updated dashboard data + run state

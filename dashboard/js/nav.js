@@ -16,21 +16,27 @@
    ===================================================================== */
 
 const GMNav = (() => {
-  const tabs = new Map(); // tabId -> { onActivate, activated }
+  const tabs = new Map(); // tabId -> { onActivate, activated, panelId }
 
-  function registerTab(tabId, { onActivate } = {}) {
-    tabs.set(tabId, { onActivate: onActivate || null, activated: false });
+  function registerTab(tabId, { onActivate, panelId } = {}) {
+    // panelId defaults to the `tab-<tabId>` convention every tab follows,
+    // but can be overridden — see the startup self-check in init() below
+    // for why this matters: a mismatch here used to fail completely
+    // silently (see the incident note further down).
+    tabs.set(tabId, { onActivate: onActivate || null, activated: false, panelId: panelId || `tab-${tabId}` });
   }
 
   function activate(tabId) {
+    const entry = tabs.get(tabId);
+    const targetPanelId = entry ? entry.panelId : `tab-${tabId}`;
+
     document.querySelectorAll(".gm-nav__tab").forEach((btn) => {
       btn.classList.toggle("is-active", btn.dataset.tab === tabId);
     });
     document.querySelectorAll(".tab-panel").forEach((panel) => {
-      panel.classList.toggle("is-active", panel.id === `tab-${tabId}`);
+      panel.classList.toggle("is-active", panel.id === targetPanelId);
     });
 
-    const entry = tabs.get(tabId);
     if (entry && !entry.activated && typeof entry.onActivate === "function") {
       entry.activated = true; // lazy-init each module exactly once
       try {
@@ -48,6 +54,22 @@ const GMNav = (() => {
   function init() {
     document.querySelectorAll(".gm-nav__tab").forEach((btn) => {
       btn.addEventListener("click", () => activate(btn.dataset.tab));
+    });
+
+    // Startup self-check: catches exactly the class of bug that caused a
+    // real incident — the "Website Performance" tab's panel element was
+    // named <section id="tab-website-performance"> while this file
+    // assumed every panel follows the `tab-<tabId>` pattern (true for
+    // every OTHER tab, e.g. "overview" -> "tab-overview"). That mismatch
+    // meant activate("performance") could never find its panel, so
+    // is-active was silently stripped and never restored — no exception,
+    // nothing in the console, just a permanently blank tab. If a future
+    // tab is ever registered without a matching (or explicitly overridden)
+    // panelId, this logs it loudly instead of failing silently again.
+    tabs.forEach((entry, tabId) => {
+      if (!document.getElementById(entry.panelId)) {
+        console.error(`[GMNav] tab "${tabId}" expects a panel with id="${entry.panelId}", but no such element exists. This tab will render permanently blank — fix by adding the matching id, or pass panelId to registerTab().`);
+      }
     });
 
     const fromHash = (location.hash || "").replace("#", "");
