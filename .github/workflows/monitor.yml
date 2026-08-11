@@ -1,0 +1,236 @@
+name: GoodMonk Performance Monitor
+
+# Two schedules, per the July 2026 manager review (fix #6 — reduce API
+# quota usage): the 6 priority commercial pages run hourly; the remaining
+# 10 pages (fruit-drink/milk-mix variants etc.) run once daily.
+#   - "0 * * * *"   -> every hour, on the hour (UTC == identical offset
+#                      in every timezone, so no IST math needed for this
+#                      one) -> runs main.py --priority
+#   - "30 20 * * *" -> 20:30 UTC = 02:00 IST -> runs main.py --secondary
+# Both are also runnable manually from the Actions tab, with a tier input.
+on:
+  schedule:
+    - cron: "0 * * * *"
+    - cron: "30 20 * * *"
+  workflow_dispatch:
+    inputs:
+      tier:
+        description: "Which pages to run"
+        type: choice
+        options: [priority, secondary, all]
+        default: priority
+      no_resume:
+        description: "Force a full clean run (ignore any saved run state)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  monitor-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Determine page tier for this run
+        id: tier
+        run: |
+          # Cron-triggered runs pick the tier from which schedule fired;
+          # manual runs use the workflow_dispatch "tier" input.
+          if [ "${{ github.event.schedule }}" = "30 20 * * *" ]; then
+            FLAG="--secondary"
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            case "${{ github.event.inputs.tier }}" in
+              secondary) FLAG="--secondary" ;;
+              all) FLAG="" ;;
+              *) FLAG="--priority" ;;
+            esac
+          else
+            FLAG="--priority"
+          fi
+          echo "flag=$FLAG" >> "$GITHUB_OUTPUT"
+          echo "Resolved tier flag: '$FLAG'"
+
+      - name: Run PageSpeed Insights monitoring batch
+        id: run
+        env:
+          GOOGLE_PAGESPEED_API_KEY: ${{ secrets.GOOGLE_PAGESPEED_API_KEY }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        continue-on-error: true
+        run: |
+          NO_RESUME_FLAG=""
+          if [ "${{ github.event.inputs.no_resume }}" = "true" ]; then
+            NO_RESUME_FLAG="--no-resume"
+          fi
+          python main.py ${{ steps.tier.outputs.flag }} $NO_RESUME_FLAG
+
+      - name: Report run outcome
+        run: |
+          # NOTE on this step's exit code: "Run PageSpeed Insights
+          # monitoring batch" (above) has continue-on-error: true and can
+          # legitimately exit 1 — main.py returns 1 whenever ANY page's
+          # PageSpeed Insights API call failed this run (network
+          # timeout, transient 429/quota, etc.), which is a genuine,
+          # useful signal worth NOT hiding. This is by design (see
+          # main.py's module docstring) — it does not mean the run
+          # crashed, and it does not affect the dashboard JSON's
+          # validity (dashboard_data.build_all() always runs against
+          # whatever IS in Sheets, regardless of this run's failures).
+          # A page failing occasionally is expected; if a LOT of pages
+          # fail on most runs, it usually means the PageSpeed Insights
+          # API is being rate-limited — check pages.json's per-page
+          # total_runs/failed_runs ratio, and consider raising
+          # RATE_LIMIT_WAIT_SECONDS or lowering MAX_WORKERS in config.py.
+          if [ "${{ steps.run.outcome }}" = "success" ]; then
+            echo "✅ All pages processed successfully (tier: ${{ steps.tier.outputs.flag }})."
+            echo "### ✅ PageSpeed run: all pages succeeded (tier: ${{ steps.tier.outputs.flag }})" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "⚠️ Run finished with one or more failed pages (tier: ${{ steps.tier.outputs.flag }}) — this is non-fatal and expected occasionally; the dashboard still updates below."
+            echo "### ⚠️ PageSpeed run: one or more pages failed to fetch this run (tier: ${{ steps.tier.outputs.flag }})" >> "$GITHUB_STEP_SUMMARY"
+            echo "This is non-fatal — dashboard data below still updates from whatever succeeded. If this happens on most runs, it usually means the PageSpeed Insights API is rate-limiting; see this step's log comment for tuning options." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Commit updated dashboard data + run state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Stage the ENTIRE generated-data directories, not individual
+          # filenames. This is the fix for a real production incident:
+          # main.py gained a new call (insights_data.build_insights())
+          # that writes data/business_daily_history.json, but this step
+          # still only staged "dashboard/data/*.json data/run_state.json"
+          # — that file was left modified-but-unstaged after every commit,
+          # and `git rebase` refuses to even start on a dirty working
+          # tree (this check runs before any merge-strategy logic, so
+          # `-X theirs` below never got a chance to help). Staging whole
+          # directories means any future module that writes a new file
+          # under dashboard/data/ or data/ is covered automatically, with
+          # no workflow edit required — this class of bug cannot recur.
+          git add dashboard/data data
+
+          if git diff --cached --quiet; then
+            echo "No dashboard changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore: update performance data (${{ steps.tier.outputs.flag || 'all' }}) [skip ci]"
+
+          # Belt-and-suspenders: the git add above should already have
+          # staged everything, so this should always be empty. If it
+          # ever isn't (e.g. a future module writes somewhere entirely
+          # outside dashboard/data/ or data/), fail immediately with the
+          # exact file(s) at fault instead of retrying 5 times and
+          # failing with git's generic "unstaged changes" message.
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "::error::Working tree still dirty after commit — rebase would fail. Dirty path(s):"
+            git status --porcelain
+            echo "::error::Fix: widen the 'git add' above to cover whatever path is generating this file."
+            exit 1
+          fi
+
+          # dashboard/data/*.json and data/run_state.json are fully
+          # REGENERATED from scratch every run (never incrementally
+          # edited) — so if a rebase finds this file changed on both
+          # sides (e.g. an overlapping run, or a manual push landing at
+          # the wrong moment), there is nothing meaningful to line-merge:
+          # this run's freshly computed version should simply win. A
+          # previous version of this step used `git pull --rebase || true`
+          # then pushed unconditionally regardless of outcome — on a
+          # rebase conflict that silently swallowed the failure and could
+          # push a tree with unresolved conflict markers, which corrupted
+          # the JSON GitHub Pages served (seen in production: all 4 files
+          # failing to parse at once, self-healing on the next run once it
+          # overwrote the same paths).
+          #
+          # IMPORTANT: `git rebase` reverses the usual ours/theirs meaning
+          # vs. `git merge` — during a rebase, "ours" is the branch being
+          # rebased ONTO (origin/main), and "theirs" is the commit being
+          # replayed (this run's own commit, made two lines above). We
+          # want THIS run's freshly generated data to win, so this must
+          # be `-X theirs`, not `-X ours` — verified with a real two-clone
+          # race simulation before shipping this.
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            if git rebase origin/main -X theirs; then
+              echo "Rebase succeeded on attempt $attempt."
+              break
+            fi
+            echo "Rebase attempt $attempt failed — aborting and retrying."
+            git rebase --abort || true
+            if [ "$attempt" = "5" ]; then
+              echo "::error::Could not rebase onto origin/main after 5 attempts — not pushing."
+              exit 1
+            fi
+            sleep $((RANDOM % 10 + 5))
+          done
+
+          # Hard safety gate: never push data that isn't valid JSON,
+          # regardless of how it might have gotten that way. This is the
+          # last line of defense — if this ever fails, the previous good
+          # data on Pages stays live instead of being overwritten with
+          # something broken.
+          python3 -c "
+          import json, sys
+          from pathlib import Path
+          bad = []
+          for f in Path('dashboard/data').rglob('*.json'):
+              try:
+                  json.loads(f.read_text())
+              except Exception as e:
+                  bad.append(f'{f}: {e}')
+          for f in [Path('data/run_state.json'), Path('data/business_daily_history.json'), Path('data/journey_runs.json')]:
+              if not f.exists():
+                  continue
+              try:
+                  json.loads(f.read_text())
+              except Exception as e:
+                  bad.append(f'{f}: {e}')
+          if bad:
+              print('::error::Refusing to push invalid JSON:\n' + '\n'.join(bad))
+              sys.exit(1)
+          print('All committed JSON files validated OK.')
+          "
+
+          git push origin HEAD:main
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload dashboard artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dashboard
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

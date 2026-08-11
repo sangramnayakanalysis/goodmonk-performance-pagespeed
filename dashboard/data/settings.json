@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-08-11T16:59:42+05:30",
+  "monitoring": {
+    "total_pages": 16,
+    "priority_pages": 6,
+    "secondary_pages": 10,
+    "strategy": "mobile",
+    "priority_schedule": "Every hour",
+    "secondary_schedule": "Once daily (2:00 AM IST)",
+    "timezone": "Asia/Kolkata"
+  },
+  "thresholds": {
+    "score": {
+      "green_min": 60.0,
+      "amber_min": 40.0
+    },
+    "lcp_seconds": {
+      "green_max": 2.5,
+      "amber_max": 4.0
+    },
+    "cls": {
+      "green_max": 0.1,
+      "amber_max": 0.25
+    },
+    "ttfb_seconds": {
+      "green_max": 0.8,
+      "amber_max": 1.8
+    },
+    "tbt_ms": {
+      "green_max": 200.0,
+      "amber_max": 600.0
+    }
+  },
+  "email_alerts_enabled": false,
+  "pages": [
+    {
+      "name": "Homepage",
+      "url": "https://www.goodmonk.in/",
+      "tier": "Priority"
+    },
+    {
+      "name": "Shop All",
+      "url": "https://www.goodmonk.in/collections/all",
+      "tier": "Priority"
+    },
+    {
+      "name": "FNM",
+      "url": "https://www.goodmonk.in/products/good-monk",
+      "tier": "Priority"
+    },
+    {
+      "name": "H50+",
+      "url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix",
+      "tier": "Priority"
+    },
+    {
+      "name": "Fiber Fix",
+      "url": "https://www.goodmonk.in/products/fiber-fix",
+      "tier": "Priority"
+    },
+    {
+      "name": "Plant Protein Roti",
+      "url": "https://www.goodmonk.in/products/plant-protein-for-rotis",
+      "tier": "Priority"
+    },
+    {
+      "name": "Berries",
+      "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-mixed-berries",
+      "tier": "Secondary"
+    },
+    {
+      "name": "Orange",
+      "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-orange",
+      "tier": "Secondary"
+    },
+    {
+      "name": "Pineapple",
+      "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-pineapple",
+      "tier": "Secondary"
+    },
+    {
+      "name": "Mango",
+      "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-natural-mango-powder-50-less-sugar-with-8-vitamins-minerals",
+      "tier": "Secondary"
+    },
+    {
+      "name": "Assorted",
+      "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-assorted",
+      "tier": "Secondary"
+    },
+    {
+      "name": "Milk Mix Strawberry",
+      "url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-strawberry",
+      "tier": "Secondary"
+    },
+    {
+      "name": "Milk Mix Vanilla",
+      "url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-vanilla",
+      "tier": "Secondary"
+    },
+    {
+      "name": "Milk Mix Chocolate",
+      "url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix",
+      "tier": "Secondary"
+    },
+    {
+      "name": "Slimbiotics",
+      "url": "https://www.goodmonk.in/products/good-monk-slimbiotics",
+      "tier": "Secondary"
+    },
+    {
+      "name": "Weight Management",
+      "url": "https://www.goodmonk.in/products/good-monk-weight-management-program",
+      "tier": "Secondary"
+    }
+  ]
+}

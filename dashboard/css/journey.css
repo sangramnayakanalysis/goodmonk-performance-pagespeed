@@ -1,0 +1,112 @@
+/* =====================================================================
+   journey.css — Customer Journey tab module
+   ---------------------------------------------------------------------
+   Additive only. Namespaced under .gm-journey. Reuses the same
+   --panel/--hairline/--accent-* variables as every other new module.
+   ===================================================================== */
+
+.gm-journey { max-width: 1320px; margin: 0 auto; padding: 24px 24px 64px; }
+
+.gm-journey-kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin: 20px 0 28px;
+}
+
+.gm-journey-kpi {
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+.gm-journey-kpi .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); margin-bottom: 6px; }
+.gm-journey-kpi .value { font-family: var(--font-display); font-size: 24px; font-weight: 700; }
+.gm-journey-kpi .value.green { color: var(--accent-teal); }
+.gm-journey-kpi .value.yellow { color: var(--accent-amber); }
+.gm-journey-kpi .value.red { color: var(--accent-red); }
+
+/* --- Step timeline for the latest run --------------------------------- */
+.gm-journey-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.gm-journey-step {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--hairline);
+  background: var(--panel);
+  font-size: 12.5px;
+}
+.gm-journey-step .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.gm-journey-step.pass .dot { background: var(--accent-teal); }
+.gm-journey-step.fail .dot { background: var(--accent-red); }
+.gm-journey-step.pending .dot { background: var(--text-faint); }
+.gm-journey-step.fail { border-color: var(--accent-red); }
+
+/* --- Failure detail card ------------------------------------------------ */
+.gm-journey-failure {
+  background: var(--red-bg);
+  border: 1px solid var(--accent-red);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin-bottom: 28px;
+}
+.gm-journey-failure h3 { margin: 0 0 8px; color: var(--accent-red); font-family: var(--font-display); font-size: 15px; }
+.gm-journey-failure .row { margin: 6px 0; font-size: 13px; color: var(--text); }
+.gm-journey-failure .row b { color: var(--text-muted); font-weight: 600; margin-right: 6px; }
+.gm-journey-failure img {
+  max-width: 100%;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--hairline);
+  margin-top: 10px;
+}
+
+/* --- History table -------------------------------------------------- */
+.gm-journey-history-wrap {
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  overflow: hidden;
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+.gm-journey-history {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.gm-journey-history th {
+  text-align: left;
+  background: var(--panel-alt);
+  color: var(--text-faint);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10.5px;
+  letter-spacing: 0.05em;
+  padding: 10px 14px;
+  position: sticky;
+  top: 0;
+}
+
+.gm-journey-history td {
+  padding: 9px 14px;
+  border-top: 1px solid var(--hairline);
+  color: var(--text-muted);
+}
+
+.gm-journey-status-chip {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 999px;
+}
+.gm-journey-status-chip.pass { background: var(--green-bg); color: var(--accent-teal); }
+.gm-journey-status-chip.fail { background: var(--red-bg); color: var(--accent-red); }

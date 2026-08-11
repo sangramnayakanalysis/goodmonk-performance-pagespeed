@@ -1,0 +1,106 @@
+/* =====================================================================
+   insights.css — Business Insights tab module
+   ---------------------------------------------------------------------
+   Additive only. Namespaced under .gm-insights.
+   ===================================================================== */
+
+.gm-insights { max-width: 1320px; margin: 0 auto; padding: 24px 24px 64px; }
+
+/* --- Business Health Score --------------------------------------------- */
+.gm-score-panel {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  margin: 20px 0 28px;
+  flex-wrap: wrap;
+}
+
+.gm-score-ring {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 6px solid var(--hairline);
+  flex-shrink: 0;
+}
+.gm-score-ring.green { border-color: var(--accent-teal); }
+.gm-score-ring.yellow { border-color: var(--accent-amber); }
+.gm-score-ring.red { border-color: var(--accent-red); }
+.gm-score-ring .num { font-family: var(--font-display); font-size: 34px; font-weight: 700; color: var(--text); line-height: 1; }
+.gm-score-ring .lbl { font-size: 11px; color: var(--text-faint); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.05em; }
+
+.gm-score-breakdown { flex: 1; min-width: 260px; display: flex; flex-direction: column; gap: 10px; }
+
+.gm-score-bar-row { display: flex; align-items: center; gap: 10px; font-size: 12.5px; }
+.gm-score-bar-row .name { width: 100px; color: var(--text-muted); flex-shrink: 0; }
+.gm-score-bar-track { flex: 1; height: 8px; border-radius: 999px; background: var(--panel-alt); overflow: hidden; }
+.gm-score-bar-fill { height: 100%; border-radius: 999px; background: var(--accent-teal); }
+.gm-score-bar-row .pct { width: 40px; text-align: right; color: var(--text-faint); flex-shrink: 0; }
+
+/* --- Narrative summary -------------------------------------------------- */
+.gm-narrative {
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin-bottom: 12px;
+}
+.gm-narrative h3 { font-family: var(--font-display); font-size: 14px; margin: 0 0 10px; }
+.gm-narrative ul { margin: 0; padding-left: 18px; color: var(--text); font-size: 13.5px; line-height: 1.7; }
+.gm-narrative .gm-caveat { font-size: 11px; color: var(--text-faint); margin-top: 10px; }
+
+.gm-action-box {
+  background: var(--green-bg);
+  border: 1px solid var(--accent-teal);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin-bottom: 28px;
+  font-size: 13.5px;
+  color: var(--text);
+}
+.gm-action-box b { color: var(--accent-teal); }
+
+/* --- Top-5 lists --------------------------------------------------------- */
+.gm-insights-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.gm-insights-list-card {
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+.gm-insights-list-card h3 { font-family: var(--font-display); font-size: 14px; margin: 0 0 10px; }
+
+.gm-insights-list-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--hairline);
+  font-size: 13px;
+}
+.gm-insights-list-row:last-child { border-bottom: none; }
+.gm-insights-list-row .name { color: var(--text); font-weight: 600; }
+.gm-insights-list-row .detail { color: var(--text-muted); font-size: 12px; }
+
+/* --- Trend chart --------------------------------------------------------- */
+.gm-trend-card {
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+}
+.gm-trend-card h3 { font-family: var(--font-display); font-size: 14px; margin: 0 0 10px; }
+.gm-trend-card canvas { max-height: 220px; }

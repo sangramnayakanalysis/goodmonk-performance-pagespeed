@@ -1,0 +1,120 @@
+/* =====================================================================
+   overview.css — CEO Overview tab module
+   ---------------------------------------------------------------------
+   Additive only. Namespaced under .gm-overview so nothing here can
+   collide with style.css's existing .kpi-strip / .pages-grid / etc.
+   ===================================================================== */
+
+.gm-overview { max-width: 1320px; margin: 0 auto; padding: 24px 24px 64px; }
+
+.gm-overview__hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.gm-overview__hero h2 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  margin: 0 0 4px;
+}
+
+.gm-overview__hero p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.gm-health-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: var(--radius);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  border: 1px solid var(--hairline);
+}
+.gm-health-badge.green { background: var(--green-bg); color: var(--accent-teal); }
+.gm-health-badge.yellow { background: var(--amber-bg); color: var(--accent-amber); }
+.gm-health-badge.red { background: var(--red-bg); color: var(--accent-red); }
+.gm-health-badge.grey { background: var(--panel-alt); color: var(--text-faint); }
+
+.gm-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.gm-kpi-card {
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+
+.gm-kpi-card .gm-kpi-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+  margin-bottom: 6px;
+}
+
+.gm-kpi-card .gm-kpi-value {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.gm-kpi-card .gm-kpi-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.gm-section-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  margin: 28px 0 12px;
+  color: var(--text);
+}
+
+.gm-risk-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gm-risk-item {
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-left: 4px solid var(--accent-red);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.gm-risk-item.yellow { border-left-color: var(--accent-amber); }
+.gm-risk-item.green { border-left-color: var(--accent-teal); }
+
+.gm-risk-item__name { font-weight: 600; color: var(--text); }
+.gm-risk-item__reason { font-size: 13px; color: var(--text-muted); }
+
+.gm-empty {
+  color: var(--text-faint);
+  font-size: 13px;
+  padding: 20px;
+  text-align: center;
+  border: 1px dashed var(--hairline);
+  border-radius: var(--radius);
+}

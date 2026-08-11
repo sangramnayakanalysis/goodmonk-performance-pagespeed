@@ -1,0 +1,92 @@
+/* =====================================================================
+   navigation.css — Top navigation module
+   ---------------------------------------------------------------------
+   Additive only. Reuses the --bg / --panel / --accent-* / --font-*
+   variables already defined in style.css's :root — does not define or
+   override a single existing selector there. Safe to delete this file
+   and its <link> tag with zero effect on the existing dashboard.
+   ===================================================================== */
+
+.gm-nav {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 14px 24px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.gm-nav__brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text);
+  letter-spacing: 0.01em;
+  margin-right: 18px;
+  white-space: nowrap;
+}
+
+.gm-nav__tabs {
+  display: flex;
+  gap: 4px;
+  background: var(--panel);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+  flex-wrap: wrap;
+}
+
+.gm-nav__tab {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: calc(var(--radius-sm) - 2px);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+}
+
+.gm-nav__tab:hover {
+  color: var(--text);
+  background: var(--panel-alt);
+}
+
+.gm-nav__tab.is-active {
+  color: var(--bg);
+  background: var(--accent-teal);
+}
+
+.gm-nav__tab .gm-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--amber-bg);
+  color: var(--accent-amber);
+  letter-spacing: 0.03em;
+}
+
+.gm-nav__tab.is-active .gm-badge {
+  background: rgba(0, 0, 0, 0.15);
+  color: var(--bg);
+}
+
+/* --- Tab panel visibility -------------------------------------------- */
+.tab-panel { display: none; }
+.tab-panel.is-active { display: block; }
+
+@media (max-width: 720px) {
+  .gm-nav { padding: 12px 16px 0; }
+  .gm-nav__brand { display: none; }
+  .gm-nav__tabs { width: 100%; justify-content: space-between; }
+  .gm-nav__tab { padding: 8px 10px; font-size: 12px; }
+}
