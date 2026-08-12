@@ -50,8 +50,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 210,
-    "failed_runs": 62
+    "total_runs": 211,
+    "failed_runs": 63
   },
   {
     "name": "Shop All",
@@ -98,8 +98,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 209,
-    "failed_runs": 58
+    "total_runs": 210,
+    "failed_runs": 59
   },
   {
     "name": "FNM",
@@ -146,8 +146,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 207,
-    "failed_runs": 65
+    "total_runs": 208,
+    "failed_runs": 66
   },
   {
     "name": "H50+",
@@ -188,8 +188,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 205,
-    "failed_runs": 69
+    "total_runs": 206,
+    "failed_runs": 70
   },
   {
     "name": "Fiber Fix",
@@ -197,18 +197,18 @@
     "url": "https://www.goodmonk.in/products/fiber-fix",
     "latest": {
       "Date": "2026-08-12",
-      "Time": "17:11:14",
-      "Performance Score": 48,
+      "Time": "18:17:30",
+      "Performance Score": 43,
       "Grade": "F",
-      "LCP": 15.46,
-      "Onload": 5.05,
-      "Fully Loaded": 9.69,
+      "LCP": 11.71,
+      "Onload": 4.96,
+      "Fully Loaded": 9.72,
       "TTFB": 0.02,
-      "CLS": 0.009,
-      "TBT": 0.37,
+      "CLS": 0,
+      "TBT": 0.56,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Ffiber-fix&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,047\\u00a0KiB\", \"savings\": 900, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 20, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,035\\u00a0KiB\", \"savings\": 300, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 19, \"unit\": \"millisecond\"}]",
       "_page_name": "Fiber Fix",
       "_sheet_name": "FF",
       "_url": "https://www.goodmonk.in/products/fiber-fix"
@@ -221,55 +221,7 @@
       "ttfb": "green",
       "tbt": "yellow"
     },
-    "score_trend": 17,
-    "top_opportunities": [
-      {
-        "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 2,047\u00a0KiB",
-        "savings": 900,
-        "unit": "millisecond"
-      },
-      {
-        "title": "Initial server response time was short",
-        "display_value": "Root document took 20\u00a0ms",
-        "savings": 20,
-        "unit": "millisecond"
-      }
-    ],
-    "total_runs": 211,
-    "failed_runs": 64
-  },
-  {
-    "name": "Plant Protein Roti",
-    "sheet_name": "Plant Protein Roti",
-    "url": "https://www.goodmonk.in/products/plant-protein-for-rotis",
-    "latest": {
-      "Date": "2026-08-12",
-      "Time": "17:11:33",
-      "Performance Score": 45,
-      "Grade": "F",
-      "LCP": 6.98,
-      "Onload": 3.01,
-      "Fully Loaded": 7.11,
-      "TTFB": 0.02,
-      "CLS": 0,
-      "TBT": 0.85,
-      "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fplant-protein-for-rotis&form_factor=mobile",
-      "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,035\\u00a0KiB\", \"savings\": 300, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 21, \"unit\": \"millisecond\"}]",
-      "_page_name": "Plant Protein Roti",
-      "_sheet_name": "Plant Protein Roti",
-      "_url": "https://www.goodmonk.in/products/plant-protein-for-rotis"
-    },
-    "status_color": "yellow",
-    "metric_tiers": {
-      "score": "yellow",
-      "lcp": "red",
-      "cls": "green",
-      "ttfb": "green",
-      "tbt": "red"
-    },
-    "score_trend": -12,
+    "score_trend": 12,
     "top_opportunities": [
       {
         "title": "Reduce unused JavaScript",
@@ -280,11 +232,59 @@
       {
         "title": "Initial server response time was short",
         "display_value": "Root document took 20\u00a0ms",
-        "savings": 21,
+        "savings": 19,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 213,
+    "total_runs": 212,
+    "failed_runs": 64
+  },
+  {
+    "name": "Plant Protein Roti",
+    "sheet_name": "Plant Protein Roti",
+    "url": "https://www.goodmonk.in/products/plant-protein-for-rotis",
+    "latest": {
+      "Date": "2026-08-12",
+      "Time": "18:18:29",
+      "Performance Score": 36,
+      "Grade": "F",
+      "LCP": 8.08,
+      "Onload": 3.31,
+      "Fully Loaded": 7.62,
+      "TTFB": 0.03,
+      "CLS": 0,
+      "TBT": 1.6,
+      "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fplant-protein-for-rotis&form_factor=mobile",
+      "Status": "OK",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,912\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 30\\u00a0ms\", \"savings\": 27, \"unit\": \"millisecond\"}]",
+      "_page_name": "Plant Protein Roti",
+      "_sheet_name": "Plant Protein Roti",
+      "_url": "https://www.goodmonk.in/products/plant-protein-for-rotis"
+    },
+    "status_color": "red",
+    "metric_tiers": {
+      "score": "red",
+      "lcp": "red",
+      "cls": "green",
+      "ttfb": "green",
+      "tbt": "red"
+    },
+    "score_trend": -21,
+    "top_opportunities": [
+      {
+        "title": "Reduce unused JavaScript",
+        "display_value": "Est savings of 1,912\u00a0KiB",
+        "savings": 150,
+        "unit": "millisecond"
+      },
+      {
+        "title": "Initial server response time was short",
+        "display_value": "Root document took 30\u00a0ms",
+        "savings": 27,
+        "unit": "millisecond"
+      }
+    ],
+    "total_runs": 214,
     "failed_runs": 66
   },
   {
