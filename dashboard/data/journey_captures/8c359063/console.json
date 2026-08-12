@@ -1,11 +1,10 @@
 [
   "[pageerror] Unexpected token 'export'",
-  "[error] Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
-  "[error] Failed to load resource: the server responded with a status of 403 ()",
   "[pageerror] Unexpected token 'export'",
+  "[error] Failed to load resource: the server responded with a status of 404 ()",
   "[pageerror] Unexpected token 'export'",
   "[pageerror] t.fetchAvailability is not a function",
-  "[error] Failed to load resource: the server responded with a status of 404 ()",
+  "[error] Failed to load resource: the server responded with a status of 429 ()",
   "[error] Access to XMLHttpRequest at 'https://alpenliebe20250305050635.shopflo.com/api/v1/spark' from origin 'https://www.goodmonk.in' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
   "[error] Analytics request failed: l",
   "[error] Failed to load resource: net::ERR_FAILED",
