@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T23:11:28+05:30",
+  "generated_at": "2026-08-13T23:23:12+05:30",
   "business_score": 19.7,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -13,10 +13,10 @@
   "customer_journey_health": "red",
   "critical_issues_count": 12,
   "checkout_failures_today": 21,
-  "pages_slower_than_yesterday": 8,
+  "pages_slower_than_yesterday": 7,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 15
+    "page_count": 14
   },
   "top_slow_pages": [
     {
@@ -32,6 +32,12 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
+      "name": "Fiber Fix",
+      "score": 27,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
       "name": "Milk Mix Vanilla",
       "score": 27,
       "status_color": "red",
@@ -40,12 +46,6 @@
     {
       "name": "Weight Management",
       "score": 30,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Fiber Fix",
-      "score": 32,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     }
@@ -159,17 +159,17 @@
     {
       "date": "2026-08-13",
       "business_score": 19.7,
-      "average_score": 37.99,
+      "average_score": 37.98,
       "critical_count": 12,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 21,
       "page_scores": {
-        "Homepage": 39,
-        "Shop All": 34,
+        "Homepage": 35,
+        "Shop All": 52,
         "FNM": 12,
         "H50+": 48,
-        "Fiber Fix": 32,
-        "Plant Protein Roti": 43,
+        "Fiber Fix": 27,
+        "Plant Protein Roti": 35,
         "Berries": 36,
         "Orange": 36,
         "Pineapple": 14,
@@ -265,17 +265,17 @@
     {
       "date": "2026-08-13",
       "business_score": 19.7,
-      "average_score": 37.99,
+      "average_score": 37.98,
       "critical_count": 12,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 21,
       "page_scores": {
-        "Homepage": 39,
-        "Shop All": 34,
+        "Homepage": 35,
+        "Shop All": 52,
         "FNM": 12,
         "H50+": 48,
-        "Fiber Fix": 32,
-        "Plant Protein Roti": 43,
+        "Fiber Fix": 27,
+        "Plant Protein Roti": 35,
         "Berries": 36,
         "Orange": 36,
         "Pineapple": 14,
