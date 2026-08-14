@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T14:08:11+05:30",
+  "generated_at": "2026-08-14T14:31:36+05:30",
   "business_score": 19.6,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,12 +11,12 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 12,
+  "critical_issues_count": 13,
   "checkout_failures_today": 13,
-  "pages_slower_than_yesterday": 6,
+  "pages_slower_than_yesterday": 7,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 15
+    "page_count": 14
   },
   "top_slow_pages": [
     {
@@ -44,8 +44,8 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "FNM",
-      "score": 22,
+      "name": "Slimbiotics",
+      "score": 24,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     }
@@ -186,16 +186,16 @@
       "date": "2026-08-14",
       "business_score": 19.6,
       "average_score": 37.8,
-      "critical_count": 12,
+      "critical_count": 13,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 13,
       "page_scores": {
-        "Homepage": 47,
-        "Shop All": 53,
-        "FNM": 22,
+        "Homepage": 39,
+        "Shop All": 42,
+        "FNM": 38,
         "H50+": 10,
         "Fiber Fix": 15,
-        "Plant Protein Roti": 39,
+        "Plant Protein Roti": 36,
         "Berries": 29,
         "Orange": 36,
         "Pineapple": 14,
@@ -318,16 +318,16 @@
       "date": "2026-08-14",
       "business_score": 19.6,
       "average_score": 37.8,
-      "critical_count": 12,
+      "critical_count": 13,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 13,
       "page_scores": {
-        "Homepage": 47,
-        "Shop All": 53,
-        "FNM": 22,
+        "Homepage": 39,
+        "Shop All": 42,
+        "FNM": 38,
         "H50+": 10,
         "Fiber Fix": 15,
-        "Plant Protein Roti": 39,
+        "Plant Protein Roti": 36,
         "Berries": 29,
         "Orange": 36,
         "Pineapple": 14,
