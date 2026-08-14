@@ -50,8 +50,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 247,
-    "failed_runs": 78
+    "total_runs": 248,
+    "failed_runs": 79
   },
   {
     "name": "Shop All",
@@ -104,8 +104,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 247,
-    "failed_runs": 73
+    "total_runs": 248,
+    "failed_runs": 74
   },
   {
     "name": "FNM",
@@ -152,8 +152,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 245,
-    "failed_runs": 83
+    "total_runs": 246,
+    "failed_runs": 84
   },
   {
     "name": "H50+",
@@ -161,46 +161,46 @@
     "url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix",
     "latest": {
       "Date": "2026-08-14",
-      "Time": "17:08:30",
-      "Performance Score": 15,
+      "Time": "21:13:40",
+      "Performance Score": 40,
       "Grade": "F",
-      "LCP": 7.01,
-      "Onload": 3.39,
-      "Fully Loaded": 7.36,
-      "TTFB": 0.02,
-      "CLS": 0.709,
-      "TBT": 1.3,
+      "LCP": 7.02,
+      "Onload": 3.1,
+      "Fully Loaded": 8.07,
+      "TTFB": 0.06,
+      "CLS": 0,
+      "TBT": 1.12,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-50-nutrition-mix&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,940\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 20, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,714\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 60\\u00a0ms\", \"savings\": 64, \"unit\": \"millisecond\"}]",
       "_page_name": "H50+",
       "_sheet_name": "H50+",
       "_url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix"
     },
-    "status_color": "red",
+    "status_color": "yellow",
     "metric_tiers": {
-      "score": "red",
+      "score": "yellow",
       "lcp": "red",
-      "cls": "red",
+      "cls": "green",
       "ttfb": "green",
       "tbt": "red"
     },
-    "score_trend": -15,
+    "score_trend": 10,
     "top_opportunities": [
       {
         "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 1,940\u00a0KiB",
+        "display_value": "Est savings of 1,714\u00a0KiB",
         "savings": 150,
         "unit": "millisecond"
       },
       {
         "title": "Initial server response time was short",
-        "display_value": "Root document took 20\u00a0ms",
-        "savings": 20,
+        "display_value": "Root document took 60\u00a0ms",
+        "savings": 64,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 243,
+    "total_runs": 244,
     "failed_runs": 83
   },
   {
@@ -209,18 +209,18 @@
     "url": "https://www.goodmonk.in/products/fiber-fix",
     "latest": {
       "Date": "2026-08-14",
-      "Time": "18:14:59",
-      "Performance Score": 15,
+      "Time": "21:14:32",
+      "Performance Score": 28,
       "Grade": "F",
-      "LCP": 7.59,
-      "Onload": 3.46,
-      "Fully Loaded": 8.77,
-      "TTFB": 0.02,
-      "CLS": 0.725,
-      "TBT": 1.05,
+      "LCP": 16.18,
+      "Onload": 5.76,
+      "Fully Loaded": 13.35,
+      "TTFB": 0.01,
+      "CLS": 0,
+      "TBT": 2.22,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Ffiber-fix&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,904\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 17, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,023\\u00a0KiB\", \"savings\": 620, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 180\\u00a0KiB\", \"savings\": 20, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 10\\u00a0ms\", \"savings\": 13, \"unit\": \"millisecond\"}]",
       "_page_name": "Fiber Fix",
       "_sheet_name": "FF",
       "_url": "https://www.goodmonk.in/products/fiber-fix"
@@ -229,26 +229,32 @@
     "metric_tiers": {
       "score": "red",
       "lcp": "red",
-      "cls": "red",
+      "cls": "green",
       "ttfb": "green",
       "tbt": "red"
     },
-    "score_trend": -18,
+    "score_trend": -5,
     "top_opportunities": [
       {
         "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 1,904\u00a0KiB",
-        "savings": 150,
+        "display_value": "Est savings of 2,023\u00a0KiB",
+        "savings": 620,
+        "unit": "millisecond"
+      },
+      {
+        "title": "Reduce unused CSS",
+        "display_value": "Est savings of 180\u00a0KiB",
+        "savings": 20,
         "unit": "millisecond"
       },
       {
         "title": "Initial server response time was short",
-        "display_value": "Root document took 20\u00a0ms",
-        "savings": 17,
+        "display_value": "Root document took 10\u00a0ms",
+        "savings": 13,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 249,
+    "total_runs": 250,
     "failed_runs": 75
   },
   {
@@ -296,8 +302,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 251,
-    "failed_runs": 81
+    "total_runs": 252,
+    "failed_runs": 82
   },
   {
     "name": "Berries",
