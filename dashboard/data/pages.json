@@ -44,8 +44,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 250,
-    "failed_runs": 79
+    "total_runs": 251,
+    "failed_runs": 80
   },
   {
     "name": "Shop All",
@@ -92,8 +92,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 250,
-    "failed_runs": 75
+    "total_runs": 251,
+    "failed_runs": 76
   },
   {
     "name": "FNM",
@@ -140,8 +140,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 248,
-    "failed_runs": 86
+    "total_runs": 249,
+    "failed_runs": 87
   },
   {
     "name": "H50+",
@@ -188,8 +188,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 246,
-    "failed_runs": 84
+    "total_runs": 247,
+    "failed_runs": 85
   },
   {
     "name": "Fiber Fix",
@@ -242,49 +242,49 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 252,
-    "failed_runs": 77
+    "total_runs": 253,
+    "failed_runs": 78
   },
   {
     "name": "Plant Protein Roti",
     "sheet_name": "Plant Protein Roti",
     "url": "https://www.goodmonk.in/products/plant-protein-for-rotis",
     "latest": {
-      "Date": "2026-08-14",
-      "Time": "22:13:45",
-      "Performance Score": 48,
+      "Date": "2026-08-15",
+      "Time": "00:13:42",
+      "Performance Score": 26,
       "Grade": "F",
-      "LCP": 6.83,
-      "Onload": 3.24,
-      "Fully Loaded": 6.88,
-      "TTFB": 0.01,
-      "CLS": 0,
-      "TBT": 0.64,
+      "LCP": 6.98,
+      "Onload": 3.31,
+      "Fully Loaded": 7.72,
+      "TTFB": 0.02,
+      "CLS": 0.258,
+      "TBT": 1.17,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fplant-protein-for-rotis&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 15, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 22, \"unit\": \"millisecond\"}]",
       "_page_name": "Plant Protein Roti",
       "_sheet_name": "Plant Protein Roti",
       "_url": "https://www.goodmonk.in/products/plant-protein-for-rotis"
     },
-    "status_color": "yellow",
+    "status_color": "red",
     "metric_tiers": {
-      "score": "yellow",
+      "score": "red",
       "lcp": "red",
-      "cls": "green",
+      "cls": "red",
       "ttfb": "green",
       "tbt": "red"
     },
-    "score_trend": 9,
+    "score_trend": -25,
     "top_opportunities": [
       {
         "title": "Initial server response time was short",
         "display_value": "Root document took 20\u00a0ms",
-        "savings": 15,
+        "savings": 22,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 254,
+    "total_runs": 255,
     "failed_runs": 83
   },
   {
