@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-15T16:28:46+05:30",
+  "generated_at": "2026-08-15T16:44:44+05:30",
   "business_score": 19.6,
   "business_score_color": "red",
   "business_score_label": "Critical",
   "components": {
-    "performance": 37.7,
+    "performance": 37.6,
     "journey": 0.0,
     "alerts": 0.0,
     "availability": 45.0
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 14,
+  "critical_issues_count": 15,
   "checkout_failures_today": 32,
   "pages_slower_than_yesterday": 5,
   "most_common_issue": {
@@ -44,10 +44,10 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Berries",
+      "name": "FNM",
       "score": 29,
       "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
+      "top_issue_title": "Reduce unused JavaScript"
     }
   ],
   "top_failed_journeys": [
@@ -211,16 +211,16 @@
     {
       "date": "2026-08-15",
       "business_score": 19.6,
-      "average_score": 37.66,
-      "critical_count": 14,
+      "average_score": 37.64,
+      "critical_count": 15,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 32,
       "page_scores": {
         "Homepage": 35,
         "Shop All": 50,
-        "FNM": 37,
+        "FNM": 29,
         "H50+": 22,
-        "Fiber Fix": 46,
+        "Fiber Fix": 29,
         "Plant Protein Roti": 38,
         "Berries": 29,
         "Orange": 37,
@@ -369,16 +369,16 @@
     {
       "date": "2026-08-15",
       "business_score": 19.6,
-      "average_score": 37.66,
-      "critical_count": 14,
+      "average_score": 37.64,
+      "critical_count": 15,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 32,
       "page_scores": {
         "Homepage": 35,
         "Shop All": 50,
-        "FNM": 37,
+        "FNM": 29,
         "H50+": 22,
-        "Fiber Fix": 46,
+        "Fiber Fix": 29,
         "Plant Protein Roti": 38,
         "Berries": 29,
         "Orange": 37,
