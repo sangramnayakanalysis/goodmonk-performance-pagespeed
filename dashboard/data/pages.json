@@ -5,18 +5,18 @@
     "url": "https://www.goodmonk.in/",
     "latest": {
       "Date": "2026-08-16",
-      "Time": "10:49:59",
-      "Performance Score": 33,
+      "Time": "11:54:30",
+      "Performance Score": 38,
       "Grade": "F",
-      "LCP": 18.81,
-      "Onload": 5.2,
-      "Fully Loaded": 14.82,
+      "LCP": 11.38,
+      "Onload": 3.16,
+      "Fully Loaded": 9.75,
       "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 1.04,
+      "TBT": 1.02,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2F&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,019\\u00a0KiB\", \"savings\": 1350, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 41\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 16, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 41\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,051\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 22, \"unit\": \"millisecond\"}]",
       "_page_name": "Homepage",
       "_sheet_name": "Homepage",
       "_url": "https://www.goodmonk.in/"
@@ -29,14 +29,8 @@
       "ttfb": "green",
       "tbt": "red"
     },
-    "score_trend": -1,
+    "score_trend": 4,
     "top_opportunities": [
-      {
-        "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 2,019\u00a0KiB",
-        "savings": 1350,
-        "unit": "millisecond"
-      },
       {
         "title": "Reduce unused CSS",
         "display_value": "Est savings of 41\u00a0KiB",
@@ -44,13 +38,19 @@
         "unit": "millisecond"
       },
       {
+        "title": "Reduce unused JavaScript",
+        "display_value": "Est savings of 2,051\u00a0KiB",
+        "savings": 150,
+        "unit": "millisecond"
+      },
+      {
         "title": "Initial server response time was short",
         "display_value": "Root document took 20\u00a0ms",
-        "savings": 16,
+        "savings": 22,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 280,
+    "total_runs": 281,
     "failed_runs": 84
   },
   {
@@ -92,8 +92,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 280,
-    "failed_runs": 83
+    "total_runs": 281,
+    "failed_runs": 84
   },
   {
     "name": "FNM",
@@ -101,69 +101,21 @@
     "url": "https://www.goodmonk.in/products/good-monk",
     "latest": {
       "Date": "2026-08-16",
-      "Time": "10:50:30",
-      "Performance Score": 33,
+      "Time": "11:54:23",
+      "Performance Score": 41,
       "Grade": "F",
-      "LCP": 7.31,
-      "Onload": 3.16,
-      "Fully Loaded": 9.63,
-      "TTFB": 0.01,
+      "LCP": 22.36,
+      "Onload": 5.5,
+      "Fully Loaded": 10.41,
+      "TTFB": 0.03,
       "CLS": 0,
-      "TBT": 2.29,
+      "TBT": 0.59,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,027\\u00a0KiB\", \"savings\": 30, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 15, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,049\\u00a0KiB\", \"savings\": 2700, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 30\\u00a0ms\", \"savings\": 28, \"unit\": \"millisecond\"}]",
       "_page_name": "FNM",
       "_sheet_name": "FNM",
       "_url": "https://www.goodmonk.in/products/good-monk"
-    },
-    "status_color": "red",
-    "metric_tiers": {
-      "score": "red",
-      "lcp": "red",
-      "cls": "green",
-      "ttfb": "green",
-      "tbt": "red"
-    },
-    "score_trend": -24,
-    "top_opportunities": [
-      {
-        "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 2,027\u00a0KiB",
-        "savings": 30,
-        "unit": "millisecond"
-      },
-      {
-        "title": "Initial server response time was short",
-        "display_value": "Root document took 20\u00a0ms",
-        "savings": 15,
-        "unit": "millisecond"
-      }
-    ],
-    "total_runs": 278,
-    "failed_runs": 100
-  },
-  {
-    "name": "H50+",
-    "sheet_name": "H50+",
-    "url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix",
-    "latest": {
-      "Date": "2026-08-16",
-      "Time": "01:43:46",
-      "Performance Score": 45,
-      "Grade": "F",
-      "LCP": 26.46,
-      "Onload": 6.09,
-      "Fully Loaded": 12.03,
-      "TTFB": 0.02,
-      "CLS": 0,
-      "TBT": 0.45,
-      "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-50-nutrition-mix&form_factor=mobile",
-      "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,023\\u00a0KiB\", \"savings\": 3450, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 24, \"unit\": \"millisecond\"}]",
-      "_page_name": "H50+",
-      "_sheet_name": "H50+",
-      "_url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix"
     },
     "status_color": "yellow",
     "metric_tiers": {
@@ -173,22 +125,70 @@
       "ttfb": "green",
       "tbt": "yellow"
     },
-    "score_trend": 13,
+    "score_trend": -16,
     "top_opportunities": [
       {
         "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 2,023\u00a0KiB",
-        "savings": 3450,
+        "display_value": "Est savings of 2,049\u00a0KiB",
+        "savings": 2700,
+        "unit": "millisecond"
+      },
+      {
+        "title": "Initial server response time was short",
+        "display_value": "Root document took 30\u00a0ms",
+        "savings": 28,
+        "unit": "millisecond"
+      }
+    ],
+    "total_runs": 279,
+    "failed_runs": 100
+  },
+  {
+    "name": "H50+",
+    "sheet_name": "H50+",
+    "url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix",
+    "latest": {
+      "Date": "2026-08-16",
+      "Time": "11:55:00",
+      "Performance Score": 19,
+      "Grade": "F",
+      "LCP": 7.4,
+      "Onload": 3.16,
+      "Fully Loaded": 7.82,
+      "TTFB": 0.02,
+      "CLS": 0.694,
+      "TBT": 0.89,
+      "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-50-nutrition-mix&form_factor=mobile",
+      "Status": "OK",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,941\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 16, \"unit\": \"millisecond\"}]",
+      "_page_name": "H50+",
+      "_sheet_name": "H50+",
+      "_url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix"
+    },
+    "status_color": "red",
+    "metric_tiers": {
+      "score": "red",
+      "lcp": "red",
+      "cls": "red",
+      "ttfb": "green",
+      "tbt": "red"
+    },
+    "score_trend": -13,
+    "top_opportunities": [
+      {
+        "title": "Reduce unused JavaScript",
+        "display_value": "Est savings of 1,941\u00a0KiB",
+        "savings": 150,
         "unit": "millisecond"
       },
       {
         "title": "Initial server response time was short",
         "display_value": "Root document took 20\u00a0ms",
-        "savings": 24,
+        "savings": 16,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 276,
+    "total_runs": 277,
     "failed_runs": 100
   },
   {
@@ -197,18 +197,18 @@
     "url": "https://www.goodmonk.in/products/fiber-fix",
     "latest": {
       "Date": "2026-08-16",
-      "Time": "09:58:25",
-      "Performance Score": 21,
+      "Time": "11:54:58",
+      "Performance Score": 35,
       "Grade": "F",
-      "LCP": 6.75,
-      "Onload": 3.46,
-      "Fully Loaded": 7.8,
-      "TTFB": 0.01,
-      "CLS": 0.258,
-      "TBT": 2.6,
+      "LCP": 6.45,
+      "Onload": 3.16,
+      "Fully Loaded": 6.9,
+      "TTFB": 0.02,
+      "CLS": 0.725,
+      "TBT": 0.32,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Ffiber-fix&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,903\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 15, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,047\\u00a0KiB\", \"savings\": 300, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 17, \"unit\": \"millisecond\"}]",
       "_page_name": "Fiber Fix",
       "_sheet_name": "FF",
       "_url": "https://www.goodmonk.in/products/fiber-fix"
@@ -219,24 +219,24 @@
       "lcp": "red",
       "cls": "red",
       "ttfb": "green",
-      "tbt": "red"
+      "tbt": "yellow"
     },
-    "score_trend": -7,
+    "score_trend": 7,
     "top_opportunities": [
       {
         "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 1,903\u00a0KiB",
-        "savings": 150,
+        "display_value": "Est savings of 2,047\u00a0KiB",
+        "savings": 300,
         "unit": "millisecond"
       },
       {
         "title": "Initial server response time was short",
         "display_value": "Root document took 20\u00a0ms",
-        "savings": 15,
+        "savings": 17,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 282,
+    "total_runs": 283,
     "failed_runs": 88
   },
   {
@@ -278,8 +278,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 284,
-    "failed_runs": 99
+    "total_runs": 285,
+    "failed_runs": 100
   },
   {
     "name": "Berries",
