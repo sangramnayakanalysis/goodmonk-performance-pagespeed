@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T10:33:20+05:30",
+  "generated_at": "2026-08-16T10:52:16+05:30",
   "business_score": 19.6,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,7 +11,7 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 7,
+  "critical_issues_count": 9,
   "checkout_failures_today": 11,
   "pages_slower_than_yesterday": 1,
   "most_common_issue": {
@@ -44,8 +44,8 @@
       "top_issue_title": "Initial server response time was short"
     },
     {
-      "name": "Milk Mix Chocolate",
-      "score": 34,
+      "name": "Homepage",
+      "score": 33,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     }
@@ -237,14 +237,14 @@
     {
       "date": "2026-08-16",
       "business_score": 19.6,
-      "average_score": 37.64,
-      "critical_count": 7,
+      "average_score": 37.63,
+      "critical_count": 9,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 11,
       "page_scores": {
-        "Homepage": 40,
+        "Homepage": 33,
         "Shop All": 59,
-        "FNM": 52,
+        "FNM": 33,
         "H50+": 45,
         "Fiber Fix": 21,
         "Plant Protein Roti": 50,
@@ -421,14 +421,14 @@
     {
       "date": "2026-08-16",
       "business_score": 19.6,
-      "average_score": 37.64,
-      "critical_count": 7,
+      "average_score": 37.63,
+      "critical_count": 9,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 11,
       "page_scores": {
-        "Homepage": 40,
+        "Homepage": 33,
         "Shop All": 59,
-        "FNM": 52,
+        "FNM": 33,
         "H50+": 45,
         "Fiber Fix": 21,
         "Plant Protein Roti": 50,
