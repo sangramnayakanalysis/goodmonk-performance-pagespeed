@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T18:39:09+05:30",
+  "generated_at": "2026-08-16T18:56:33+05:30",
   "business_score": 19.5,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,7 +11,7 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 11,
+  "critical_issues_count": 12,
   "checkout_failures_today": 28,
   "pages_slower_than_yesterday": 4,
   "most_common_issue": {
@@ -20,14 +20,14 @@
   },
   "top_slow_pages": [
     {
-      "name": "Assorted",
-      "score": 15,
+      "name": "Plant Protein Roti",
+      "score": 14,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Fiber Fix",
-      "score": 19,
+      "name": "Assorted",
+      "score": 15,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
@@ -237,8 +237,8 @@
     {
       "date": "2026-08-16",
       "business_score": 19.5,
-      "average_score": 37.59,
-      "critical_count": 11,
+      "average_score": 37.57,
+      "critical_count": 12,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 28,
       "page_scores": {
@@ -246,8 +246,8 @@
         "Shop All": 32,
         "FNM": 29,
         "H50+": 36,
-        "Fiber Fix": 19,
-        "Plant Protein Roti": 45,
+        "Fiber Fix": 36,
+        "Plant Protein Roti": 14,
         "Berries": 29,
         "Orange": 37,
         "Pineapple": 41,
@@ -421,8 +421,8 @@
     {
       "date": "2026-08-16",
       "business_score": 19.5,
-      "average_score": 37.59,
-      "critical_count": 11,
+      "average_score": 37.57,
+      "critical_count": 12,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 28,
       "page_scores": {
@@ -430,8 +430,8 @@
         "Shop All": 32,
         "FNM": 29,
         "H50+": 36,
-        "Fiber Fix": 19,
-        "Plant Protein Roti": 45,
+        "Fiber Fix": 36,
+        "Plant Protein Roti": 14,
         "Berries": 29,
         "Orange": 37,
         "Pineapple": 41,
