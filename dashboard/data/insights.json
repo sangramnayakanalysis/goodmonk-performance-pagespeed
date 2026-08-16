@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T00:45:46+05:30",
+  "generated_at": "2026-08-17T00:49:29+05:30",
   "business_score": 19.5,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -12,16 +12,22 @@
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
   "critical_issues_count": 11,
-  "checkout_failures_today": 2,
-  "pages_slower_than_yesterday": 0,
+  "checkout_failures_today": 1,
+  "pages_slower_than_yesterday": 3,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 11
+    "page_count": 12
   },
   "top_slow_pages": [
     {
       "name": "Assorted",
       "score": 15,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "FNM",
+      "score": 20,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
@@ -32,20 +38,14 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Plant Protein Roti",
+      "name": "Homepage",
       "score": 28,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Berries",
-      "score": 29,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
-    },
-    {
-      "name": "Shop All",
-      "score": 33,
+      "name": "Plant Protein Roti",
+      "score": 28,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     }
@@ -263,16 +263,16 @@
     {
       "date": "2026-08-17",
       "business_score": 19.5,
-      "average_score": 37.54,
+      "average_score": 37.52,
       "critical_count": 11,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 2,
       "page_scores": {
-        "Homepage": 37,
-        "Shop All": 33,
-        "FNM": 45,
-        "H50+": 33,
-        "Fiber Fix": 39,
+        "Homepage": 28,
+        "Shop All": 43,
+        "FNM": 20,
+        "H50+": 35,
+        "Fiber Fix": 29,
         "Plant Protein Roti": 28,
         "Berries": 29,
         "Orange": 37,
@@ -447,16 +447,16 @@
     {
       "date": "2026-08-17",
       "business_score": 19.5,
-      "average_score": 37.54,
+      "average_score": 37.52,
       "critical_count": 11,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 2,
       "page_scores": {
-        "Homepage": 37,
-        "Shop All": 33,
-        "FNM": 45,
-        "H50+": 33,
-        "Fiber Fix": 39,
+        "Homepage": 28,
+        "Shop All": 43,
+        "FNM": 20,
+        "H50+": 35,
+        "Fiber Fix": 29,
         "Plant Protein Roti": 28,
         "Berries": 29,
         "Orange": 37,
