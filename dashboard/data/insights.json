@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-08-17T22:50:13+05:30",
-  "business_score": 22.0,
+  "generated_at": "2026-08-17T22:53:53+05:30",
+  "business_score": 19.5,
   "business_score_color": "red",
   "business_score_label": "Critical",
   "components": {
     "performance": 37.4,
     "journey": 0.0,
     "alerts": 0.0,
-    "availability": 70.0
+    "availability": 45.0
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 14,
-  "checkout_failures_today": 42,
-  "pages_slower_than_yesterday": 9,
+  "critical_issues_count": 15,
+  "checkout_failures_today": 41,
+  "pages_slower_than_yesterday": 10,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 12
+    "page_count": 13
   },
   "top_slow_pages": [
     {
@@ -38,13 +38,13 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "H50+",
+      "name": "Shop All",
       "score": 28,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Slimbiotics",
+      "name": "H50+",
       "score": 28,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
@@ -262,14 +262,14 @@
     },
     {
       "date": "2026-08-17",
-      "business_score": 22.0,
-      "average_score": 37.42,
-      "critical_count": 14,
+      "business_score": 19.5,
+      "average_score": 37.41,
+      "critical_count": 15,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 42,
       "page_scores": {
-        "Homepage": 32,
-        "Shop All": 47,
+        "Homepage": 30,
+        "Shop All": 28,
         "FNM": 34,
         "H50+": 28,
         "Fiber Fix": 31,
@@ -446,14 +446,14 @@
     },
     {
       "date": "2026-08-17",
-      "business_score": 22.0,
-      "average_score": 37.42,
-      "critical_count": 14,
+      "business_score": 19.5,
+      "average_score": 37.41,
+      "critical_count": 15,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 42,
       "page_scores": {
-        "Homepage": 32,
-        "Shop All": 47,
+        "Homepage": 30,
+        "Shop All": 28,
         "FNM": 34,
         "H50+": 28,
         "Fiber Fix": 31,
