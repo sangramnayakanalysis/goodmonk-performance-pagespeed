@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T09:31:33+05:30",
+  "generated_at": "2026-08-17T10:04:54+05:30",
   "business_score": 19.5,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -13,12 +13,18 @@
   "customer_journey_health": "red",
   "critical_issues_count": 13,
   "checkout_failures_today": 20,
-  "pages_slower_than_yesterday": 7,
+  "pages_slower_than_yesterday": 8,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 13
+    "page_count": 12
   },
   "top_slow_pages": [
+    {
+      "name": "Plant Protein Roti",
+      "score": 12,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
     {
       "name": "Milk Mix Vanilla",
       "score": 18,
@@ -28,12 +34,6 @@
     {
       "name": "Milk Mix Strawberry",
       "score": 21,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Homepage",
-      "score": 27,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
@@ -263,17 +263,17 @@
     {
       "date": "2026-08-17",
       "business_score": 19.5,
-      "average_score": 37.5,
+      "average_score": 37.49,
       "critical_count": 13,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 20,
       "page_scores": {
-        "Homepage": 27,
-        "Shop All": 48,
+        "Homepage": 45,
+        "Shop All": 32,
         "FNM": 33,
-        "H50+": 34,
+        "H50+": 47,
         "Fiber Fix": 36,
-        "Plant Protein Roti": 46,
+        "Plant Protein Roti": 12,
         "Berries": 29,
         "Orange": 37,
         "Pineapple": 31,
@@ -447,17 +447,17 @@
     {
       "date": "2026-08-17",
       "business_score": 19.5,
-      "average_score": 37.5,
+      "average_score": 37.49,
       "critical_count": 13,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 20,
       "page_scores": {
-        "Homepage": 27,
-        "Shop All": 48,
+        "Homepage": 45,
+        "Shop All": 32,
         "FNM": 33,
-        "H50+": 34,
+        "H50+": 47,
         "Fiber Fix": 36,
-        "Plant Protein Roti": 46,
+        "Plant Protein Roti": 12,
         "Berries": 29,
         "Orange": 37,
         "Pineapple": 31,
