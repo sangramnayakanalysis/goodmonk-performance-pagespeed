@@ -10943,5 +10943,54 @@
       "[error] Failed to load resource: net::ERR_FAILED"
     ],
     "capture_dir": "8710c5cb"
+  },
+  {
+    "run_id": "760469f2",
+    "started_at": "2026-08-17T20:23:36+05:30",
+    "finished_at": "2026-08-17T20:23:54+05:30",
+    "overall_status": "fail",
+    "attempt": 2,
+    "failed_step": "Images Loaded",
+    "duration_seconds": 17.6,
+    "steps": [
+      {
+        "name": "Homepage",
+        "status": "pass",
+        "duration_ms": 891,
+        "error": ""
+      },
+      {
+        "name": "Collection",
+        "status": "pass",
+        "duration_ms": 551,
+        "error": ""
+      },
+      {
+        "name": "Product Page",
+        "status": "pass",
+        "duration_ms": 692,
+        "error": ""
+      },
+      {
+        "name": "Images Loaded",
+        "status": "fail",
+        "duration_ms": 15001,
+        "error": "Locator.wait_for: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"main img, .product img, img\").first to be visible\n    32 \u00d7 locator resolved to hidden <img width=\"auto\" height=\"auto\" class=\"you-may-also-img\" alt=\"Plant Protein Powder for Rotis - Add to Atta\" src=\"//www.goodmonk.in/cdn/shop/files/Slide1_e6a80c22-966b-4b45-bb40-a137b9a7e408.jpg?v=1786701366&width=150\"/>\n"
+      }
+    ],
+    "console_errors": [
+      "[pageerror] Unexpected token 'export'",
+      "[error] Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+      "[error] Failed to load resource: the server responded with a status of 403 ()",
+      "[pageerror] Unexpected token 'export'",
+      "[pageerror] t.fetchAvailability is not a function",
+      "[pageerror] Unexpected token 'export'",
+      "[error] Failed to load resource: the server responded with a status of 404 ()",
+      "[error] TypeError: Cannot read properties of undefined (reading 'filter')\n    at https://bridge.shopflo.com/js/shopflo.bundle.js:2:353314\n    at Object.En [as cart] (https://bridge.shopflo.com/js/shopflo.bundle.js:2:354011)\n    at G (https://bridge.shopflo.com/js/shopflo.bundle.js:2:343803)\n    at https://bridge.shopflo.com/js/shopflo.bundle.js:2:169972\n    at Generator.<anonymous> (https://bridge.shopflo.com/js/shopflo.bundle.js:2:164306)\n    at Generator.next (https://bridge.shopflo.com/js/shopflo.bundle.js:2:165149)\n    at Me (https://bridge.shopflo.com/js/shopflo.bundle.js:2:165331)\n    at l (https://bridge.shopflo.com/js/shopflo.bundle.js:2:165534)\n    at https://bridge.shopflo.com/js/shopflo.bundle.js:2:165595\n    at new Promise (<anonymous>)",
+      "[pageerror] signal is aborted without reason",
+      "[error] Error occured while loading iFrame. TypeError: Cannot read properties of undefined (reading 'filter')\n    at https://bridge.shopflo.com/js/shopflo.bundle.js:2:353314\n    at Object.En [as cart] (https://bridge.shopflo.com/js/shopflo.bundle.js:2:354011)\n    at https://bridge.shopflo.com/js/shopflo.bundle.js:2:505064\n    at Generator.<anonymous> (https://bridge.shopflo.com/js/shopflo.bundle.js:2:502455)\n    at Generator.next (https://bridge.shopflo.com/js/shopflo.bundle.js:2:503285)\n    at d (https://bridge.shopflo.com/js/shopflo.bundle.js:2:503465)\n    at l (https://bridge.shopflo.com/js/shopflo.bundle.js:2:505317)\n    at https://bridge.shopflo.com/js/shopflo.bundle.js:2:505376\n    at new Promise (<anonymous>)\n    at t (https://bridge.shopflo.com/js/shopflo.bundle.js:2:505258)",
+      "[pageerror] Cannot read properties of undefined (reading 'filter')"
+    ],
+    "capture_dir": "760469f2"
   }
 ]
