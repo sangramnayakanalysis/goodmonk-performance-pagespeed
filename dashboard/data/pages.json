@@ -44,8 +44,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 351,
-    "failed_runs": 110
+    "total_runs": 352,
+    "failed_runs": 111
   },
   {
     "name": "Shop All",
@@ -98,8 +98,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 352,
-    "failed_runs": 108
+    "total_runs": 353,
+    "failed_runs": 109
   },
   {
     "name": "FNM",
@@ -152,8 +152,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 350,
-    "failed_runs": 132
+    "total_runs": 351,
+    "failed_runs": 133
   },
   {
     "name": "H50+",
@@ -200,8 +200,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 346,
-    "failed_runs": 127
+    "total_runs": 347,
+    "failed_runs": 128
   },
   {
     "name": "Fiber Fix",
@@ -248,8 +248,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 353,
-    "failed_runs": 116
+    "total_runs": 354,
+    "failed_runs": 117
   },
   {
     "name": "Plant Protein Roti",
@@ -296,8 +296,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 354,
-    "failed_runs": 134
+    "total_runs": 355,
+    "failed_runs": 135
   },
   {
     "name": "Berries",
@@ -729,48 +729,18 @@
     "name": "Weight Management",
     "sheet_name": "Weight Management",
     "url": "https://www.goodmonk.in/products/good-monk-weight-management-program",
-    "latest": {
-      "Date": "2026-08-18",
-      "Time": "02:26:30",
-      "Performance Score": 38,
-      "Grade": "F",
-      "LCP": 7.5,
-      "Onload": 3.31,
-      "Fully Loaded": 7.67,
-      "TTFB": 0.02,
-      "CLS": 0,
-      "TBT": 1.29,
-      "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-weight-management-program&form_factor=mobile",
-      "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,047\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 19, \"unit\": \"millisecond\"}]",
-      "_page_name": "Weight Management",
-      "_sheet_name": "Weight Management",
-      "_url": "https://www.goodmonk.in/products/good-monk-weight-management-program"
-    },
-    "status_color": "red",
+    "latest": null,
+    "status_color": "grey",
     "metric_tiers": {
-      "score": "red",
-      "lcp": "red",
-      "cls": "green",
-      "ttfb": "green",
-      "tbt": "red"
+      "score": "grey",
+      "lcp": "grey",
+      "cls": "grey",
+      "ttfb": "grey",
+      "tbt": "grey"
     },
-    "score_trend": 7,
-    "top_opportunities": [
-      {
-        "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 2,047\u00a0KiB",
-        "savings": 150,
-        "unit": "millisecond"
-      },
-      {
-        "title": "Initial server response time was short",
-        "display_value": "Root document took 20\u00a0ms",
-        "savings": 19,
-        "unit": "millisecond"
-      }
-    ],
-    "total_runs": 36,
-    "failed_runs": 6
+    "score_trend": null,
+    "top_opportunities": [],
+    "total_runs": 0,
+    "failed_runs": 0
   }
 ]
