@@ -1,33 +1,27 @@
 {
-  "generated_at": "2026-08-21T02:15:53+05:30",
-  "business_score": 19.4,
+  "generated_at": "2026-08-21T02:29:03+05:30",
+  "business_score": 21.9,
   "business_score_color": "red",
   "business_score_label": "Critical",
   "components": {
-    "performance": 37.2,
+    "performance": 37.1,
     "journey": 0.0,
     "alerts": 0.0,
-    "availability": 45.0
+    "availability": 70.0
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
   "critical_issues_count": 12,
   "checkout_failures_today": 4,
-  "pages_slower_than_yesterday": 2,
+  "pages_slower_than_yesterday": 6,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
     "page_count": 13
   },
   "top_slow_pages": [
     {
-      "name": "Pineapple",
-      "score": 10,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Assorted",
-      "score": 13,
+      "name": "Orange",
+      "score": 16,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
@@ -38,16 +32,22 @@
       "top_issue_title": "Avoid multiple page redirects"
     },
     {
-      "name": "Milk Mix Vanilla",
-      "score": 18,
+      "name": "Milk Mix Chocolate",
+      "score": 21,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Orange",
-      "score": 20,
+      "name": "H50+",
+      "score": 26,
       "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Slimbiotics",
+      "score": 27,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
     }
   ],
   "top_failed_journeys": [
@@ -366,8 +366,8 @@
     },
     {
       "date": "2026-08-21",
-      "business_score": 19.4,
-      "average_score": 37.17,
+      "business_score": 21.9,
+      "average_score": 37.13,
       "critical_count": 12,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 4,
@@ -378,16 +378,16 @@
         "H50+": 26,
         "Fiber Fix": 37,
         "Plant Protein Roti": 38,
-        "Berries": 40,
-        "Orange": 20,
-        "Pineapple": 10,
-        "Mango": 27,
-        "Assorted": 13,
-        "Milk Mix Strawberry": 21,
-        "Milk Mix Vanilla": 18,
-        "Milk Mix Chocolate": 34,
-        "Slimbiotics": 45,
-        "Weight Management": 38
+        "Berries": 44,
+        "Orange": 16,
+        "Pineapple": 35,
+        "Mango": 41,
+        "Assorted": 32,
+        "Milk Mix Strawberry": 33,
+        "Milk Mix Vanilla": 35,
+        "Milk Mix Chocolate": 21,
+        "Slimbiotics": 27,
+        "Weight Management": 28
       }
     }
   ],
@@ -550,8 +550,8 @@
     },
     {
       "date": "2026-08-21",
-      "business_score": 19.4,
-      "average_score": 37.17,
+      "business_score": 21.9,
+      "average_score": 37.13,
       "critical_count": 12,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 4,
@@ -562,16 +562,16 @@
         "H50+": 26,
         "Fiber Fix": 37,
         "Plant Protein Roti": 38,
-        "Berries": 40,
-        "Orange": 20,
-        "Pineapple": 10,
-        "Mango": 27,
-        "Assorted": 13,
-        "Milk Mix Strawberry": 21,
-        "Milk Mix Vanilla": 18,
-        "Milk Mix Chocolate": 34,
-        "Slimbiotics": 45,
-        "Weight Management": 38
+        "Berries": 44,
+        "Orange": 16,
+        "Pineapple": 35,
+        "Mango": 41,
+        "Assorted": 32,
+        "Milk Mix Strawberry": 33,
+        "Milk Mix Vanilla": 35,
+        "Milk Mix Chocolate": 21,
+        "Slimbiotics": 27,
+        "Weight Management": 28
       }
     }
   ]
