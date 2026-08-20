@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-08-20T10:10:38+05:30",
+  "generated_at": "2026-08-20T10:40:10+05:30",
   "overall_health": "red",
-  "today_runs": 12,
+  "today_runs": 13,
   "today_pass": 0,
-  "today_fail": 12,
+  "today_fail": 13,
   "success_pct_last_30": 0.0,
   "failure_pct_last_30": 100.0,
   "avg_journey_seconds": 17.8,
   "latest_run": {
-    "run_id": "79223e77",
-    "started_at": "2026-08-20T10:10:20+05:30",
-    "finished_at": "2026-08-20T10:10:37+05:30",
+    "run_id": "9855a745",
+    "started_at": "2026-08-20T10:39:51+05:30",
+    "finished_at": "2026-08-20T10:40:09+05:30",
     "overall_status": "fail",
     "attempt": 2,
     "failed_step": "Images Loaded",
-    "duration_seconds": 17.05,
+    "duration_seconds": 17.48,
     "steps": [
       {
         "name": "Homepage",
         "status": "pass",
-        "duration_ms": 655,
+        "duration_ms": 844,
         "error": ""
       },
       {
         "name": "Collection",
         "status": "pass",
-        "duration_ms": 474,
+        "duration_ms": 501,
         "error": ""
       },
       {
         "name": "Product Page",
         "status": "pass",
-        "duration_ms": 621,
+        "duration_ms": 686,
         "error": ""
       },
       {
         "name": "Images Loaded",
         "status": "fail",
-        "duration_ms": 15000,
-        "error": "Locator.wait_for: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"main img, .product img, img\").first to be visible\n    33 \u00d7 locator resolved to hidden <img width=\"auto\" height=\"auto\" class=\"you-may-also-img\" alt=\"Plant Protein Powder for Rotis - Add to Atta\" src=\"//www.goodmonk.in/cdn/shop/files/Slide1_e6a80c22-966b-4b45-bb40-a137b9a7e408.jpg?v=1786701366&width=150\"/>\n"
+        "duration_ms": 15001,
+        "error": "Locator.wait_for: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"main img, .product img, img\").first to be visible\n    32 \u00d7 locator resolved to hidden <img width=\"auto\" height=\"auto\" class=\"you-may-also-img\" alt=\"Plant Protein Powder for Rotis - Add to Atta\" src=\"//www.goodmonk.in/cdn/shop/files/Slide1_e6a80c22-966b-4b45-bb40-a137b9a7e408.jpg?v=1786701366&width=150\"/>\n"
       }
     ],
     "console_errors": [
@@ -47,8 +47,8 @@
       "[error] Failed to load resource: the server responded with a status of 403 ()",
       "[pageerror] Unexpected token 'export'",
       "[error] Failed to load resource: the server responded with a status of 404 ()",
-      "[pageerror] t.fetchAvailability is not a function",
       "[pageerror] Unexpected token 'export'",
+      "[pageerror] t.fetchAvailability is not a function",
       "[error] Access to XMLHttpRequest at 'https://alpenliebe20250305050635.shopflo.com/api/v1/spark' from origin 'https://www.goodmonk.in' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
       "[error] Analytics request failed: l",
       "[error] Failed to load resource: net::ERR_FAILED",
@@ -59,40 +59,40 @@
       "[error] Analytics request failed: l",
       "[error] Failed to load resource: net::ERR_FAILED"
     ],
-    "capture_dir": "79223e77"
+    "capture_dir": "9855a745"
   },
   "latest_confirmed_failure": {
-    "run_id": "79223e77",
-    "started_at": "2026-08-20T10:10:20+05:30",
-    "finished_at": "2026-08-20T10:10:37+05:30",
+    "run_id": "9855a745",
+    "started_at": "2026-08-20T10:39:51+05:30",
+    "finished_at": "2026-08-20T10:40:09+05:30",
     "overall_status": "fail",
     "attempt": 2,
     "failed_step": "Images Loaded",
-    "duration_seconds": 17.05,
+    "duration_seconds": 17.48,
     "steps": [
       {
         "name": "Homepage",
         "status": "pass",
-        "duration_ms": 655,
+        "duration_ms": 844,
         "error": ""
       },
       {
         "name": "Collection",
         "status": "pass",
-        "duration_ms": 474,
+        "duration_ms": 501,
         "error": ""
       },
       {
         "name": "Product Page",
         "status": "pass",
-        "duration_ms": 621,
+        "duration_ms": 686,
         "error": ""
       },
       {
         "name": "Images Loaded",
         "status": "fail",
-        "duration_ms": 15000,
-        "error": "Locator.wait_for: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"main img, .product img, img\").first to be visible\n    33 \u00d7 locator resolved to hidden <img width=\"auto\" height=\"auto\" class=\"you-may-also-img\" alt=\"Plant Protein Powder for Rotis - Add to Atta\" src=\"//www.goodmonk.in/cdn/shop/files/Slide1_e6a80c22-966b-4b45-bb40-a137b9a7e408.jpg?v=1786701366&width=150\"/>\n"
+        "duration_ms": 15001,
+        "error": "Locator.wait_for: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"main img, .product img, img\").first to be visible\n    32 \u00d7 locator resolved to hidden <img width=\"auto\" height=\"auto\" class=\"you-may-also-img\" alt=\"Plant Protein Powder for Rotis - Add to Atta\" src=\"//www.goodmonk.in/cdn/shop/files/Slide1_e6a80c22-966b-4b45-bb40-a137b9a7e408.jpg?v=1786701366&width=150\"/>\n"
       }
     ],
     "console_errors": [
@@ -101,8 +101,8 @@
       "[error] Failed to load resource: the server responded with a status of 403 ()",
       "[pageerror] Unexpected token 'export'",
       "[error] Failed to load resource: the server responded with a status of 404 ()",
-      "[pageerror] t.fetchAvailability is not a function",
       "[pageerror] Unexpected token 'export'",
+      "[pageerror] t.fetchAvailability is not a function",
       "[error] Access to XMLHttpRequest at 'https://alpenliebe20250305050635.shopflo.com/api/v1/spark' from origin 'https://www.goodmonk.in' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
       "[error] Analytics request failed: l",
       "[error] Failed to load resource: net::ERR_FAILED",
@@ -113,11 +113,65 @@
       "[error] Analytics request failed: l",
       "[error] Failed to load resource: net::ERR_FAILED"
     ],
-    "capture_dir": "79223e77",
+    "capture_dir": "9855a745",
     "business_impact": "Product images aren't displaying \u2014 customers can't see what they're buying.",
     "suggested_cause": "CDN issue, broken image reference, or slow image loading."
   },
   "timeline": [
+    {
+      "run_id": "9855a745",
+      "started_at": "2026-08-20T10:39:51+05:30",
+      "finished_at": "2026-08-20T10:40:09+05:30",
+      "overall_status": "fail",
+      "attempt": 2,
+      "failed_step": "Images Loaded",
+      "duration_seconds": 17.48,
+      "steps": [
+        {
+          "name": "Homepage",
+          "status": "pass",
+          "duration_ms": 844,
+          "error": ""
+        },
+        {
+          "name": "Collection",
+          "status": "pass",
+          "duration_ms": 501,
+          "error": ""
+        },
+        {
+          "name": "Product Page",
+          "status": "pass",
+          "duration_ms": 686,
+          "error": ""
+        },
+        {
+          "name": "Images Loaded",
+          "status": "fail",
+          "duration_ms": 15001,
+          "error": "Locator.wait_for: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"main img, .product img, img\").first to be visible\n    32 \u00d7 locator resolved to hidden <img width=\"auto\" height=\"auto\" class=\"you-may-also-img\" alt=\"Plant Protein Powder for Rotis - Add to Atta\" src=\"//www.goodmonk.in/cdn/shop/files/Slide1_e6a80c22-966b-4b45-bb40-a137b9a7e408.jpg?v=1786701366&width=150\"/>\n"
+        }
+      ],
+      "console_errors": [
+        "[pageerror] Unexpected token 'export'",
+        "[error] Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+        "[error] Failed to load resource: the server responded with a status of 403 ()",
+        "[pageerror] Unexpected token 'export'",
+        "[error] Failed to load resource: the server responded with a status of 404 ()",
+        "[pageerror] Unexpected token 'export'",
+        "[pageerror] t.fetchAvailability is not a function",
+        "[error] Access to XMLHttpRequest at 'https://alpenliebe20250305050635.shopflo.com/api/v1/spark' from origin 'https://www.goodmonk.in' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+        "[error] Analytics request failed: l",
+        "[error] Failed to load resource: net::ERR_FAILED",
+        "[error] Access to XMLHttpRequest at 'https://alpenliebe20250305050635.shopflo.com/api/v1/spark' from origin 'https://www.goodmonk.in' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+        "[error] Analytics request failed: l",
+        "[error] Failed to load resource: net::ERR_FAILED",
+        "[error] Access to XMLHttpRequest at 'https://alpenliebe20250305050635.shopflo.com/api/v1/spark' from origin 'https://www.goodmonk.in' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+        "[error] Analytics request failed: l",
+        "[error] Failed to load resource: net::ERR_FAILED"
+      ],
+      "capture_dir": "9855a745"
+    },
     {
       "run_id": "79223e77",
       "started_at": "2026-08-20T10:10:20+05:30",
@@ -1680,60 +1734,6 @@
         "[error] Failed to load resource: net::ERR_FAILED"
       ],
       "capture_dir": "7719ac2d"
-    },
-    {
-      "run_id": "9444c5d9",
-      "started_at": "2026-08-19T00:37:36+05:30",
-      "finished_at": "2026-08-19T00:37:53+05:30",
-      "overall_status": "fail",
-      "attempt": 2,
-      "failed_step": "Images Loaded",
-      "duration_seconds": 17.16,
-      "steps": [
-        {
-          "name": "Homepage",
-          "status": "pass",
-          "duration_ms": 626,
-          "error": ""
-        },
-        {
-          "name": "Collection",
-          "status": "pass",
-          "duration_ms": 427,
-          "error": ""
-        },
-        {
-          "name": "Product Page",
-          "status": "pass",
-          "duration_ms": 792,
-          "error": ""
-        },
-        {
-          "name": "Images Loaded",
-          "status": "fail",
-          "duration_ms": 15000,
-          "error": "Locator.wait_for: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"main img, .product img, img\").first to be visible\n    33 \u00d7 locator resolved to hidden <img width=\"auto\" height=\"auto\" class=\"you-may-also-img\" alt=\"Plant Protein Powder for Rotis - Add to Atta\" src=\"//www.goodmonk.in/cdn/shop/files/Slide1_e6a80c22-966b-4b45-bb40-a137b9a7e408.jpg?v=1786701366&width=150\"/>\n"
-        }
-      ],
-      "console_errors": [
-        "[pageerror] Unexpected token 'export'",
-        "[error] Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
-        "[error] Failed to load resource: the server responded with a status of 403 ()",
-        "[pageerror] Unexpected token 'export'",
-        "[error] Failed to load resource: the server responded with a status of 404 ()",
-        "[pageerror] t.fetchAvailability is not a function",
-        "[pageerror] Unexpected token 'export'",
-        "[error] Access to XMLHttpRequest at 'https://alpenliebe20250305050635.shopflo.com/api/v1/spark' from origin 'https://www.goodmonk.in' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
-        "[error] Analytics request failed: l",
-        "[error] Failed to load resource: net::ERR_FAILED",
-        "[error] Access to XMLHttpRequest at 'https://alpenliebe20250305050635.shopflo.com/api/v1/spark' from origin 'https://www.goodmonk.in' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
-        "[error] Analytics request failed: l",
-        "[error] Failed to load resource: net::ERR_FAILED",
-        "[error] Access to XMLHttpRequest at 'https://alpenliebe20250305050635.shopflo.com/api/v1/spark' from origin 'https://www.goodmonk.in' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
-        "[error] Analytics request failed: l",
-        "[error] Failed to load resource: net::ERR_FAILED"
-      ],
-      "capture_dir": "9444c5d9"
     }
   ],
   "step_names": [
