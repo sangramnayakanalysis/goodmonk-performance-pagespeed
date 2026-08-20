@@ -1,6 +1,5 @@
 [
-  "[pageerror] Unexpected token 'export'",
-  "[error] Invalid 'X-Frame-Options' header encountered when loading 'https://www.goodmonk.in/': 'ALLOW-FROM https://www.goodmonk.in' is not a recognized directive. The header will be ignored.",
+  "[error] Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
   "[pageerror] Unexpected token 'export'",
   "[error] Failed to load resource: the server responded with a status of 404 ()",
   "[pageerror] t.fetchAvailability is not a function",
