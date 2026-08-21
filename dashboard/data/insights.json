@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T02:33:15+05:30",
+  "generated_at": "2026-08-22T02:46:29+05:30",
   "business_score": 19.3,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -13,7 +13,7 @@
   "customer_journey_health": "red",
   "critical_issues_count": 13,
   "checkout_failures_today": 6,
-  "pages_slower_than_yesterday": 6,
+  "pages_slower_than_yesterday": 7,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
     "page_count": 11
@@ -26,6 +26,12 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
+      "name": "H50+",
+      "score": 18,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
+    },
+    {
       "name": "Milk Mix Chocolate",
       "score": 19,
       "status_color": "red",
@@ -36,12 +42,6 @@
       "score": 23,
       "status_color": "red",
       "top_issue_title": "Initial server response time was short"
-    },
-    {
-      "name": "Homepage",
-      "score": 27,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
     },
     {
       "name": "Slimbiotics",
@@ -398,12 +398,12 @@
       "journey_success_pct": 0.0,
       "checkout_failures_today": 6,
       "page_scores": {
-        "Homepage": 27,
+        "Homepage": 34,
         "Shop All": 35,
-        "FNM": 34,
-        "H50+": 39,
-        "Fiber Fix": 40,
-        "Plant Protein Roti": 34,
+        "FNM": 47,
+        "H50+": 18,
+        "Fiber Fix": 34,
+        "Plant Protein Roti": 38,
         "Berries": 44,
         "Orange": 16,
         "Pineapple": 33,
@@ -582,12 +582,12 @@
       "journey_success_pct": 0.0,
       "checkout_failures_today": 6,
       "page_scores": {
-        "Homepage": 27,
+        "Homepage": 34,
         "Shop All": 35,
-        "FNM": 34,
-        "H50+": 39,
-        "Fiber Fix": 40,
-        "Plant Protein Roti": 34,
+        "FNM": 47,
+        "H50+": 18,
+        "Fiber Fix": 34,
+        "Plant Protein Roti": 38,
         "Berries": 44,
         "Orange": 16,
         "Pineapple": 33,
