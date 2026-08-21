@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T01:45:50+05:30",
+  "generated_at": "2026-08-22T01:49:14+05:30",
   "business_score": 19.3,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -32,22 +32,22 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
+      "name": "Homepage",
+      "score": 27,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
       "name": "Slimbiotics",
       "score": 27,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Homepage",
+      "name": "Weight Management",
       "score": 28,
       "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Shop All",
-      "score": 28,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
+      "top_issue_title": "Avoid multiple page redirects"
     }
   ],
   "top_failed_journeys": [
@@ -398,8 +398,8 @@
       "journey_success_pct": 0.0,
       "checkout_failures_today": 4,
       "page_scores": {
-        "Homepage": 28,
-        "Shop All": 28,
+        "Homepage": 27,
+        "Shop All": 35,
         "FNM": 34,
         "H50+": 39,
         "Fiber Fix": 40,
@@ -582,8 +582,8 @@
       "journey_success_pct": 0.0,
       "checkout_failures_today": 4,
       "page_scores": {
-        "Homepage": 28,
-        "Shop All": 28,
+        "Homepage": 27,
+        "Shop All": 35,
         "FNM": 34,
         "H50+": 39,
         "Fiber Fix": 40,
