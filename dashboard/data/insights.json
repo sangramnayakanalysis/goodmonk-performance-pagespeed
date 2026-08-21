@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T21:51:16+05:30",
+  "generated_at": "2026-08-21T21:54:09+05:30",
   "business_score": 19.3,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,9 +11,9 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 14,
-  "checkout_failures_today": 35,
-  "pages_slower_than_yesterday": 9,
+  "critical_issues_count": 13,
+  "checkout_failures_today": 34,
+  "pages_slower_than_yesterday": 7,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
     "page_count": 13
@@ -39,15 +39,15 @@
     },
     {
       "name": "FNM",
-      "score": 27,
+      "score": 24,
       "status_color": "red",
       "top_issue_title": "Avoid multiple page redirects"
     },
     {
-      "name": "Plant Protein Roti",
+      "name": "Slimbiotics",
       "score": 27,
       "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
+      "top_issue_title": "Reduce unused JavaScript"
     }
   ],
   "top_failed_journeys": [
@@ -368,16 +368,16 @@
       "date": "2026-08-21",
       "business_score": 19.3,
       "average_score": 37.07,
-      "critical_count": 14,
+      "critical_count": 13,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 35,
       "page_scores": {
         "Homepage": 37,
-        "Shop All": 28,
-        "FNM": 27,
+        "Shop All": 37,
+        "FNM": 24,
         "H50+": 13,
         "Fiber Fix": 31,
-        "Plant Protein Roti": 27,
+        "Plant Protein Roti": 52,
         "Berries": 44,
         "Orange": 16,
         "Pineapple": 35,
@@ -552,16 +552,16 @@
       "date": "2026-08-21",
       "business_score": 19.3,
       "average_score": 37.07,
-      "critical_count": 14,
+      "critical_count": 13,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 35,
       "page_scores": {
         "Homepage": 37,
-        "Shop All": 28,
-        "FNM": 27,
+        "Shop All": 37,
+        "FNM": 24,
         "H50+": 13,
         "Fiber Fix": 31,
-        "Plant Protein Roti": 27,
+        "Plant Protein Roti": 52,
         "Berries": 44,
         "Orange": 16,
         "Pineapple": 35,
