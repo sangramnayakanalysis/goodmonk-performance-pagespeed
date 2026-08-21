@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T17:55:23+05:30",
+  "generated_at": "2026-08-21T17:59:29+05:30",
   "business_score": 19.3,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,12 +11,12 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 14,
+  "critical_issues_count": 12,
   "checkout_failures_today": 29,
-  "pages_slower_than_yesterday": 9,
+  "pages_slower_than_yesterday": 8,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 13
+    "page_count": 14
   },
   "top_slow_pages": [
     {
@@ -32,10 +32,10 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Fiber Fix",
-      "score": 22,
+      "name": "FNM",
+      "score": 27,
       "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
+      "top_issue_title": "Avoid multiple page redirects"
     },
     {
       "name": "Slimbiotics",
@@ -44,10 +44,10 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Shop All",
+      "name": "Weight Management",
       "score": 28,
       "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
+      "top_issue_title": "Avoid multiple page redirects"
     }
   ],
   "top_failed_journeys": [
@@ -368,16 +368,16 @@
       "date": "2026-08-21",
       "business_score": 19.3,
       "average_score": 37.1,
-      "critical_count": 14,
+      "critical_count": 12,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 29,
       "page_scores": {
-        "Homepage": 33,
-        "Shop All": 28,
-        "FNM": 29,
+        "Homepage": 44,
+        "Shop All": 51,
+        "FNM": 27,
         "H50+": 35,
-        "Fiber Fix": 22,
-        "Plant Protein Roti": 28,
+        "Fiber Fix": 29,
+        "Plant Protein Roti": 31,
         "Berries": 44,
         "Orange": 16,
         "Pineapple": 35,
@@ -552,16 +552,16 @@
       "date": "2026-08-21",
       "business_score": 19.3,
       "average_score": 37.1,
-      "critical_count": 14,
+      "critical_count": 12,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 29,
       "page_scores": {
-        "Homepage": 33,
-        "Shop All": 28,
-        "FNM": 29,
+        "Homepage": 44,
+        "Shop All": 51,
+        "FNM": 27,
         "H50+": 35,
-        "Fiber Fix": 22,
-        "Plant Protein Roti": 28,
+        "Fiber Fix": 29,
+        "Plant Protein Roti": 31,
         "Berries": 44,
         "Orange": 16,
         "Pineapple": 35,
