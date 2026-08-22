@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-08-22T14:35:50+05:30",
+  "generated_at": "2026-08-22T14:51:02+05:30",
   "business_score": 19.3,
   "business_score_color": "red",
   "business_score_label": "Critical",
   "components": {
-    "performance": 37.0,
+    "performance": 37.1,
     "journey": 0.0,
     "alerts": 0.0,
     "availability": 45.0
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 13,
+  "critical_issues_count": 8,
   "checkout_failures_today": 27,
-  "pages_slower_than_yesterday": 7,
+  "pages_slower_than_yesterday": 4,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 12
+    "page_count": 10
   },
   "top_slow_pages": [
     {
@@ -32,20 +32,20 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Milk Mix Chocolate",
-      "score": 19,
+      "name": "FNM",
+      "score": 26,
+      "status_color": "red",
+      "top_issue_title": "Avoid multiple page redirects"
+    },
+    {
+      "name": "Plant Protein Roti",
+      "score": 32,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Milk Mix Vanilla",
-      "score": 23,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
-    },
-    {
-      "name": "Shop All",
-      "score": 27,
+      "name": "Mango",
+      "score": 32,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     }
@@ -393,27 +393,22 @@
     {
       "date": "2026-08-22",
       "business_score": 19.3,
-      "average_score": 37.0,
-      "critical_count": 13,
+      "average_score": 37.07,
+      "critical_count": 8,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 27,
       "page_scores": {
         "Homepage": 37,
-        "Shop All": 27,
-        "FNM": 34,
-        "H50+": 40,
+        "Shop All": 46,
+        "FNM": 26,
+        "H50+": 47,
         "Fiber Fix": 14,
-        "Plant Protein Roti": 35,
+        "Plant Protein Roti": 32,
         "Berries": 44,
         "Orange": 16,
         "Pineapple": 33,
         "Mango": 32,
-        "Assorted": 32,
-        "Milk Mix Strawberry": 49,
-        "Milk Mix Vanilla": 23,
-        "Milk Mix Chocolate": 19,
-        "Slimbiotics": 27,
-        "Weight Management": 28
+        "Assorted": 32
       }
     }
   ],
@@ -577,27 +572,22 @@
     {
       "date": "2026-08-22",
       "business_score": 19.3,
-      "average_score": 37.0,
-      "critical_count": 13,
+      "average_score": 37.07,
+      "critical_count": 8,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 27,
       "page_scores": {
         "Homepage": 37,
-        "Shop All": 27,
-        "FNM": 34,
-        "H50+": 40,
+        "Shop All": 46,
+        "FNM": 26,
+        "H50+": 47,
         "Fiber Fix": 14,
-        "Plant Protein Roti": 35,
+        "Plant Protein Roti": 32,
         "Berries": 44,
         "Orange": 16,
         "Pineapple": 33,
         "Mango": 32,
-        "Assorted": 32,
-        "Milk Mix Strawberry": 49,
-        "Milk Mix Vanilla": 23,
-        "Milk Mix Chocolate": 19,
-        "Slimbiotics": 27,
-        "Weight Management": 28
+        "Assorted": 32
       }
     }
   ]
