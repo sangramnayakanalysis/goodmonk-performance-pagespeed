@@ -152,8 +152,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 401,
-    "failed_runs": 149
+    "total_runs": 402,
+    "failed_runs": 150
   },
   {
     "name": "H50+",
@@ -200,50 +200,44 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 397,
-    "failed_runs": 151
+    "total_runs": 398,
+    "failed_runs": 152
   },
   {
     "name": "Fiber Fix",
     "sheet_name": "FF",
     "url": "https://www.goodmonk.in/products/fiber-fix",
     "latest": {
-      "Date": "2026-08-22",
-      "Time": "23:47:59",
-      "Performance Score": 42,
+      "Date": "2026-08-23",
+      "Time": "00:49:31",
+      "Performance Score": 35,
       "Grade": "F",
-      "LCP": 11.87,
-      "Onload": 5.27,
-      "Fully Loaded": 9.44,
+      "LCP": 6.62,
+      "Onload": 3.31,
+      "Fully Loaded": 7.83,
       "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 0.58,
+      "TBT": 2.34,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Ffiber-fix&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,059\\u00a0KiB\", \"savings\": 300, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 41\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 16, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,034\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 16, \"unit\": \"millisecond\"}]",
       "_page_name": "Fiber Fix",
       "_sheet_name": "FF",
       "_url": "https://www.goodmonk.in/products/fiber-fix"
     },
-    "status_color": "yellow",
+    "status_color": "red",
     "metric_tiers": {
-      "score": "yellow",
+      "score": "red",
       "lcp": "red",
       "cls": "green",
       "ttfb": "green",
-      "tbt": "yellow"
+      "tbt": "red"
     },
-    "score_trend": 22,
+    "score_trend": -4,
     "top_opportunities": [
       {
         "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 2,059\u00a0KiB",
-        "savings": 300,
-        "unit": "millisecond"
-      },
-      {
-        "title": "Reduce unused CSS",
-        "display_value": "Est savings of 41\u00a0KiB",
+        "display_value": "Est savings of 2,034\u00a0KiB",
         "savings": 150,
         "unit": "millisecond"
       },
@@ -254,7 +248,7 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 404,
+    "total_runs": 405,
     "failed_runs": 132
   },
   {
@@ -308,8 +302,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 405,
-    "failed_runs": 147
+    "total_runs": 406,
+    "failed_runs": 148
   },
   {
     "name": "Berries",
