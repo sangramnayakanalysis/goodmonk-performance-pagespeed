@@ -1,21 +1,49 @@
 {
-  "generated_at": "2026-08-22T22:29:56+05:30",
-  "business_score": 40.8,
-  "business_score_color": "yellow",
-  "business_score_label": "Needs Attention",
+  "generated_at": "2026-08-22T22:45:00+05:30",
+  "business_score": 27.0,
+  "business_score_color": "red",
+  "business_score_label": "Critical",
   "components": {
-    "performance": null,
+    "performance": 36.3,
     "journey": 0.0,
-    "alerts": 100.0,
+    "alerts": 40.0,
     "availability": 45.0
   },
-  "overall_website_health": "No Data",
+  "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 0,
+  "critical_issues_count": 4,
   "checkout_failures_today": 47,
-  "pages_slower_than_yesterday": 0,
-  "most_common_issue": null,
-  "top_slow_pages": [],
+  "pages_slower_than_yesterday": 2,
+  "most_common_issue": {
+    "title": "Reduce unused JavaScript",
+    "page_count": 4
+  },
+  "top_slow_pages": [
+    {
+      "name": "H50+",
+      "score": 5,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Homepage",
+      "score": 18,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "FNM",
+      "score": 31,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Fiber Fix",
+      "score": 33,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    }
+  ],
   "top_failed_journeys": [
     {
       "run_id": "08285c89",
@@ -358,12 +386,17 @@
     },
     {
       "date": "2026-08-22",
-      "business_score": 40.8,
-      "average_score": null,
-      "critical_count": 0,
+      "business_score": 27.0,
+      "average_score": 36.33,
+      "critical_count": 4,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 47,
-      "page_scores": {}
+      "page_scores": {
+        "Homepage": 18,
+        "FNM": 31,
+        "H50+": 5,
+        "Fiber Fix": 33
+      }
     }
   ],
   "weekly_trend": [
@@ -525,12 +558,17 @@
     },
     {
       "date": "2026-08-22",
-      "business_score": 40.8,
-      "average_score": null,
-      "critical_count": 0,
+      "business_score": 27.0,
+      "average_score": 36.33,
+      "critical_count": 4,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 47,
-      "page_scores": {}
+      "page_scores": {
+        "Homepage": 18,
+        "FNM": 31,
+        "H50+": 5,
+        "Fiber Fix": 33
+      }
     }
   ]
 }
