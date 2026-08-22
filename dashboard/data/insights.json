@@ -1,21 +1,55 @@
 {
-  "generated_at": "2026-08-22T18:39:34+05:30",
-  "business_score": 45.0,
-  "business_score_color": "yellow",
-  "business_score_label": "Needs Attention",
+  "generated_at": "2026-08-22T18:57:40+05:30",
+  "business_score": 19.3,
+  "business_score_color": "red",
+  "business_score_label": "Critical",
   "components": {
-    "performance": null,
+    "performance": 37.0,
     "journey": 0.0,
-    "alerts": 100.0,
-    "availability": 70.0
+    "alerts": 0.0,
+    "availability": 45.0
   },
-  "overall_website_health": "No Data",
+  "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 0,
+  "critical_issues_count": 11,
   "checkout_failures_today": 36,
-  "pages_slower_than_yesterday": 0,
-  "most_common_issue": null,
-  "top_slow_pages": [],
+  "pages_slower_than_yesterday": 6,
+  "most_common_issue": {
+    "title": "Reduce unused JavaScript",
+    "page_count": 11
+  },
+  "top_slow_pages": [
+    {
+      "name": "Fiber Fix",
+      "score": 10,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Orange",
+      "score": 16,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Milk Mix Chocolate",
+      "score": 19,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Milk Mix Vanilla",
+      "score": 23,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
+    },
+    {
+      "name": "FNM",
+      "score": 27,
+      "status_color": "red",
+      "top_issue_title": "Avoid multiple page redirects"
+    }
+  ],
   "top_failed_journeys": [
     {
       "run_id": "5ecf43a3",
@@ -358,12 +392,29 @@
     },
     {
       "date": "2026-08-22",
-      "business_score": 45.0,
-      "average_score": null,
-      "critical_count": 0,
+      "business_score": 19.3,
+      "average_score": 37.03,
+      "critical_count": 11,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 36,
-      "page_scores": {}
+      "page_scores": {
+        "Homepage": 43,
+        "Shop All": 45,
+        "FNM": 27,
+        "H50+": 50,
+        "Fiber Fix": 10,
+        "Plant Protein Roti": 31,
+        "Berries": 44,
+        "Orange": 16,
+        "Pineapple": 33,
+        "Mango": 32,
+        "Assorted": 32,
+        "Milk Mix Strawberry": 49,
+        "Milk Mix Vanilla": 23,
+        "Milk Mix Chocolate": 19,
+        "Slimbiotics": 27,
+        "Weight Management": 28
+      }
     }
   ],
   "weekly_trend": [
@@ -525,12 +576,29 @@
     },
     {
       "date": "2026-08-22",
-      "business_score": 45.0,
-      "average_score": null,
-      "critical_count": 0,
+      "business_score": 19.3,
+      "average_score": 37.03,
+      "critical_count": 11,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 36,
-      "page_scores": {}
+      "page_scores": {
+        "Homepage": 43,
+        "Shop All": 45,
+        "FNM": 27,
+        "H50+": 50,
+        "Fiber Fix": 10,
+        "Plant Protein Roti": 31,
+        "Berries": 44,
+        "Orange": 16,
+        "Pineapple": 33,
+        "Mango": 32,
+        "Assorted": 32,
+        "Milk Mix Strawberry": 49,
+        "Milk Mix Vanilla": 23,
+        "Milk Mix Chocolate": 19,
+        "Slimbiotics": 27,
+        "Weight Management": 28
+      }
     }
   ]
 }
