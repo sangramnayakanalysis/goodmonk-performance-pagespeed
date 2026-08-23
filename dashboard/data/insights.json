@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T18:40:35+05:30",
+  "generated_at": "2026-08-23T18:57:18+05:30",
   "business_score": 19.3,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -13,10 +13,10 @@
   "customer_journey_health": "red",
   "critical_issues_count": 11,
   "checkout_failures_today": 38,
-  "pages_slower_than_yesterday": 3,
+  "pages_slower_than_yesterday": 4,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 9
+    "page_count": 8
   },
   "top_slow_pages": [
     {
@@ -24,6 +24,12 @@
       "score": 27,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "FNM",
+      "score": 28,
+      "status_color": "red",
+      "top_issue_title": "Avoid multiple page redirects"
     },
     {
       "name": "Orange",
@@ -36,12 +42,6 @@
       "score": 30,
       "status_color": "red",
       "top_issue_title": "Initial server response time was short"
-    },
-    {
-      "name": "FNM",
-      "score": 32,
-      "status_color": "red",
-      "top_issue_title": "Avoid multiple page redirects"
     },
     {
       "name": "Mango",
@@ -425,11 +425,11 @@
       "checkout_failures_today": 38,
       "page_scores": {
         "Homepage": 51,
-        "Shop All": 53,
-        "FNM": 32,
-        "H50+": 37,
-        "Fiber Fix": 36,
-        "Plant Protein Roti": 51,
+        "Shop All": 41,
+        "FNM": 28,
+        "H50+": 45,
+        "Fiber Fix": 34,
+        "Plant Protein Roti": 38,
         "Berries": 34,
         "Orange": 29,
         "Pineapple": 37,
@@ -609,11 +609,11 @@
       "checkout_failures_today": 38,
       "page_scores": {
         "Homepage": 51,
-        "Shop All": 53,
-        "FNM": 32,
-        "H50+": 37,
-        "Fiber Fix": 36,
-        "Plant Protein Roti": 51,
+        "Shop All": 41,
+        "FNM": 28,
+        "H50+": 45,
+        "Fiber Fix": 34,
+        "Plant Protein Roti": 38,
         "Berries": 34,
         "Orange": 29,
         "Pineapple": 37,
