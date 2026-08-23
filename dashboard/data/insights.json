@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-23T12:41:02+05:30",
-  "business_score": 19.3,
+  "generated_at": "2026-08-23T12:58:34+05:30",
+  "business_score": 19.1,
   "business_score_color": "red",
   "business_score_label": "Critical",
   "components": {
-    "performance": 37.0,
+    "performance": 36.6,
     "journey": 0.0,
     "alerts": 0.0,
     "availability": 45.0
@@ -19,6 +19,12 @@
     "page_count": 10
   },
   "top_slow_pages": [
+    {
+      "name": "Fiber Fix",
+      "score": 25,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
     {
       "name": "Slimbiotics",
       "score": 27,
@@ -42,12 +48,6 @@
       "score": 32,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Weight Management",
-      "score": 32,
-      "status_color": "red",
-      "top_issue_title": "Avoid multiple page redirects"
     }
   ],
   "top_failed_journeys": [
@@ -418,17 +418,16 @@
     },
     {
       "date": "2026-08-23",
-      "business_score": 19.3,
-      "average_score": 36.98,
+      "business_score": 19.1,
+      "average_score": 36.61,
       "critical_count": 10,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 25,
       "page_scores": {
-        "Homepage": 35,
         "Shop All": 36,
-        "FNM": 48,
+        "FNM": 43,
         "H50+": 54,
-        "Fiber Fix": 40,
+        "Fiber Fix": 25,
         "Plant Protein Roti": 49,
         "Berries": 34,
         "Orange": 29,
@@ -602,17 +601,16 @@
     },
     {
       "date": "2026-08-23",
-      "business_score": 19.3,
-      "average_score": 36.98,
+      "business_score": 19.1,
+      "average_score": 36.61,
       "critical_count": 10,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 25,
       "page_scores": {
-        "Homepage": 35,
         "Shop All": 36,
-        "FNM": 48,
+        "FNM": 43,
         "H50+": 54,
-        "Fiber Fix": 40,
+        "Fiber Fix": 25,
         "Plant Protein Roti": 49,
         "Berries": 34,
         "Orange": 29,
