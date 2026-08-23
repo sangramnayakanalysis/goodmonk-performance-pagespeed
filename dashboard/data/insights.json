@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T16:29:19+05:30",
+  "generated_at": "2026-08-23T16:44:30+05:30",
   "business_score": 21.8,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,17 +11,23 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 13,
+  "critical_issues_count": 11,
   "checkout_failures_today": 33,
-  "pages_slower_than_yesterday": 6,
+  "pages_slower_than_yesterday": 5,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 11
+    "page_count": 9
   },
   "top_slow_pages": [
     {
-      "name": "H50+",
-      "score": 27,
+      "name": "Plant Protein Roti",
+      "score": 17,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "FNM",
+      "score": 26,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
@@ -32,22 +38,16 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Shop All",
-      "score": 28,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Plant Protein Roti",
-      "score": 28,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
       "name": "Orange",
       "score": 29,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Milk Mix Chocolate",
+      "score": 30,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
     }
   ],
   "top_failed_journeys": [
@@ -420,16 +420,16 @@
       "date": "2026-08-23",
       "business_score": 21.8,
       "average_score": 36.96,
-      "critical_count": 13,
+      "critical_count": 11,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 33,
       "page_scores": {
         "Homepage": 43,
-        "Shop All": 28,
-        "FNM": 30,
-        "H50+": 27,
+        "Shop All": 56,
+        "FNM": 26,
+        "H50+": 45,
         "Fiber Fix": 36,
-        "Plant Protein Roti": 28,
+        "Plant Protein Roti": 17,
         "Berries": 34,
         "Orange": 29,
         "Pineapple": 37,
@@ -604,16 +604,16 @@
       "date": "2026-08-23",
       "business_score": 21.8,
       "average_score": 36.96,
-      "critical_count": 13,
+      "critical_count": 11,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 33,
       "page_scores": {
         "Homepage": 43,
-        "Shop All": 28,
-        "FNM": 30,
-        "H50+": 27,
+        "Shop All": 56,
+        "FNM": 26,
+        "H50+": 45,
         "Fiber Fix": 36,
-        "Plant Protein Roti": 28,
+        "Plant Protein Roti": 17,
         "Berries": 34,
         "Orange": 29,
         "Pineapple": 37,
