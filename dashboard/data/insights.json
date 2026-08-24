@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T01:54:19+05:30",
+  "generated_at": "2026-08-25T01:56:51+05:30",
   "business_score": 19.2,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -12,8 +12,8 @@
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
   "critical_issues_count": 15,
-  "checkout_failures_today": 3,
-  "pages_slower_than_yesterday": 0,
+  "checkout_failures_today": 2,
+  "pages_slower_than_yesterday": 2,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
     "page_count": 11
@@ -22,12 +22,6 @@
     {
       "name": "Assorted",
       "score": 16,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Plant Protein Roti",
-      "score": 24,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
@@ -45,6 +39,12 @@
     },
     {
       "name": "Milk Mix Strawberry",
+      "score": 30,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Milk Mix Vanilla",
       "score": 30,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
@@ -477,11 +477,11 @@
       "checkout_failures_today": 3,
       "page_scores": {
         "Homepage": 39,
-        "Shop All": 43,
-        "FNM": 32,
-        "H50+": 39,
+        "Shop All": 38,
+        "FNM": 37,
+        "H50+": 38,
         "Fiber Fix": 32,
-        "Plant Protein Roti": 24,
+        "Plant Protein Roti": 45,
         "Berries": 34,
         "Orange": 29,
         "Pineapple": 37,
@@ -661,11 +661,11 @@
       "checkout_failures_today": 3,
       "page_scores": {
         "Homepage": 39,
-        "Shop All": 43,
-        "FNM": 32,
-        "H50+": 39,
+        "Shop All": 38,
+        "FNM": 37,
+        "H50+": 38,
         "Fiber Fix": 32,
-        "Plant Protein Roti": 24,
+        "Plant Protein Roti": 45,
         "Berries": 34,
         "Orange": 29,
         "Pineapple": 37,
