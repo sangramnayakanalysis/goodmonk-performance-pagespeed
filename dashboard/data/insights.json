@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T11:40:21+05:30",
+  "generated_at": "2026-08-24T12:11:17+05:30",
   "business_score": 19.3,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -26,12 +26,6 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "H50+",
-      "score": 18,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
       "name": "FNM",
       "score": 19,
       "status_color": "red",
@@ -40,6 +34,12 @@
     {
       "name": "Slimbiotics",
       "score": 24,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Fiber Fix",
+      "score": 29,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
@@ -453,8 +453,8 @@
         "Homepage": 43,
         "Shop All": 43,
         "FNM": 19,
-        "H50+": 18,
-        "Fiber Fix": 36,
+        "H50+": 39,
+        "Fiber Fix": 29,
         "Plant Protein Roti": 32,
         "Berries": 34,
         "Orange": 29,
@@ -637,8 +637,8 @@
         "Homepage": 43,
         "Shop All": 43,
         "FNM": 19,
-        "H50+": 18,
-        "Fiber Fix": 36,
+        "H50+": 39,
+        "Fiber Fix": 29,
         "Plant Protein Roti": 32,
         "Berries": 34,
         "Orange": 29,
