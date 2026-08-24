@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T03:50:09+05:30",
+  "generated_at": "2026-08-25T04:16:56+05:30",
   "business_score": 40.8,
   "business_score_color": "yellow",
   "business_score_label": "Needs Attention",
@@ -12,11 +12,16 @@
   "overall_website_health": "No Data",
   "customer_journey_health": "red",
   "critical_issues_count": 0,
-  "checkout_failures_today": 6,
+  "checkout_failures_today": 8,
   "pages_slower_than_yesterday": 0,
   "most_common_issue": null,
   "top_slow_pages": [],
   "top_failed_journeys": [
+    {
+      "run_id": "779dd92c",
+      "finished_at": "2026-08-25T04:16:55+05:30",
+      "failed_step": "Images Loaded"
+    },
     {
       "run_id": "c1940af0",
       "finished_at": "2026-08-25T03:46:44+05:30",
@@ -35,11 +40,6 @@
     {
       "run_id": "c69cc2f5",
       "finished_at": "2026-08-25T02:18:05+05:30",
-      "failed_step": "Images Loaded"
-    },
-    {
-      "run_id": "ca204898",
-      "finished_at": "2026-08-25T01:54:18+05:30",
       "failed_step": "Images Loaded"
     }
   ],
@@ -440,7 +440,7 @@
       "average_score": null,
       "critical_count": 0,
       "journey_success_pct": 0.0,
-      "checkout_failures_today": 6,
+      "checkout_failures_today": 8,
       "page_scores": {}
     }
   ],
@@ -607,7 +607,7 @@
       "average_score": null,
       "critical_count": 0,
       "journey_success_pct": 0.0,
-      "checkout_failures_today": 6,
+      "checkout_failures_today": 8,
       "page_scores": {}
     }
   ]
