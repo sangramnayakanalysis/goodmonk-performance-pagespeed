@@ -38,8 +38,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 448,
-    "failed_runs": 137
+    "total_runs": 449,
+    "failed_runs": 138
   },
   {
     "name": "Shop All",
@@ -92,8 +92,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 450,
-    "failed_runs": 136
+    "total_runs": 451,
+    "failed_runs": 137
   },
   {
     "name": "FNM",
@@ -101,18 +101,18 @@
     "url": "https://www.goodmonk.in/products/good-monk",
     "latest": {
       "Date": "2026-08-25",
-      "Time": "01:55:43",
-      "Performance Score": 37,
+      "Time": "02:53:16",
+      "Performance Score": 28,
       "Grade": "F",
-      "LCP": 22.38,
-      "Onload": 6.14,
-      "Fully Loaded": 10.73,
+      "LCP": 17.91,
+      "Onload": 5.59,
+      "Fully Loaded": 13.12,
       "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 0.77,
+      "TBT": 2.1,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,034\\u00a0KiB\", \"savings\": 2250, \"unit\": \"millisecond\"}, {\"title\": \"Avoid multiple page redirects\", \"display_value\": \"Est savings of 750\\u00a0ms\", \"savings\": 754.64, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 41\\u00a0KiB\", \"savings\": 140, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 18, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 4,053\\u00a0KiB\", \"savings\": 2730, \"unit\": \"millisecond\"}, {\"title\": \"Avoid multiple page redirects\", \"display_value\": \"Est savings of 760\\u00a0ms\", \"savings\": 755.39, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 16, \"unit\": \"millisecond\"}]",
       "_page_name": "FNM",
       "_sheet_name": "FNM",
       "_url": "https://www.goodmonk.in/products/good-monk"
@@ -125,34 +125,28 @@
       "ttfb": "green",
       "tbt": "red"
     },
-    "score_trend": -11,
+    "score_trend": -20,
     "top_opportunities": [
       {
         "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 2,034\u00a0KiB",
-        "savings": 2250,
+        "display_value": "Est savings of 4,053\u00a0KiB",
+        "savings": 2730,
         "unit": "millisecond"
       },
       {
         "title": "Avoid multiple page redirects",
-        "display_value": "Est savings of 750\u00a0ms",
-        "savings": 754.64,
-        "unit": "millisecond"
-      },
-      {
-        "title": "Reduce unused CSS",
-        "display_value": "Est savings of 41\u00a0KiB",
-        "savings": 140,
+        "display_value": "Est savings of 760\u00a0ms",
+        "savings": 755.39,
         "unit": "millisecond"
       },
       {
         "title": "Initial server response time was short",
         "display_value": "Root document took 20\u00a0ms",
-        "savings": 18,
+        "savings": 16,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 447,
+    "total_runs": 448,
     "failed_runs": 168
   },
   {
@@ -200,8 +194,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 440,
-    "failed_runs": 165
+    "total_runs": 441,
+    "failed_runs": 166
   },
   {
     "name": "Fiber Fix",
@@ -254,8 +248,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 448,
-    "failed_runs": 149
+    "total_runs": 449,
+    "failed_runs": 150
   },
   {
     "name": "Plant Protein Roti",
@@ -296,8 +290,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 447,
-    "failed_runs": 162
+    "total_runs": 448,
+    "failed_runs": 163
   },
   {
     "name": "Berries",
@@ -687,102 +681,36 @@
     "name": "Slimbiotics",
     "sheet_name": "Slimbiotics",
     "url": "https://www.goodmonk.in/products/good-monk-slimbiotics",
-    "latest": {
-      "Date": "2026-08-25",
-      "Time": "02:31:19",
-      "Performance Score": 43,
-      "Grade": "F",
-      "LCP": 26.38,
-      "Onload": 6.17,
-      "Fully Loaded": 11.15,
-      "TTFB": 0.01,
-      "CLS": 0,
-      "TBT": 0.5,
-      "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-slimbiotics&form_factor=mobile",
-      "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,060\\u00a0KiB\", \"savings\": 5260, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 10\\u00a0ms\", \"savings\": 14, \"unit\": \"millisecond\"}]",
-      "_page_name": "Slimbiotics",
-      "_sheet_name": "Slimbiotics",
-      "_url": "https://www.goodmonk.in/products/good-monk-slimbiotics"
-    },
-    "status_color": "yellow",
+    "latest": null,
+    "status_color": "grey",
     "metric_tiers": {
-      "score": "yellow",
-      "lcp": "red",
-      "cls": "green",
-      "ttfb": "green",
-      "tbt": "yellow"
+      "score": "grey",
+      "lcp": "grey",
+      "cls": "grey",
+      "ttfb": "grey",
+      "tbt": "grey"
     },
-    "score_trend": -2,
-    "top_opportunities": [
-      {
-        "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 2,060\u00a0KiB",
-        "savings": 5260,
-        "unit": "millisecond"
-      },
-      {
-        "title": "Initial server response time was short",
-        "display_value": "Root document took 10\u00a0ms",
-        "savings": 14,
-        "unit": "millisecond"
-      }
-    ],
-    "total_runs": 39,
-    "failed_runs": 8
+    "score_trend": null,
+    "top_opportunities": [],
+    "total_runs": 0,
+    "failed_runs": 0
   },
   {
     "name": "Weight Management",
     "sheet_name": "Weight Management",
     "url": "https://www.goodmonk.in/products/good-monk-weight-management-program",
-    "latest": {
-      "Date": "2026-08-23",
-      "Time": "02:20:59",
-      "Performance Score": 32,
-      "Grade": "F",
-      "LCP": 8.13,
-      "Onload": 3.61,
-      "Fully Loaded": 7.71,
-      "TTFB": 0.01,
-      "CLS": 0.164,
-      "TBT": 1.06,
-      "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-weight-management-program&form_factor=mobile",
-      "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Avoid multiple page redirects\", \"display_value\": \"Est savings of 760\\u00a0ms\", \"savings\": 755.68, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 2,020\\u00a0KiB\", \"savings\": 300, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 15, \"unit\": \"millisecond\"}]",
-      "_page_name": "Weight Management",
-      "_sheet_name": "Weight Management",
-      "_url": "https://www.goodmonk.in/products/good-monk-weight-management-program"
-    },
-    "status_color": "red",
+    "latest": null,
+    "status_color": "grey",
     "metric_tiers": {
-      "score": "red",
-      "lcp": "red",
-      "cls": "yellow",
-      "ttfb": "green",
-      "tbt": "red"
+      "score": "grey",
+      "lcp": "grey",
+      "cls": "grey",
+      "ttfb": "grey",
+      "tbt": "grey"
     },
-    "score_trend": -6,
-    "top_opportunities": [
-      {
-        "title": "Avoid multiple page redirects",
-        "display_value": "Est savings of 760\u00a0ms",
-        "savings": 755.68,
-        "unit": "millisecond"
-      },
-      {
-        "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 2,020\u00a0KiB",
-        "savings": 300,
-        "unit": "millisecond"
-      },
-      {
-        "title": "Initial server response time was short",
-        "display_value": "Root document took 20\u00a0ms",
-        "savings": 15,
-        "unit": "millisecond"
-      }
-    ],
-    "total_runs": 41,
-    "failed_runs": 8
+    "score_trend": null,
+    "top_opportunities": [],
+    "total_runs": 0,
+    "failed_runs": 0
   }
 ]
