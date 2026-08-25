@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-26T03:49:54+05:30",
-  "last_run_status": "completed",
+  "generated_at": "2026-08-26T04:52:18+05:30",
+  "last_run_status": "completed_with_failures",
   "total_urls": 16,
-  "average_score": null,
-  "best_page": "Homepage",
-  "worst_page": null,
+  "average_score": 36.63,
+  "best_page": "Shop All",
+  "worst_page": "Homepage",
   "healthy_count": 0,
-  "warning_count": 0,
-  "critical_count": 0,
-  "no_data_count": 16,
-  "next_scheduled_run": "2026-08-26T04:00:00+05:30"
+  "warning_count": 4,
+  "critical_count": 12,
+  "no_data_count": 0,
+  "next_scheduled_run": "2026-08-26T05:00:00+05:30"
 }
