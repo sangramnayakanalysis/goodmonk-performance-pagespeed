@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T02:58:12+05:30",
+  "generated_at": "2026-08-26T03:02:01+05:30",
   "business_score": 19.2,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,9 +11,9 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 13,
-  "checkout_failures_today": 6,
-  "pages_slower_than_yesterday": 9,
+  "critical_issues_count": 14,
+  "checkout_failures_today": 5,
+  "pages_slower_than_yesterday": 10,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
     "page_count": 13
@@ -22,6 +22,12 @@
     {
       "name": "Plant Protein Roti",
       "score": 6,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Shop All",
+      "score": 19,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
@@ -42,12 +48,6 @@
       "score": 22,
       "status_color": "red",
       "top_issue_title": "Initial server response time was short"
-    },
-    {
-      "name": "Milk Mix Vanilla",
-      "score": 22,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
     }
   ],
   "top_failed_journeys": [
@@ -497,14 +497,14 @@
     {
       "date": "2026-08-26",
       "business_score": 19.2,
-      "average_score": 36.65,
-      "critical_count": 13,
+      "average_score": 36.64,
+      "critical_count": 14,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 6,
       "page_scores": {
         "Homepage": 44,
-        "Shop All": 51,
-        "FNM": 30,
+        "Shop All": 19,
+        "FNM": 34,
         "H50+": 33,
         "Fiber Fix": 31,
         "Plant Protein Roti": 6,
@@ -681,14 +681,14 @@
     {
       "date": "2026-08-26",
       "business_score": 19.2,
-      "average_score": 36.65,
-      "critical_count": 13,
+      "average_score": 36.64,
+      "critical_count": 14,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 6,
       "page_scores": {
         "Homepage": 44,
-        "Shop All": 51,
-        "FNM": 30,
+        "Shop All": 19,
+        "FNM": 34,
         "H50+": 33,
         "Fiber Fix": 31,
         "Plant Protein Roti": 6,
