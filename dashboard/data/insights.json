@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T12:55:32+05:30",
+  "generated_at": "2026-08-25T13:12:21+05:30",
   "business_score": 19.2,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,12 +11,12 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 10,
+  "critical_issues_count": 12,
   "checkout_failures_today": 20,
   "pages_slower_than_yesterday": 6,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 9
+    "page_count": 12
   },
   "top_slow_pages": [
     {
@@ -471,8 +471,8 @@
     {
       "date": "2026-08-25",
       "business_score": 19.2,
-      "average_score": 36.8,
-      "critical_count": 10,
+      "average_score": 36.76,
+      "critical_count": 12,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 20,
       "page_scores": {
@@ -487,7 +487,11 @@
         "Pineapple": 25,
         "Mango": 35,
         "Assorted": 22,
-        "Milk Mix Strawberry": 21
+        "Milk Mix Strawberry": 21,
+        "Milk Mix Vanilla": 38,
+        "Milk Mix Chocolate": 44,
+        "Slimbiotics": 43,
+        "Weight Management": 32
       }
     }
   ],
@@ -651,8 +655,8 @@
     {
       "date": "2026-08-25",
       "business_score": 19.2,
-      "average_score": 36.8,
-      "critical_count": 10,
+      "average_score": 36.76,
+      "critical_count": 12,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 20,
       "page_scores": {
@@ -667,7 +671,11 @@
         "Pineapple": 25,
         "Mango": 35,
         "Assorted": 22,
-        "Milk Mix Strawberry": 21
+        "Milk Mix Strawberry": 21,
+        "Milk Mix Vanilla": 38,
+        "Milk Mix Chocolate": 44,
+        "Slimbiotics": 43,
+        "Weight Management": 32
       }
     }
   ]
