@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T05:22:05+05:30",
+  "generated_at": "2026-08-27T05:29:54+05:30",
   "business_score": 19.1,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -32,22 +32,22 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Pineapple",
-      "score": 22,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
-    },
-    {
       "name": "Milk Mix Vanilla",
       "score": 22,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Weight Management",
-      "score": 22,
+      "name": "Milk Mix Chocolate",
+      "score": 23,
       "status_color": "red",
-      "top_issue_title": "Avoid multiple page redirects"
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Slimbiotics",
+      "score": 29,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
     }
   ],
   "top_failed_journeys": [
@@ -519,14 +519,14 @@
         "Plant Protein Roti": 42,
         "Berries": 22,
         "Orange": 39,
-        "Pineapple": 22,
-        "Mango": 30,
+        "Pineapple": 37,
+        "Mango": 35,
         "Assorted": 34,
         "Milk Mix Strawberry": 21,
         "Milk Mix Vanilla": 22,
-        "Milk Mix Chocolate": 25,
-        "Slimbiotics": 42,
-        "Weight Management": 22
+        "Milk Mix Chocolate": 23,
+        "Slimbiotics": 29,
+        "Weight Management": 40
       }
     }
   ],
@@ -686,14 +686,14 @@
         "Plant Protein Roti": 42,
         "Berries": 22,
         "Orange": 39,
-        "Pineapple": 22,
-        "Mango": 30,
+        "Pineapple": 37,
+        "Mango": 35,
         "Assorted": 34,
         "Milk Mix Strawberry": 21,
         "Milk Mix Vanilla": 22,
-        "Milk Mix Chocolate": 25,
-        "Slimbiotics": 42,
-        "Weight Management": 22
+        "Milk Mix Chocolate": 23,
+        "Slimbiotics": 29,
+        "Weight Management": 40
       }
     }
   ]
