@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T16:30:16+05:30",
-  "business_score": 19.2,
+  "generated_at": "2026-08-26T16:54:08+05:30",
+  "business_score": 19.1,
   "business_score_color": "red",
   "business_score_label": "Critical",
   "components": {
@@ -19,6 +19,12 @@
     "page_count": 13
   },
   "top_slow_pages": [
+    {
+      "name": "Fiber Fix",
+      "score": 9,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
     {
       "name": "Milk Mix Strawberry",
       "score": 21,
@@ -42,12 +48,6 @@
       "score": 22,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Weight Management",
-      "score": 22,
-      "status_color": "red",
-      "top_issue_title": "Avoid multiple page redirects"
     }
   ],
   "top_failed_journeys": [
@@ -496,17 +496,17 @@
     },
     {
       "date": "2026-08-26",
-      "business_score": 19.2,
-      "average_score": 36.63,
+      "business_score": 19.1,
+      "average_score": 36.62,
       "critical_count": 13,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 25,
       "page_scores": {
         "Homepage": 28,
         "Shop All": 27,
-        "FNM": 44,
-        "H50+": 31,
-        "Fiber Fix": 41,
+        "FNM": 52,
+        "H50+": 41,
+        "Fiber Fix": 9,
         "Plant Protein Roti": 31,
         "Berries": 22,
         "Orange": 39,
@@ -680,17 +680,17 @@
     },
     {
       "date": "2026-08-26",
-      "business_score": 19.2,
-      "average_score": 36.63,
+      "business_score": 19.1,
+      "average_score": 36.62,
       "critical_count": 13,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 25,
       "page_scores": {
         "Homepage": 28,
         "Shop All": 27,
-        "FNM": 44,
-        "H50+": 31,
-        "Fiber Fix": 41,
+        "FNM": 52,
+        "H50+": 41,
+        "Fiber Fix": 9,
         "Plant Protein Roti": 31,
         "Berries": 22,
         "Orange": 39,
