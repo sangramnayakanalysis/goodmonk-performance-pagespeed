@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-08-27T05:29:54+05:30",
-  "business_score": 19.1,
+  "generated_at": "2026-08-27T07:57:18+05:30",
+  "business_score": 21.6,
   "business_score_color": "red",
   "business_score_label": "Critical",
   "components": {
     "performance": 36.6,
     "journey": 0.0,
     "alerts": 0.0,
-    "availability": 45.0
+    "availability": 70.0
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 12,
+  "critical_issues_count": 14,
   "checkout_failures_today": 2,
   "pages_slower_than_yesterday": 0,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 13
+    "page_count": 11
   },
   "top_slow_pages": [
     {
@@ -505,18 +505,18 @@
     },
     {
       "date": "2026-08-27",
-      "business_score": 19.1,
+      "business_score": 21.6,
       "average_score": 36.6,
-      "critical_count": 12,
+      "critical_count": 14,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 2,
       "page_scores": {
-        "Homepage": 49,
-        "Shop All": 41,
-        "FNM": 35,
-        "H50+": 31,
-        "Fiber Fix": 33,
-        "Plant Protein Roti": 42,
+        "Homepage": 39,
+        "Shop All": 48,
+        "FNM": 33,
+        "H50+": 33,
+        "Fiber Fix": 34,
+        "Plant Protein Roti": 32,
         "Berries": 22,
         "Orange": 39,
         "Pineapple": 37,
@@ -672,18 +672,18 @@
     },
     {
       "date": "2026-08-27",
-      "business_score": 19.1,
+      "business_score": 21.6,
       "average_score": 36.6,
-      "critical_count": 12,
+      "critical_count": 14,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 2,
       "page_scores": {
-        "Homepage": 49,
-        "Shop All": 41,
-        "FNM": 35,
-        "H50+": 31,
-        "Fiber Fix": 33,
-        "Plant Protein Roti": 42,
+        "Homepage": 39,
+        "Shop All": 48,
+        "FNM": 33,
+        "H50+": 33,
+        "Fiber Fix": 34,
+        "Plant Protein Roti": 32,
         "Berries": 22,
         "Orange": 39,
         "Pineapple": 37,
