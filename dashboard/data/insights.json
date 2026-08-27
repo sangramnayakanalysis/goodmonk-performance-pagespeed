@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T11:07:06+05:30",
+  "generated_at": "2026-08-27T18:53:57+05:30",
   "business_score": 21.6,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -16,9 +16,15 @@
   "pages_slower_than_yesterday": 0,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 11
+    "page_count": 10
   },
   "top_slow_pages": [
+    {
+      "name": "Fiber Fix",
+      "score": 18,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
+    },
     {
       "name": "Milk Mix Strawberry",
       "score": 21,
@@ -40,12 +46,6 @@
     {
       "name": "Milk Mix Chocolate",
       "score": 23,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Slimbiotics",
-      "score": 29,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     }
@@ -506,17 +506,17 @@
     {
       "date": "2026-08-27",
       "business_score": 21.6,
-      "average_score": 36.6,
+      "average_score": 36.58,
       "critical_count": 14,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 3,
       "page_scores": {
-        "Homepage": 39,
-        "Shop All": 48,
-        "FNM": 33,
-        "H50+": 33,
-        "Fiber Fix": 34,
-        "Plant Protein Roti": 32,
+        "Homepage": 32,
+        "Shop All": 43,
+        "FNM": 36,
+        "H50+": 27,
+        "Fiber Fix": 18,
+        "Plant Protein Roti": 30,
         "Berries": 22,
         "Orange": 39,
         "Pineapple": 37,
@@ -673,17 +673,17 @@
     {
       "date": "2026-08-27",
       "business_score": 21.6,
-      "average_score": 36.6,
+      "average_score": 36.58,
       "critical_count": 14,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 3,
       "page_scores": {
-        "Homepage": 39,
-        "Shop All": 48,
-        "FNM": 33,
-        "H50+": 33,
-        "Fiber Fix": 34,
-        "Plant Protein Roti": 32,
+        "Homepage": 32,
+        "Shop All": 43,
+        "FNM": 36,
+        "H50+": 27,
+        "Fiber Fix": 18,
+        "Plant Protein Roti": 30,
         "Berries": 22,
         "Orange": 39,
         "Pineapple": 37,
