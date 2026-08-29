@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T09:29:15+05:30",
+  "generated_at": "2026-08-29T15:12:22+05:30",
   "business_score": 19.1,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -16,15 +16,9 @@
   "pages_slower_than_yesterday": 4,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 15
+    "page_count": 14
   },
   "top_slow_pages": [
-    {
-      "name": "Fiber Fix",
-      "score": 9,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
     {
       "name": "Milk Mix Strawberry",
       "score": 11,
@@ -48,6 +42,12 @@
       "score": 20,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "H50+",
+      "score": 22,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
     }
   ],
   "top_failed_journeys": [
@@ -564,10 +564,10 @@
       "checkout_failures_today": 2,
       "page_scores": {
         "Homepage": 29,
-        "Shop All": 30,
+        "Shop All": 35,
         "FNM": 20,
-        "H50+": 30,
-        "Fiber Fix": 9,
+        "H50+": 22,
+        "Fiber Fix": 37,
         "Plant Protein Roti": 17,
         "Berries": 35,
         "Orange": 39,
@@ -731,10 +731,10 @@
       "checkout_failures_today": 2,
       "page_scores": {
         "Homepage": 29,
-        "Shop All": 30,
+        "Shop All": 35,
         "FNM": 20,
-        "H50+": 30,
-        "Fiber Fix": 9,
+        "H50+": 22,
+        "Fiber Fix": 37,
         "Plant Protein Roti": 17,
         "Berries": 35,
         "Orange": 39,
