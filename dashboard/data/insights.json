@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T17:56:41+05:30",
+  "generated_at": "2026-08-30T19:39:23+05:30",
   "business_score": 19.1,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,9 +11,9 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 13,
+  "critical_issues_count": 14,
   "checkout_failures_today": 6,
-  "pages_slower_than_yesterday": 10,
+  "pages_slower_than_yesterday": 11,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
     "page_count": 15
@@ -32,6 +32,12 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
+      "name": "FNM",
+      "score": 15,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
       "name": "H50+",
       "score": 22,
       "status_color": "red",
@@ -39,12 +45,6 @@
     },
     {
       "name": "Shop All",
-      "score": 28,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Berries",
       "score": 28,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
@@ -584,14 +584,14 @@
     {
       "date": "2026-08-30",
       "business_score": 19.1,
-      "average_score": 36.42,
-      "critical_count": 13,
+      "average_score": 36.41,
+      "critical_count": 14,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 6,
       "page_scores": {
         "Homepage": 39,
         "Shop All": 28,
-        "FNM": 51,
+        "FNM": 15,
         "H50+": 22,
         "Fiber Fix": 34,
         "Plant Protein Roti": 32,
@@ -751,14 +751,14 @@
     {
       "date": "2026-08-30",
       "business_score": 19.1,
-      "average_score": 36.42,
-      "critical_count": 13,
+      "average_score": 36.41,
+      "critical_count": 14,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 6,
       "page_scores": {
         "Homepage": 39,
         "Shop All": 28,
-        "FNM": 51,
+        "FNM": 15,
         "H50+": 22,
         "Fiber Fix": 34,
         "Plant Protein Roti": 32,
