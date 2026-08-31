@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T01:14:14+05:30",
+  "generated_at": "2026-09-01T02:02:49+05:30",
   "business_score": 19.0,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -13,10 +13,10 @@
   "customer_journey_health": "red",
   "critical_issues_count": 13,
   "checkout_failures_today": 1,
-  "pages_slower_than_yesterday": 0,
+  "pages_slower_than_yesterday": 1,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 15
+    "page_count": 16
   },
   "top_slow_pages": [
     {
@@ -32,20 +32,20 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Plant Protein Roti",
-      "score": 19,
-      "status_color": "red",
-      "top_issue_title": "Reduce initial server response time"
-    },
-    {
       "name": "Pineapple",
       "score": 22,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "H50+",
-      "score": 29,
+      "name": "Plant Protein Roti",
+      "score": 28,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Milk Mix Strawberry",
+      "score": 30,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     }
@@ -642,11 +642,11 @@
       "checkout_failures_today": 1,
       "page_scores": {
         "Homepage": 34,
-        "Shop All": 40,
+        "Shop All": 34,
         "FNM": 32,
-        "H50+": 29,
-        "Fiber Fix": 29,
-        "Plant Protein Roti": 19,
+        "H50+": 41,
+        "Fiber Fix": 33,
+        "Plant Protein Roti": 28,
         "Berries": 39,
         "Orange": 32,
         "Pineapple": 22,
@@ -809,11 +809,11 @@
       "checkout_failures_today": 1,
       "page_scores": {
         "Homepage": 34,
-        "Shop All": 40,
+        "Shop All": 34,
         "FNM": 32,
-        "H50+": 29,
-        "Fiber Fix": 29,
-        "Plant Protein Roti": 19,
+        "H50+": 41,
+        "Fiber Fix": 33,
+        "Plant Protein Roti": 28,
         "Berries": 39,
         "Orange": 32,
         "Pineapple": 22,
