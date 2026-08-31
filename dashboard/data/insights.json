@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T04:26:58+05:30",
+  "generated_at": "2026-08-31T05:35:33+05:30",
   "business_score": 19.1,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,20 +11,14 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 14,
+  "critical_issues_count": 12,
   "checkout_failures_today": 2,
-  "pages_slower_than_yesterday": 5,
+  "pages_slower_than_yesterday": 6,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
     "page_count": 14
   },
   "top_slow_pages": [
-    {
-      "name": "FNM",
-      "score": 13,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
     {
       "name": "Assorted",
       "score": 14,
@@ -42,6 +36,12 @@
       "score": 21,
       "status_color": "red",
       "top_issue_title": "Reduce unused CSS"
+    },
+    {
+      "name": "FNM",
+      "score": 21,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
     },
     {
       "name": "Pineapple",
@@ -611,15 +611,15 @@
       "date": "2026-08-31",
       "business_score": 19.1,
       "average_score": 36.38,
-      "critical_count": 14,
+      "critical_count": 12,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 2,
       "page_scores": {
         "Homepage": 21,
-        "Shop All": 38,
-        "FNM": 13,
-        "H50+": 24,
-        "Fiber Fix": 34,
+        "Shop All": 44,
+        "FNM": 21,
+        "H50+": 41,
+        "Fiber Fix": 30,
         "Plant Protein Roti": 34,
         "Berries": 39,
         "Orange": 32,
@@ -778,15 +778,15 @@
       "date": "2026-08-31",
       "business_score": 19.1,
       "average_score": 36.38,
-      "critical_count": 14,
+      "critical_count": 12,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 2,
       "page_scores": {
         "Homepage": 21,
-        "Shop All": 38,
-        "FNM": 13,
-        "H50+": 24,
-        "Fiber Fix": 34,
+        "Shop All": 44,
+        "FNM": 21,
+        "H50+": 41,
+        "Fiber Fix": 30,
         "Plant Protein Roti": 34,
         "Berries": 39,
         "Orange": 32,
