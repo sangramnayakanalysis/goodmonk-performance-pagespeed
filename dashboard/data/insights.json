@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T12:28:38+05:30",
+  "generated_at": "2026-09-01T16:21:02+05:30",
   "business_score": 19.0,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -13,12 +13,18 @@
   "customer_journey_health": "red",
   "critical_issues_count": 13,
   "checkout_failures_today": 4,
-  "pages_slower_than_yesterday": 3,
+  "pages_slower_than_yesterday": 4,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 11
+    "page_count": 10
   },
   "top_slow_pages": [
+    {
+      "name": "H50+",
+      "score": 14,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
+    },
     {
       "name": "Assorted",
       "score": 14,
@@ -33,7 +39,7 @@
     },
     {
       "name": "FNM",
-      "score": 25,
+      "score": 24,
       "status_color": "red",
       "top_issue_title": "Initial server response time was short"
     },
@@ -42,12 +48,6 @@
       "score": 29,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Milk Mix Strawberry",
-      "score": 30,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
     }
   ],
   "top_failed_journeys": [
@@ -641,11 +641,11 @@
       "journey_success_pct": 0.0,
       "checkout_failures_today": 4,
       "page_scores": {
-        "Homepage": 51,
-        "Shop All": 47,
-        "FNM": 25,
-        "H50+": 34,
-        "Fiber Fix": 36,
+        "Homepage": 60,
+        "Shop All": 44,
+        "FNM": 24,
+        "H50+": 14,
+        "Fiber Fix": 34,
         "Plant Protein Roti": 48,
         "Berries": 39,
         "Orange": 32,
@@ -808,11 +808,11 @@
       "journey_success_pct": 0.0,
       "checkout_failures_today": 4,
       "page_scores": {
-        "Homepage": 51,
-        "Shop All": 47,
-        "FNM": 25,
-        "H50+": 34,
-        "Fiber Fix": 36,
+        "Homepage": 60,
+        "Shop All": 44,
+        "FNM": 24,
+        "H50+": 14,
+        "Fiber Fix": 34,
         "Plant Protein Roti": 48,
         "Berries": 39,
         "Orange": 32,
