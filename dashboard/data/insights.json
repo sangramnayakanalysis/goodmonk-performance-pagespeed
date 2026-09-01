@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T17:47:44+05:30",
+  "generated_at": "2026-09-01T20:52:09+05:30",
   "business_score": 19.0,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -13,21 +13,21 @@
   "customer_journey_health": "red",
   "critical_issues_count": 13,
   "checkout_failures_today": 5,
-  "pages_slower_than_yesterday": 4,
+  "pages_slower_than_yesterday": 3,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 10
+    "page_count": 11
   },
   "top_slow_pages": [
     {
-      "name": "H50+",
-      "score": 14,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
-    },
-    {
       "name": "Assorted",
       "score": 14,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "FNM",
+      "score": 21,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
@@ -38,16 +38,16 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "FNM",
-      "score": 24,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
-    },
-    {
       "name": "Slimbiotics",
       "score": 29,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Milk Mix Strawberry",
+      "score": 30,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
     }
   ],
   "top_failed_journeys": [
@@ -636,15 +636,15 @@
     {
       "date": "2026-09-01",
       "business_score": 19.0,
-      "average_score": 36.36,
+      "average_score": 36.35,
       "critical_count": 13,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 5,
       "page_scores": {
-        "Homepage": 60,
+        "Homepage": 45,
         "Shop All": 44,
-        "FNM": 24,
-        "H50+": 14,
+        "FNM": 21,
+        "H50+": 38,
         "Fiber Fix": 34,
         "Plant Protein Roti": 48,
         "Berries": 39,
@@ -803,15 +803,15 @@
     {
       "date": "2026-09-01",
       "business_score": 19.0,
-      "average_score": 36.36,
+      "average_score": 36.35,
       "critical_count": 13,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 5,
       "page_scores": {
-        "Homepage": 60,
+        "Homepage": 45,
         "Shop All": 44,
-        "FNM": 24,
-        "H50+": 14,
+        "FNM": 21,
+        "H50+": 38,
         "Fiber Fix": 34,
         "Plant Protein Roti": 48,
         "Berries": 39,
