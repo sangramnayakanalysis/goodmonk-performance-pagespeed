@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T09:57:34+05:30",
+  "generated_at": "2026-09-02T10:49:29+05:30",
   "business_score": 19.1,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,12 +11,12 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 10,
+  "critical_issues_count": 7,
   "checkout_failures_today": 4,
-  "pages_slower_than_yesterday": 3,
+  "pages_slower_than_yesterday": 2,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 10
+    "page_count": 9
   },
   "top_slow_pages": [
     {
@@ -44,8 +44,8 @@
       "top_issue_title": "Initial server response time was short"
     },
     {
-      "name": "Shop All",
-      "score": 30,
+      "name": "Orange",
+      "score": 32,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     }
@@ -662,13 +662,13 @@
     {
       "date": "2026-09-02",
       "business_score": 19.1,
-      "average_score": 36.39,
-      "critical_count": 10,
+      "average_score": 36.44,
+      "critical_count": 7,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 4,
       "page_scores": {
-        "Homepage": 39,
-        "Shop All": 30,
+        "Homepage": 53,
+        "Shop All": 40,
         "FNM": 22,
         "H50+": 40,
         "Fiber Fix": 54,
@@ -678,11 +678,7 @@
         "Pineapple": 22,
         "Mango": 53,
         "Assorted": 14,
-        "Milk Mix Strawberry": 36,
-        "Milk Mix Vanilla": 47,
-        "Milk Mix Chocolate": 45,
-        "Slimbiotics": 49,
-        "Weight Management": 39
+        "Milk Mix Strawberry": 36
       }
     }
   ],
@@ -846,13 +842,13 @@
     {
       "date": "2026-09-02",
       "business_score": 19.1,
-      "average_score": 36.39,
-      "critical_count": 10,
+      "average_score": 36.44,
+      "critical_count": 7,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 4,
       "page_scores": {
-        "Homepage": 39,
-        "Shop All": 30,
+        "Homepage": 53,
+        "Shop All": 40,
         "FNM": 22,
         "H50+": 40,
         "Fiber Fix": 54,
@@ -862,11 +858,7 @@
         "Pineapple": 22,
         "Mango": 53,
         "Assorted": 14,
-        "Milk Mix Strawberry": 36,
-        "Milk Mix Vanilla": 47,
-        "Milk Mix Chocolate": 45,
-        "Slimbiotics": 49,
-        "Weight Management": 39
+        "Milk Mix Strawberry": 36
       }
     }
   ]
