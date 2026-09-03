@@ -176,8 +176,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 516,
-    "failed_runs": 193
+    "total_runs": 517,
+    "failed_runs": 194
   },
   {
     "name": "Fiber Fix",
@@ -185,40 +185,46 @@
     "url": "https://www.goodmonk.in/products/fiber-fix",
     "latest": {
       "Date": "2026-09-03",
-      "Time": "05:14:05",
-      "Performance Score": 10,
+      "Time": "22:21:27",
+      "Performance Score": 40,
       "Grade": "F",
-      "LCP": 6.83,
-      "Onload": 3.31,
-      "Fully Loaded": 9.67,
-      "TTFB": 0.02,
-      "CLS": 0.572,
-      "TBT": 17.13,
+      "LCP": 6.75,
+      "Onload": 2.71,
+      "Fully Loaded": 5.53,
+      "TTFB": 0.01,
+      "CLS": 0.725,
+      "TBT": 0.25,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Ffiber-fix&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 18, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,465\\u00a0KiB\", \"savings\": 450, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 10\\u00a0ms\", \"savings\": 14, \"unit\": \"millisecond\"}]",
       "_page_name": "Fiber Fix",
       "_sheet_name": "FF",
       "_url": "https://www.goodmonk.in/products/fiber-fix"
     },
-    "status_color": "red",
+    "status_color": "yellow",
     "metric_tiers": {
-      "score": "red",
+      "score": "yellow",
       "lcp": "red",
       "cls": "red",
       "ttfb": "green",
-      "tbt": "red"
+      "tbt": "yellow"
     },
-    "score_trend": -8,
+    "score_trend": 22,
     "top_opportunities": [
       {
+        "title": "Reduce unused JavaScript",
+        "display_value": "Est savings of 1,465\u00a0KiB",
+        "savings": 450,
+        "unit": "millisecond"
+      },
+      {
         "title": "Initial server response time was short",
-        "display_value": "Root document took 20\u00a0ms",
-        "savings": 18,
+        "display_value": "Root document took 10\u00a0ms",
+        "savings": 14,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 522,
+    "total_runs": 523,
     "failed_runs": 184
   },
   {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T19:04:45+05:30",
+  "generated_at": "2026-09-03T22:21:36+05:30",
   "business_score": 19.1,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,20 +11,14 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 9,
+  "critical_issues_count": 8,
   "checkout_failures_today": 6,
-  "pages_slower_than_yesterday": 5,
+  "pages_slower_than_yesterday": 4,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 11
+    "page_count": 12
   },
   "top_slow_pages": [
-    {
-      "name": "Fiber Fix",
-      "score": 10,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
-    },
     {
       "name": "H50+",
       "score": 17,
@@ -46,6 +40,12 @@
     {
       "name": "Weight Management",
       "score": 29,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Pineapple",
+      "score": 32,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     }
@@ -689,7 +689,7 @@
       "date": "2026-09-03",
       "business_score": 19.1,
       "average_score": 36.46,
-      "critical_count": 9,
+      "critical_count": 8,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 6,
       "page_scores": {
@@ -697,7 +697,7 @@
         "Shop All": 68,
         "FNM": 49,
         "H50+": 17,
-        "Fiber Fix": 10,
+        "Fiber Fix": 40,
         "Plant Protein Roti": 37,
         "Berries": 61,
         "Orange": 38,
@@ -873,7 +873,7 @@
       "date": "2026-09-03",
       "business_score": 19.1,
       "average_score": 36.46,
-      "critical_count": 9,
+      "critical_count": 8,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 6,
       "page_scores": {
@@ -881,7 +881,7 @@
         "Shop All": 68,
         "FNM": 49,
         "H50+": 17,
-        "Fiber Fix": 10,
+        "Fiber Fix": 40,
         "Plant Protein Roti": 37,
         "Berries": 61,
         "Orange": 38,
