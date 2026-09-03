@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T05:44:17+05:30",
+  "generated_at": "2026-09-03T07:39:59+05:30",
   "business_score": 19.1,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -16,7 +16,7 @@
   "pages_slower_than_yesterday": 5,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 8
+    "page_count": 12
   },
   "top_slow_pages": [
     {
@@ -44,8 +44,8 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Pineapple",
-      "score": 32,
+      "name": "Weight Management",
+      "score": 29,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     }
@@ -688,24 +688,27 @@
     {
       "date": "2026-09-03",
       "business_score": 19.1,
-      "average_score": 36.45,
+      "average_score": 36.46,
       "critical_count": 9,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 3,
       "page_scores": {
-        "Homepage": 53,
-        "Shop All": 39,
-        "FNM": 39,
+        "Homepage": 54,
+        "Shop All": 68,
+        "FNM": 63,
         "H50+": 15,
         "Fiber Fix": 10,
-        "Plant Protein Roti": 55,
+        "Plant Protein Roti": 39,
         "Berries": 61,
         "Orange": 38,
         "Pineapple": 32,
         "Mango": 38,
         "Assorted": 20,
         "Milk Mix Strawberry": 19,
-        "Milk Mix Vanilla": 47
+        "Milk Mix Vanilla": 47,
+        "Milk Mix Chocolate": 45,
+        "Slimbiotics": 52,
+        "Weight Management": 29
       }
     }
   ],
@@ -869,24 +872,27 @@
     {
       "date": "2026-09-03",
       "business_score": 19.1,
-      "average_score": 36.45,
+      "average_score": 36.46,
       "critical_count": 9,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 3,
       "page_scores": {
-        "Homepage": 53,
-        "Shop All": 39,
-        "FNM": 39,
+        "Homepage": 54,
+        "Shop All": 68,
+        "FNM": 63,
         "H50+": 15,
         "Fiber Fix": 10,
-        "Plant Protein Roti": 55,
+        "Plant Protein Roti": 39,
         "Berries": 61,
         "Orange": 38,
         "Pineapple": 32,
         "Mango": 38,
         "Assorted": 20,
         "Milk Mix Strawberry": 19,
-        "Milk Mix Vanilla": 47
+        "Milk Mix Vanilla": 47,
+        "Milk Mix Chocolate": 45,
+        "Slimbiotics": 52,
+        "Weight Management": 29
       }
     }
   ]
