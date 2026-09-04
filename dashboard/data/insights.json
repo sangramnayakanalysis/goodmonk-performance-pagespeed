@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T05:19:37+05:30",
+  "generated_at": "2026-09-04T06:06:06+05:30",
   "business_score": 19.1,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,12 +11,12 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 6,
+  "critical_issues_count": 5,
   "checkout_failures_today": 3,
-  "pages_slower_than_yesterday": 5,
+  "pages_slower_than_yesterday": 4,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 12
+    "page_count": 11
   },
   "top_slow_pages": [
     {
@@ -32,12 +32,6 @@
       "top_issue_title": "Initial server response time was short"
     },
     {
-      "name": "Weight Management",
-      "score": 24,
-      "status_color": "red",
-      "top_issue_title": "Avoid multiple page redirects"
-    },
-    {
       "name": "Milk Mix Vanilla",
       "score": 35,
       "status_color": "red",
@@ -45,6 +39,12 @@
     },
     {
       "name": "Plant Protein Roti",
+      "score": 37,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Orange",
       "score": 37,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
@@ -714,8 +714,8 @@
     {
       "date": "2026-09-04",
       "business_score": 19.1,
-      "average_score": 36.49,
-      "critical_count": 6,
+      "average_score": 36.52,
+      "critical_count": 5,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 3,
       "page_scores": {
@@ -732,9 +732,7 @@
         "Assorted": 50,
         "Milk Mix Strawberry": 53,
         "Milk Mix Vanilla": 35,
-        "Milk Mix Chocolate": 43,
-        "Slimbiotics": 52,
-        "Weight Management": 24
+        "Milk Mix Chocolate": 43
       }
     }
   ],
@@ -898,8 +896,8 @@
     {
       "date": "2026-09-04",
       "business_score": 19.1,
-      "average_score": 36.49,
-      "critical_count": 6,
+      "average_score": 36.52,
+      "critical_count": 5,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 3,
       "page_scores": {
@@ -916,9 +914,7 @@
         "Assorted": 50,
         "Milk Mix Strawberry": 53,
         "Milk Mix Vanilla": 35,
-        "Milk Mix Chocolate": 43,
-        "Slimbiotics": 52,
-        "Weight Management": 24
+        "Milk Mix Chocolate": 43
       }
     }
   ]
