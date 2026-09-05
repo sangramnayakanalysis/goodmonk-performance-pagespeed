@@ -44,8 +44,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 539,
-    "failed_runs": 172
+    "total_runs": 540,
+    "failed_runs": 173
   },
   {
     "name": "Shop All",
@@ -92,8 +92,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 542,
-    "failed_runs": 169
+    "total_runs": 543,
+    "failed_runs": 170
   },
   {
     "name": "FNM",
@@ -140,8 +140,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 537,
-    "failed_runs": 206
+    "total_runs": 538,
+    "failed_runs": 207
   },
   {
     "name": "H50+",
@@ -194,8 +194,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 531,
-    "failed_runs": 203
+    "total_runs": 532,
+    "failed_runs": 204
   },
   {
     "name": "Fiber Fix",
@@ -236,8 +236,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 537,
-    "failed_runs": 192
+    "total_runs": 538,
+    "failed_runs": 193
   },
   {
     "name": "Plant Protein Roti",
@@ -278,8 +278,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 535,
-    "failed_runs": 205
+    "total_runs": 536,
+    "failed_runs": 206
   },
   {
     "name": "Berries",
@@ -675,96 +675,36 @@
     "name": "Slimbiotics",
     "sheet_name": "Slimbiotics",
     "url": "https://www.goodmonk.in/products/good-monk-slimbiotics",
-    "latest": {
-      "Date": "2026-09-05",
-      "Time": "04:00:04",
-      "Performance Score": 34,
-      "Grade": "F",
-      "LCP": 18.27,
-      "Onload": 6.1,
-      "Fully Loaded": 10.83,
-      "TTFB": 0.01,
-      "CLS": 0,
-      "TBT": 1.02,
-      "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-slimbiotics&form_factor=mobile",
-      "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,441\\u00a0KiB\", \"savings\": 1560, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 10\\u00a0ms\", \"savings\": 14, \"unit\": \"millisecond\"}]",
-      "_page_name": "Slimbiotics",
-      "_sheet_name": "Slimbiotics",
-      "_url": "https://www.goodmonk.in/products/good-monk-slimbiotics"
-    },
-    "status_color": "red",
+    "latest": null,
+    "status_color": "grey",
     "metric_tiers": {
-      "score": "red",
-      "lcp": "red",
-      "cls": "green",
-      "ttfb": "green",
-      "tbt": "red"
+      "score": "grey",
+      "lcp": "grey",
+      "cls": "grey",
+      "ttfb": "grey",
+      "tbt": "grey"
     },
-    "score_trend": 5,
-    "top_opportunities": [
-      {
-        "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 1,441\u00a0KiB",
-        "savings": 1560,
-        "unit": "millisecond"
-      },
-      {
-        "title": "Initial server response time was short",
-        "display_value": "Root document took 10\u00a0ms",
-        "savings": 14,
-        "unit": "millisecond"
-      }
-    ],
-    "total_runs": 50,
-    "failed_runs": 11
+    "score_trend": null,
+    "top_opportunities": [],
+    "total_runs": 0,
+    "failed_runs": 0
   },
   {
     "name": "Weight Management",
     "sheet_name": "Weight Management",
     "url": "https://www.goodmonk.in/products/good-monk-weight-management-program",
-    "latest": {
-      "Date": "2026-09-04",
-      "Time": "04:16:45",
-      "Performance Score": 24,
-      "Grade": "F",
-      "LCP": 7.07,
-      "Onload": 3.68,
-      "Fully Loaded": 6.69,
-      "TTFB": 0.02,
-      "CLS": 0.725,
-      "TBT": 0.63,
-      "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-weight-management-program&form_factor=mobile",
-      "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Avoid multiple page redirects\", \"display_value\": \"Est savings of 760\\u00a0ms\", \"savings\": 757.52, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 17, \"unit\": \"millisecond\"}]",
-      "_page_name": "Weight Management",
-      "_sheet_name": "Weight Management",
-      "_url": "https://www.goodmonk.in/products/good-monk-weight-management-program"
-    },
-    "status_color": "red",
+    "latest": null,
+    "status_color": "grey",
     "metric_tiers": {
-      "score": "red",
-      "lcp": "red",
-      "cls": "red",
-      "ttfb": "green",
-      "tbt": "red"
+      "score": "grey",
+      "lcp": "grey",
+      "cls": "grey",
+      "ttfb": "grey",
+      "tbt": "grey"
     },
-    "score_trend": -16,
-    "top_opportunities": [
-      {
-        "title": "Avoid multiple page redirects",
-        "display_value": "Est savings of 760\u00a0ms",
-        "savings": 757.52,
-        "unit": "millisecond"
-      },
-      {
-        "title": "Initial server response time was short",
-        "display_value": "Root document took 20\u00a0ms",
-        "savings": 17,
-        "unit": "millisecond"
-      }
-    ],
-    "total_runs": 52,
-    "failed_runs": 12
+    "score_trend": null,
+    "top_opportunities": [],
+    "total_runs": 0,
+    "failed_runs": 0
   }
 ]
