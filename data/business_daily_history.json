@@ -660,11 +660,16 @@
   },
   {
     "date": "2026-09-05",
-    "business_score": 40.8,
-    "average_score": null,
-    "critical_count": 0,
+    "business_score": 27.5,
+    "average_score": 37.45,
+    "critical_count": 4,
     "journey_success_pct": 0.0,
     "checkout_failures_today": 3,
-    "page_scores": {}
+    "page_scores": {
+      "Homepage": 34,
+      "Shop All": 30,
+      "FNM": 26,
+      "H50+": 37
+    }
   }
 ]
