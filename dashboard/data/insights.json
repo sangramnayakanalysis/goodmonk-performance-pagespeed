@@ -1,30 +1,24 @@
 {
-  "generated_at": "2026-09-06T00:42:44+05:30",
+  "generated_at": "2026-09-06T02:22:25+05:30",
   "business_score": 19.1,
   "business_score_color": "red",
   "business_score_label": "Critical",
   "components": {
-    "performance": 36.6,
+    "performance": 36.5,
     "journey": 0.0,
     "alerts": 0.0,
     "availability": 45.0
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 7,
+  "critical_issues_count": 9,
   "checkout_failures_today": 1,
-  "pages_slower_than_yesterday": 0,
+  "pages_slower_than_yesterday": 1,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 9
+    "page_count": 10
   },
   "top_slow_pages": [
-    {
-      "name": "Plant Protein Roti",
-      "score": 18,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
-    },
     {
       "name": "Berries",
       "score": 21,
@@ -32,19 +26,25 @@
       "top_issue_title": "Initial server response time was short"
     },
     {
-      "name": "Fiber Fix",
-      "score": 27,
+      "name": "Weight Management",
+      "score": 24,
       "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
+      "top_issue_title": "Avoid multiple page redirects"
     },
     {
-      "name": "Shop All",
-      "score": 34,
+      "name": "FNM",
+      "score": 29,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
       "name": "Assorted",
+      "score": 34,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Slimbiotics",
       "score": 34,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
@@ -766,17 +766,17 @@
     {
       "date": "2026-09-06",
       "business_score": 19.1,
-      "average_score": 36.57,
-      "critical_count": 7,
+      "average_score": 36.55,
+      "critical_count": 9,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 1,
       "page_scores": {
         "Homepage": 36,
-        "Shop All": 34,
-        "FNM": 44,
+        "Shop All": 46,
+        "FNM": 29,
         "H50+": 51,
-        "Fiber Fix": 27,
-        "Plant Protein Roti": 18,
+        "Fiber Fix": 38,
+        "Plant Protein Roti": 39,
         "Berries": 21,
         "Orange": 37,
         "Pineapple": 61,
@@ -784,7 +784,9 @@
         "Assorted": 34,
         "Milk Mix Strawberry": 53,
         "Milk Mix Vanilla": 63,
-        "Milk Mix Chocolate": 43
+        "Milk Mix Chocolate": 43,
+        "Slimbiotics": 34,
+        "Weight Management": 24
       }
     }
   ],
@@ -948,17 +950,17 @@
     {
       "date": "2026-09-06",
       "business_score": 19.1,
-      "average_score": 36.57,
-      "critical_count": 7,
+      "average_score": 36.55,
+      "critical_count": 9,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 1,
       "page_scores": {
         "Homepage": 36,
-        "Shop All": 34,
-        "FNM": 44,
+        "Shop All": 46,
+        "FNM": 29,
         "H50+": 51,
-        "Fiber Fix": 27,
-        "Plant Protein Roti": 18,
+        "Fiber Fix": 38,
+        "Plant Protein Roti": 39,
         "Berries": 21,
         "Orange": 37,
         "Pineapple": 61,
@@ -966,7 +968,9 @@
         "Assorted": 34,
         "Milk Mix Strawberry": 53,
         "Milk Mix Vanilla": 63,
-        "Milk Mix Chocolate": 43
+        "Milk Mix Chocolate": 43,
+        "Slimbiotics": 34,
+        "Weight Management": 24
       }
     }
   ]
