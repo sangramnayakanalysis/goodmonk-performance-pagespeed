@@ -1,24 +1,30 @@
 {
-  "generated_at": "2026-09-05T14:08:00+05:30",
+  "generated_at": "2026-09-05T15:13:17+05:30",
   "business_score": 19.1,
   "business_score_color": "red",
   "business_score_label": "Critical",
   "components": {
-    "performance": 36.6,
+    "performance": 36.5,
     "journey": 0.0,
     "alerts": 0.0,
     "availability": 45.0
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 8,
+  "critical_issues_count": 9,
   "checkout_failures_today": 5,
-  "pages_slower_than_yesterday": 6,
+  "pages_slower_than_yesterday": 7,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 9
+    "page_count": 10
   },
   "top_slow_pages": [
+    {
+      "name": "FNM",
+      "score": 9,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
     {
       "name": "Berries",
       "score": 21,
@@ -39,12 +45,6 @@
     },
     {
       "name": "Assorted",
-      "score": 34,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Slimbiotics",
       "score": 34,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
@@ -740,14 +740,14 @@
     {
       "date": "2026-09-05",
       "business_score": 19.1,
-      "average_score": 36.56,
-      "critical_count": 8,
+      "average_score": 36.55,
+      "critical_count": 9,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 5,
       "page_scores": {
         "Homepage": 36,
         "Shop All": 39,
-        "FNM": 59,
+        "FNM": 9,
         "H50+": 51,
         "Fiber Fix": 27,
         "Plant Protein Roti": 52,
@@ -924,14 +924,14 @@
     {
       "date": "2026-09-05",
       "business_score": 19.1,
-      "average_score": 36.56,
-      "critical_count": 8,
+      "average_score": 36.55,
+      "critical_count": 9,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 5,
       "page_scores": {
         "Homepage": 36,
         "Shop All": 39,
-        "FNM": 59,
+        "FNM": 9,
         "H50+": 51,
         "Fiber Fix": 27,
         "Plant Protein Roti": 52,
