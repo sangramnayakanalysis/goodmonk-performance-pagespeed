@@ -4,19 +4,19 @@
     "sheet_name": "Homepage",
     "url": "https://www.goodmonk.in/",
     "latest": {
-      "Date": "2026-09-07",
-      "Time": "22:23:58",
-      "Performance Score": 46,
-      "Grade": "F",
-      "LCP": 15.79,
-      "Onload": 7.17,
-      "Fully Loaded": 9.9,
-      "TTFB": 0.02,
-      "CLS": 0,
-      "TBT": 0.43,
+      "Date": "2026-09-08",
+      "Time": "01:48:27",
+      "Performance Score": 54,
+      "Grade": "D",
+      "LCP": 6.9,
+      "Onload": 3.39,
+      "Fully Loaded": 7.48,
+      "TTFB": 0.01,
+      "CLS": 0.009,
+      "TBT": 0.37,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2F&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,468\\u00a0KiB\", \"savings\": 1960, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 42\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 20, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 10\\u00a0ms\", \"savings\": 14, \"unit\": \"millisecond\"}]",
       "_page_name": "Homepage",
       "_sheet_name": "Homepage",
       "_url": "https://www.goodmonk.in/"
@@ -29,28 +29,16 @@
       "ttfb": "green",
       "tbt": "yellow"
     },
-    "score_trend": 12,
+    "score_trend": 9,
     "top_opportunities": [
       {
-        "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 1,468\u00a0KiB",
-        "savings": 1960,
-        "unit": "millisecond"
-      },
-      {
-        "title": "Reduce unused CSS",
-        "display_value": "Est savings of 42\u00a0KiB",
-        "savings": 150,
-        "unit": "millisecond"
-      },
-      {
         "title": "Initial server response time was short",
-        "display_value": "Root document took 20\u00a0ms",
-        "savings": 20,
+        "display_value": "Root document took 10\u00a0ms",
+        "savings": 14,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 554,
+    "total_runs": 555,
     "failed_runs": 178
   },
   {
@@ -104,8 +92,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 557,
-    "failed_runs": 174
+    "total_runs": 558,
+    "failed_runs": 175
   },
   {
     "name": "FNM",
@@ -152,8 +140,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 552,
-    "failed_runs": 213
+    "total_runs": 553,
+    "failed_runs": 214
   },
   {
     "name": "H50+",
@@ -200,8 +188,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 546,
-    "failed_runs": 207
+    "total_runs": 547,
+    "failed_runs": 208
   },
   {
     "name": "Fiber Fix",
@@ -248,8 +236,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 552,
-    "failed_runs": 198
+    "total_runs": 553,
+    "failed_runs": 199
   },
   {
     "name": "Plant Protein Roti",
@@ -296,8 +284,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 550,
-    "failed_runs": 208
+    "total_runs": 551,
+    "failed_runs": 209
   },
   {
     "name": "Berries",
