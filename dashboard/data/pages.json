@@ -38,45 +38,45 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 555,
-    "failed_runs": 178
+    "total_runs": 556,
+    "failed_runs": 179
   },
   {
     "name": "Shop All",
     "sheet_name": "Shop_All",
     "url": "https://www.goodmonk.in/collections/all",
     "latest": {
-      "Date": "2026-09-07",
-      "Time": "22:24:01",
-      "Performance Score": 33,
-      "Grade": "F",
-      "LCP": 15.34,
-      "Onload": 5.49,
-      "Fully Loaded": 9.92,
+      "Date": "2026-09-08",
+      "Time": "04:41:28",
+      "Performance Score": 57,
+      "Grade": "D",
+      "LCP": 8.12,
+      "Onload": 2.71,
+      "Fully Loaded": 5.99,
       "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 1.18,
+      "TBT": 0.37,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fcollections%2Fall&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,441\\u00a0KiB\", \"savings\": 1860, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 56\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 16, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,420\\u00a0KiB\", \"savings\": 600, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 56\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 17, \"unit\": \"millisecond\"}]",
       "_page_name": "Shop All",
       "_sheet_name": "Shop_All",
       "_url": "https://www.goodmonk.in/collections/all"
     },
-    "status_color": "red",
+    "status_color": "yellow",
     "metric_tiers": {
-      "score": "red",
+      "score": "yellow",
       "lcp": "red",
       "cls": "green",
       "ttfb": "green",
-      "tbt": "red"
+      "tbt": "yellow"
     },
-    "score_trend": -7,
+    "score_trend": 13,
     "top_opportunities": [
       {
         "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 1,441\u00a0KiB",
-        "savings": 1860,
+        "display_value": "Est savings of 1,420\u00a0KiB",
+        "savings": 600,
         "unit": "millisecond"
       },
       {
@@ -88,11 +88,11 @@
       {
         "title": "Initial server response time was short",
         "display_value": "Root document took 20\u00a0ms",
-        "savings": 16,
+        "savings": 17,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 558,
+    "total_runs": 559,
     "failed_runs": 175
   },
   {
@@ -100,47 +100,53 @@
     "sheet_name": "FNM",
     "url": "https://www.goodmonk.in/products/good-monk",
     "latest": {
-      "Date": "2026-09-07",
-      "Time": "22:23:49",
-      "Performance Score": 64,
-      "Grade": "D",
-      "LCP": 6.45,
-      "Onload": 2.71,
-      "Fully Loaded": 6.71,
-      "TTFB": 0.05,
+      "Date": "2026-09-08",
+      "Time": "04:41:47",
+      "Performance Score": 35,
+      "Grade": "F",
+      "LCP": 17.07,
+      "Onload": 5.2,
+      "Fully Loaded": 9.74,
+      "TTFB": 0.01,
       "CLS": 0,
-      "TBT": 0.2,
+      "TBT": 1.02,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,442\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 50\\u00a0ms\", \"savings\": 52, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,442\\u00a0KiB\", \"savings\": 1810, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 42\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 15, \"unit\": \"millisecond\"}]",
       "_page_name": "FNM",
       "_sheet_name": "FNM",
       "_url": "https://www.goodmonk.in/products/good-monk"
     },
-    "status_color": "green",
+    "status_color": "red",
     "metric_tiers": {
-      "score": "green",
+      "score": "red",
       "lcp": "red",
       "cls": "green",
       "ttfb": "green",
-      "tbt": "yellow"
+      "tbt": "red"
     },
-    "score_trend": 32,
+    "score_trend": 14,
     "top_opportunities": [
       {
         "title": "Reduce unused JavaScript",
         "display_value": "Est savings of 1,442\u00a0KiB",
+        "savings": 1810,
+        "unit": "millisecond"
+      },
+      {
+        "title": "Reduce unused CSS",
+        "display_value": "Est savings of 42\u00a0KiB",
         "savings": 150,
         "unit": "millisecond"
       },
       {
         "title": "Initial server response time was short",
-        "display_value": "Root document took 50\u00a0ms",
-        "savings": 52,
+        "display_value": "Root document took 20\u00a0ms",
+        "savings": 15,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 553,
+    "total_runs": 554,
     "failed_runs": 214
   },
   {
@@ -188,8 +194,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 547,
-    "failed_runs": 208
+    "total_runs": 548,
+    "failed_runs": 209
   },
   {
     "name": "Fiber Fix",
@@ -236,8 +242,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 553,
-    "failed_runs": 199
+    "total_runs": 554,
+    "failed_runs": 200
   },
   {
     "name": "Plant Protein Roti",
@@ -284,8 +290,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 551,
-    "failed_runs": 209
+    "total_runs": 552,
+    "failed_runs": 210
   },
   {
     "name": "Berries",
