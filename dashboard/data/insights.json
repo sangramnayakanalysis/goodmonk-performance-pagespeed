@@ -1,24 +1,36 @@
 {
-  "generated_at": "2026-09-08T23:13:21+05:30",
-  "business_score": 32.8,
+  "generated_at": "2026-09-09T01:13:53+05:30",
+  "business_score": 19.2,
   "business_score_color": "red",
   "business_score_label": "Critical",
   "components": {
-    "performance": 38.3,
+    "performance": 36.7,
     "journey": 0.0,
-    "alerts": 65.0,
+    "alerts": 0.0,
     "availability": 45.0
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 2,
+  "critical_issues_count": 11,
   "checkout_failures_today": 7,
-  "pages_slower_than_yesterday": 1,
+  "pages_slower_than_yesterday": 0,
   "most_common_issue": {
-    "title": "Reduce unused JavaScript",
-    "page_count": 1
+    "title": "Initial server response time was short",
+    "page_count": 7
   },
   "top_slow_pages": [
+    {
+      "name": "Plant Protein Roti",
+      "score": 12,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
+    },
+    {
+      "name": "Berries",
+      "score": 20,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
     {
       "name": "FNM",
       "score": 21,
@@ -26,16 +38,16 @@
       "top_issue_title": "Initial server response time was short"
     },
     {
-      "name": "Shop All",
-      "score": 36,
+      "name": "Pineapple",
+      "score": 24,
       "status_color": "red",
-      "top_issue_title": "Reduce unused CSS"
+      "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Homepage",
-      "score": 46,
-      "status_color": "yellow",
-      "top_issue_title": "Reduce unused JavaScript"
+      "name": "H50+",
+      "score": 29,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
     }
   ],
   "top_failed_journeys": [
@@ -815,35 +827,35 @@
         "Shop All": 36,
         "FNM": 21
       }
-    }
-  ],
-  "weekly_trend": [
+    },
     {
-      "date": "2026-09-02",
-      "business_score": 19.1,
-      "average_score": 36.42,
-      "critical_count": 9,
+      "date": "2026-09-09",
+      "business_score": 19.2,
+      "average_score": 36.66,
+      "critical_count": 11,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 7,
       "page_scores": {
-        "Homepage": 41,
-        "Shop All": 43,
-        "FNM": 31,
-        "H50+": 55,
-        "Fiber Fix": 19,
-        "Plant Protein Roti": 27,
-        "Berries": 39,
-        "Orange": 32,
-        "Pineapple": 22,
-        "Mango": 53,
-        "Assorted": 14,
-        "Milk Mix Strawberry": 36,
-        "Milk Mix Vanilla": 47,
-        "Milk Mix Chocolate": 45,
-        "Slimbiotics": 49,
-        "Weight Management": 39
+        "Homepage": 48,
+        "Shop All": 36,
+        "FNM": 21,
+        "H50+": 29,
+        "Fiber Fix": 35,
+        "Plant Protein Roti": 12,
+        "Berries": 20,
+        "Orange": 55,
+        "Pineapple": 24,
+        "Mango": 32,
+        "Assorted": 35,
+        "Milk Mix Strawberry": 47,
+        "Milk Mix Vanilla": 63,
+        "Milk Mix Chocolate": 49,
+        "Slimbiotics": 32,
+        "Weight Management": 32
       }
-    },
+    }
+  ],
+  "weekly_trend": [
     {
       "date": "2026-09-03",
       "business_score": 19.1,
@@ -985,6 +997,32 @@
         "Homepage": 46,
         "Shop All": 36,
         "FNM": 21
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "business_score": 19.2,
+      "average_score": 36.66,
+      "critical_count": 11,
+      "journey_success_pct": 0.0,
+      "checkout_failures_today": 7,
+      "page_scores": {
+        "Homepage": 48,
+        "Shop All": 36,
+        "FNM": 21,
+        "H50+": 29,
+        "Fiber Fix": 35,
+        "Plant Protein Roti": 12,
+        "Berries": 20,
+        "Orange": 55,
+        "Pineapple": 24,
+        "Mango": 32,
+        "Assorted": 35,
+        "Milk Mix Strawberry": 47,
+        "Milk Mix Vanilla": 63,
+        "Milk Mix Chocolate": 49,
+        "Slimbiotics": 32,
+        "Weight Management": 32
       }
     }
   ]
