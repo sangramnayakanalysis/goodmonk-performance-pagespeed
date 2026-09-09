@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T20:04:30+05:30",
+  "generated_at": "2026-09-09T20:28:37+05:30",
   "business_score": 19.1,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,20 +11,14 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 11,
+  "critical_issues_count": 9,
   "checkout_failures_today": 6,
   "pages_slower_than_yesterday": 2,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 9
+    "page_count": 8
   },
   "top_slow_pages": [
-    {
-      "name": "H50+",
-      "score": 8,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
-    },
     {
       "name": "Assorted",
       "score": 13,
@@ -42,6 +36,12 @@
       "score": 16,
       "status_color": "red",
       "top_issue_title": "Initial server response time was short"
+    },
+    {
+      "name": "H50+",
+      "score": 24,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
     },
     {
       "name": "Weight Management",
@@ -832,15 +832,15 @@
       "date": "2026-09-09",
       "business_score": 19.1,
       "average_score": 36.62,
-      "critical_count": 11,
+      "critical_count": 9,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 6,
       "page_scores": {
-        "Homepage": 36,
-        "Shop All": 45,
+        "Homepage": 40,
+        "Shop All": 53,
         "FNM": 14,
-        "H50+": 8,
-        "Fiber Fix": 38,
+        "H50+": 24,
+        "Fiber Fix": 45,
         "Plant Protein Roti": 33,
         "Berries": 40,
         "Orange": 55,
@@ -1003,15 +1003,15 @@
       "date": "2026-09-09",
       "business_score": 19.1,
       "average_score": 36.62,
-      "critical_count": 11,
+      "critical_count": 9,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 6,
       "page_scores": {
-        "Homepage": 36,
-        "Shop All": 45,
+        "Homepage": 40,
+        "Shop All": 53,
         "FNM": 14,
-        "H50+": 8,
-        "Fiber Fix": 38,
+        "H50+": 24,
+        "Fiber Fix": 45,
         "Plant Protein Roti": 33,
         "Berries": 40,
         "Orange": 55,
