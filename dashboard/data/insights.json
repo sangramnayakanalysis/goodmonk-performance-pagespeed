@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T04:11:17+05:30",
+  "generated_at": "2026-09-10T04:15:54+05:30",
   "business_score": 19.1,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -12,11 +12,11 @@
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
   "critical_issues_count": 8,
-  "checkout_failures_today": 2,
-  "pages_slower_than_yesterday": 0,
+  "checkout_failures_today": 1,
+  "pages_slower_than_yesterday": 1,
   "most_common_issue": {
-    "title": "Initial server response time was short",
-    "page_count": 7
+    "title": "Reduce unused JavaScript",
+    "page_count": 8
   },
   "top_slow_pages": [
     {
@@ -27,9 +27,9 @@
     },
     {
       "name": "Mango",
-      "score": 16,
+      "score": 27,
       "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
+      "top_issue_title": "Reduce unused JavaScript"
     },
     {
       "name": "Weight Management",
@@ -869,9 +869,9 @@
         "Fiber Fix": 45,
         "Plant Protein Roti": 33,
         "Berries": 40,
-        "Orange": 55,
+        "Orange": 44,
         "Pineapple": 48,
-        "Mango": 16,
+        "Mango": 27,
         "Assorted": 13,
         "Milk Mix Strawberry": 43,
         "Milk Mix Vanilla": 33,
@@ -1040,9 +1040,9 @@
         "Fiber Fix": 45,
         "Plant Protein Roti": 33,
         "Berries": 40,
-        "Orange": 55,
+        "Orange": 44,
         "Pineapple": 48,
-        "Mango": 16,
+        "Mango": 27,
         "Assorted": 13,
         "Milk Mix Strawberry": 43,
         "Milk Mix Vanilla": 33,
