@@ -50,27 +50,27 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 562,
-    "failed_runs": 181
+    "total_runs": 563,
+    "failed_runs": 182
   },
   {
     "name": "Shop All",
     "sheet_name": "Shop_All",
     "url": "https://www.goodmonk.in/collections/all",
     "latest": {
-      "Date": "2026-09-08",
-      "Time": "22:28:35",
-      "Performance Score": 36,
+      "Date": "2026-09-09",
+      "Time": "06:23:58",
+      "Performance Score": 38,
       "Grade": "F",
-      "LCP": 6.26,
-      "Onload": 3.16,
-      "Fully Loaded": 6.38,
+      "LCP": 6.25,
+      "Onload": 2.87,
+      "Fully Loaded": 6.46,
       "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 7.45,
+      "TBT": 2.67,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fcollections%2Fall&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 56\\u00a0KiB\", \"savings\": 90, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 19, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 19, \"unit\": \"millisecond\"}]",
       "_page_name": "Shop All",
       "_sheet_name": "Shop_All",
       "_url": "https://www.goodmonk.in/collections/all"
@@ -83,14 +83,8 @@
       "ttfb": "green",
       "tbt": "red"
     },
-    "score_trend": -8,
+    "score_trend": -5,
     "top_opportunities": [
-      {
-        "title": "Reduce unused CSS",
-        "display_value": "Est savings of 56\u00a0KiB",
-        "savings": 90,
-        "unit": "millisecond"
-      },
       {
         "title": "Initial server response time was short",
         "display_value": "Root document took 20\u00a0ms",
@@ -98,7 +92,7 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 565,
+    "total_runs": 566,
     "failed_runs": 177
   },
   {
@@ -140,8 +134,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 560,
-    "failed_runs": 218
+    "total_runs": 561,
+    "failed_runs": 219
   },
   {
     "name": "H50+",
@@ -182,8 +176,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 554,
-    "failed_runs": 212
+    "total_runs": 555,
+    "failed_runs": 213
   },
   {
     "name": "Fiber Fix",
@@ -230,8 +224,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 560,
-    "failed_runs": 203
+    "total_runs": 561,
+    "failed_runs": 204
   },
   {
     "name": "Plant Protein Roti",
@@ -272,8 +266,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 558,
-    "failed_runs": 213
+    "total_runs": 559,
+    "failed_runs": 214
   },
   {
     "name": "Berries",
