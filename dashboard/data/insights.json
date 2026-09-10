@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T15:17:46+05:30",
+  "generated_at": "2026-09-10T18:03:38+05:30",
   "business_score": 19.2,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,12 +11,12 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 8,
+  "critical_issues_count": 9,
   "checkout_failures_today": 5,
-  "pages_slower_than_yesterday": 1,
+  "pages_slower_than_yesterday": 2,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 10
+    "page_count": 11
   },
   "top_slow_pages": [
     {
@@ -39,9 +39,9 @@
     },
     {
       "name": "FNM",
-      "score": 29,
+      "score": 31,
       "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
+      "top_issue_title": "Reduce unused JavaScript"
     },
     {
       "name": "Milk Mix Chocolate",
@@ -857,17 +857,17 @@
     {
       "date": "2026-09-10",
       "business_score": 19.2,
-      "average_score": 36.64,
-      "critical_count": 8,
+      "average_score": 36.63,
+      "critical_count": 9,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 5,
       "page_scores": {
-        "Homepage": 40,
+        "Homepage": 37,
         "Shop All": 53,
-        "FNM": 29,
+        "FNM": 31,
         "H50+": 47,
         "Fiber Fix": 45,
-        "Plant Protein Roti": 37,
+        "Plant Protein Roti": 38,
         "Berries": 40,
         "Orange": 44,
         "Pineapple": 48,
@@ -1028,17 +1028,17 @@
     {
       "date": "2026-09-10",
       "business_score": 19.2,
-      "average_score": 36.64,
-      "critical_count": 8,
+      "average_score": 36.63,
+      "critical_count": 9,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 5,
       "page_scores": {
-        "Homepage": 40,
+        "Homepage": 37,
         "Shop All": 53,
-        "FNM": 29,
+        "FNM": 31,
         "H50+": 47,
         "Fiber Fix": 45,
-        "Plant Protein Roti": 37,
+        "Plant Protein Roti": 38,
         "Berries": 40,
         "Orange": 44,
         "Pineapple": 48,
