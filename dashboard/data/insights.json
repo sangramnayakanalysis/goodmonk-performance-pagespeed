@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T19:29:11+05:30",
+  "generated_at": "2026-09-10T22:18:53+05:30",
   "business_score": 19.2,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -32,6 +32,12 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
+      "name": "Homepage",
+      "score": 28,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
       "name": "Weight Management",
       "score": 28,
       "status_color": "red",
@@ -39,12 +45,6 @@
     },
     {
       "name": "FNM",
-      "score": 31,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Milk Mix Chocolate",
       "score": 31,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
@@ -862,12 +862,12 @@
       "journey_success_pct": 0.0,
       "checkout_failures_today": 6,
       "page_scores": {
-        "Homepage": 37,
+        "Homepage": 28,
         "Shop All": 53,
         "FNM": 31,
         "H50+": 47,
         "Fiber Fix": 45,
-        "Plant Protein Roti": 38,
+        "Plant Protein Roti": 35,
         "Berries": 40,
         "Orange": 44,
         "Pineapple": 48,
@@ -1033,12 +1033,12 @@
       "journey_success_pct": 0.0,
       "checkout_failures_today": 6,
       "page_scores": {
-        "Homepage": 37,
+        "Homepage": 28,
         "Shop All": 53,
         "FNM": 31,
         "H50+": 47,
         "Fiber Fix": 45,
-        "Plant Protein Roti": 38,
+        "Plant Protein Roti": 35,
         "Berries": 40,
         "Orange": 44,
         "Pineapple": 48,
