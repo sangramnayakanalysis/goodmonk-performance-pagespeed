@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T12:13:07+05:30",
+  "generated_at": "2026-09-15T13:45:34+05:30",
   "business_score": 19.2,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -16,9 +16,15 @@
   "pages_slower_than_yesterday": 6,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 10
+    "page_count": 8
   },
   "top_slow_pages": [
+    {
+      "name": "Fiber Fix",
+      "score": 14,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
+    },
     {
       "name": "H50+",
       "score": 28,
@@ -40,12 +46,6 @@
     {
       "name": "Milk Mix Chocolate",
       "score": 34,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
-    },
-    {
-      "name": "Orange",
-      "score": 35,
       "status_color": "red",
       "top_issue_title": "Initial server response time was short"
     }
@@ -994,9 +994,9 @@
       "page_scores": {
         "Homepage": 34,
         "Shop All": 64,
-        "FNM": 37,
+        "FNM": 35,
         "H50+": 28,
-        "Fiber Fix": 36,
+        "Fiber Fix": 14,
         "Plant Protein Roti": 47,
         "Berries": 50,
         "Orange": 35,
@@ -1178,9 +1178,9 @@
       "page_scores": {
         "Homepage": 34,
         "Shop All": 64,
-        "FNM": 37,
+        "FNM": 35,
         "H50+": 28,
-        "Fiber Fix": 36,
+        "Fiber Fix": 14,
         "Plant Protein Roti": 47,
         "Berries": 50,
         "Orange": 35,
