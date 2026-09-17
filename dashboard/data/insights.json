@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T22:53:20+05:30",
+  "generated_at": "2026-09-17T23:27:53+05:30",
   "business_score": 19.2,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -13,10 +13,10 @@
   "customer_journey_health": "red",
   "critical_issues_count": 9,
   "checkout_failures_today": 7,
-  "pages_slower_than_yesterday": 8,
+  "pages_slower_than_yesterday": 7,
   "most_common_issue": {
     "title": "Initial server response time was short",
-    "page_count": 8
+    "page_count": 9
   },
   "top_slow_pages": [
     {
@@ -44,10 +44,10 @@
       "top_issue_title": "Initial server response time was short"
     },
     {
-      "name": "Weight Management",
+      "name": "FNM",
       "score": 29,
       "status_color": "red",
-      "top_issue_title": "Avoid multiple page redirects"
+      "top_issue_title": "Initial server response time was short"
     }
   ],
   "top_failed_journeys": [
@@ -1046,8 +1046,8 @@
       "page_scores": {
         "Homepage": 34,
         "Shop All": 40,
-        "FNM": 43,
-        "H50+": 31,
+        "FNM": 29,
+        "H50+": 52,
         "Fiber Fix": 51,
         "Plant Protein Roti": 55,
         "Berries": 32,
@@ -1230,8 +1230,8 @@
       "page_scores": {
         "Homepage": 34,
         "Shop All": 40,
-        "FNM": 43,
-        "H50+": 31,
+        "FNM": 29,
+        "H50+": 52,
         "Fiber Fix": 51,
         "Plant Protein Roti": 55,
         "Berries": 32,
