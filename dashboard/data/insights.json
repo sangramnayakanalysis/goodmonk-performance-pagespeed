@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T02:00:34+05:30",
+  "generated_at": "2026-09-18T02:18:04+05:30",
   "business_score": 19.2,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,9 +11,9 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 9,
+  "critical_issues_count": 8,
   "checkout_failures_today": 1,
-  "pages_slower_than_yesterday": 0,
+  "pages_slower_than_yesterday": 1,
   "most_common_issue": {
     "title": "Initial server response time was short",
     "page_count": 9
@@ -44,10 +44,10 @@
       "top_issue_title": "Initial server response time was short"
     },
     {
-      "name": "FNM",
+      "name": "Weight Management",
       "score": 29,
       "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
+      "top_issue_title": "Avoid multiple page redirects"
     }
   ],
   "top_failed_journeys": [
@@ -1065,17 +1065,17 @@
     {
       "date": "2026-09-18",
       "business_score": 19.2,
-      "average_score": 36.8,
-      "critical_count": 9,
+      "average_score": 36.81,
+      "critical_count": 8,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 1,
       "page_scores": {
         "Homepage": 34,
         "Shop All": 40,
-        "FNM": 29,
+        "FNM": 46,
         "H50+": 52,
         "Fiber Fix": 51,
-        "Plant Protein Roti": 55,
+        "Plant Protein Roti": 42,
         "Berries": 32,
         "Orange": 46,
         "Pineapple": 26,
@@ -1249,17 +1249,17 @@
     {
       "date": "2026-09-18",
       "business_score": 19.2,
-      "average_score": 36.8,
-      "critical_count": 9,
+      "average_score": 36.81,
+      "critical_count": 8,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 1,
       "page_scores": {
         "Homepage": 34,
         "Shop All": 40,
-        "FNM": 29,
+        "FNM": 46,
         "H50+": 52,
         "Fiber Fix": 51,
-        "Plant Protein Roti": 55,
+        "Plant Protein Roti": 42,
         "Berries": 32,
         "Orange": 46,
         "Pineapple": 26,
