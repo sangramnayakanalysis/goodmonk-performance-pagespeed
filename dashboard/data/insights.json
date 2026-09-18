@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T15:29:02+05:30",
+  "generated_at": "2026-09-18T18:03:21+05:30",
   "business_score": 19.2,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,7 +11,7 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 8,
+  "critical_issues_count": 7,
   "checkout_failures_today": 5,
   "pages_slower_than_yesterday": 7,
   "most_common_issue": {
@@ -38,16 +38,16 @@
       "top_issue_title": "Initial server response time was short"
     },
     {
+      "name": "FNM",
+      "score": 24,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
+    },
+    {
       "name": "Weight Management",
       "score": 26,
       "status_color": "red",
       "top_issue_title": "Avoid multiple page redirects"
-    },
-    {
-      "name": "Homepage",
-      "score": 32,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
     }
   ],
   "top_failed_journeys": [
@@ -1066,13 +1066,13 @@
       "date": "2026-09-18",
       "business_score": 19.2,
       "average_score": 36.81,
-      "critical_count": 8,
+      "critical_count": 7,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 5,
       "page_scores": {
-        "Homepage": 32,
-        "Shop All": 54,
-        "FNM": 35,
+        "Homepage": 41,
+        "Shop All": 40,
+        "FNM": 24,
         "H50+": 46,
         "Fiber Fix": 32,
         "Plant Protein Roti": 36,
@@ -1250,13 +1250,13 @@
       "date": "2026-09-18",
       "business_score": 19.2,
       "average_score": 36.81,
-      "critical_count": 8,
+      "critical_count": 7,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 5,
       "page_scores": {
-        "Homepage": 32,
-        "Shop All": 54,
-        "FNM": 35,
+        "Homepage": 41,
+        "Shop All": 40,
+        "FNM": 24,
         "H50+": 46,
         "Fiber Fix": 32,
         "Plant Protein Roti": 36,
