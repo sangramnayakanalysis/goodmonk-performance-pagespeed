@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T01:28:53+05:30",
+  "generated_at": "2026-09-19T03:37:08+05:30",
   "business_score": 19.2,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,12 +11,12 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 8,
+  "critical_issues_count": 9,
   "checkout_failures_today": 1,
   "pages_slower_than_yesterday": 3,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 10
+    "page_count": 9
   },
   "top_slow_pages": [
     {
@@ -44,10 +44,10 @@
       "top_issue_title": "Avoid multiple page redirects"
     },
     {
-      "name": "Fiber Fix",
-      "score": 32,
+      "name": "H50+",
+      "score": 30,
       "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
+      "top_issue_title": "Initial server response time was short"
     }
   ],
   "top_failed_journeys": [
@@ -1092,16 +1092,16 @@
       "date": "2026-09-19",
       "business_score": 19.2,
       "average_score": 36.82,
-      "critical_count": 8,
+      "critical_count": 9,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 1,
       "page_scores": {
-        "Homepage": 37,
+        "Homepage": 51,
         "Shop All": 39,
         "FNM": 35,
-        "H50+": 46,
-        "Fiber Fix": 32,
-        "Plant Protein Roti": 43,
+        "H50+": 30,
+        "Fiber Fix": 35,
+        "Plant Protein Roti": 38,
         "Berries": 44,
         "Orange": 46,
         "Pineapple": 20,
@@ -1276,16 +1276,16 @@
       "date": "2026-09-19",
       "business_score": 19.2,
       "average_score": 36.82,
-      "critical_count": 8,
+      "critical_count": 9,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 1,
       "page_scores": {
-        "Homepage": 37,
+        "Homepage": 51,
         "Shop All": 39,
         "FNM": 35,
-        "H50+": 46,
-        "Fiber Fix": 32,
-        "Plant Protein Roti": 43,
+        "H50+": 30,
+        "Fiber Fix": 35,
+        "Plant Protein Roti": 38,
         "Berries": 44,
         "Orange": 46,
         "Pineapple": 20,
