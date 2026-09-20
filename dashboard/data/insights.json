@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T22:37:47+05:30",
+  "generated_at": "2026-09-20T22:41:17+05:30",
   "business_score": 19.3,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -13,7 +13,7 @@
   "customer_journey_health": "red",
   "critical_issues_count": 10,
   "checkout_failures_today": 8,
-  "pages_slower_than_yesterday": 7,
+  "pages_slower_than_yesterday": 6,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
     "page_count": 11
@@ -32,16 +32,16 @@
       "top_issue_title": "Initial server response time was short"
     },
     {
-      "name": "Fiber Fix",
-      "score": 21,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
-    },
-    {
       "name": "Mango",
       "score": 28,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "H50+",
+      "score": 30,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
     },
     {
       "name": "Milk Mix Vanilla",
@@ -1123,11 +1123,11 @@
       "checkout_failures_today": 8,
       "page_scores": {
         "Homepage": 31,
-        "Shop All": 34,
+        "Shop All": 40,
         "FNM": 47,
-        "H50+": 53,
-        "Fiber Fix": 21,
-        "Plant Protein Roti": 55,
+        "H50+": 30,
+        "Fiber Fix": 50,
+        "Plant Protein Roti": 34,
         "Berries": 51,
         "Orange": 37,
         "Pineapple": 20,
@@ -1307,11 +1307,11 @@
       "checkout_failures_today": 8,
       "page_scores": {
         "Homepage": 31,
-        "Shop All": 34,
+        "Shop All": 40,
         "FNM": 47,
-        "H50+": 53,
-        "Fiber Fix": 21,
-        "Plant Protein Roti": 55,
+        "H50+": 30,
+        "Fiber Fix": 50,
+        "Plant Protein Roti": 34,
         "Berries": 51,
         "Orange": 37,
         "Pineapple": 20,
