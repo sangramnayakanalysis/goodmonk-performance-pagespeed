@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T00:55:22+05:30",
+  "generated_at": "2026-09-22T02:59:16+05:30",
   "business_score": 19.3,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -13,7 +13,7 @@
   "customer_journey_health": "red",
   "critical_issues_count": 8,
   "checkout_failures_today": 1,
-  "pages_slower_than_yesterday": 0,
+  "pages_slower_than_yesterday": 3,
   "most_common_issue": {
     "title": "Initial server response time was short",
     "page_count": 8
@@ -32,22 +32,22 @@
       "top_issue_title": "Initial server response time was short"
     },
     {
+      "name": "Fiber Fix",
+      "score": 23,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
+    },
+    {
       "name": "Weight Management",
       "score": 23,
       "status_color": "red",
       "top_issue_title": "Avoid multiple page redirects"
     },
     {
-      "name": "Berries",
-      "score": 32,
+      "name": "Homepage",
+      "score": 26,
       "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
-    },
-    {
-      "name": "Orange",
-      "score": 34,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
+      "top_issue_title": "Reduce unused CSS"
     }
   ],
   "top_failed_journeys": [
@@ -1174,11 +1174,11 @@
       "journey_success_pct": 0.0,
       "checkout_failures_today": 1,
       "page_scores": {
-        "Homepage": 35,
-        "Shop All": 42,
+        "Homepage": 26,
+        "Shop All": 41,
         "FNM": 44,
         "H50+": 48,
-        "Fiber Fix": 36,
+        "Fiber Fix": 23,
         "Plant Protein Roti": 55,
         "Berries": 32,
         "Orange": 34,
@@ -1358,11 +1358,11 @@
       "journey_success_pct": 0.0,
       "checkout_failures_today": 1,
       "page_scores": {
-        "Homepage": 35,
-        "Shop All": 42,
+        "Homepage": 26,
+        "Shop All": 41,
         "FNM": 44,
         "H50+": 48,
-        "Fiber Fix": 36,
+        "Fiber Fix": 23,
         "Plant Protein Roti": 55,
         "Berries": 32,
         "Orange": 34,
