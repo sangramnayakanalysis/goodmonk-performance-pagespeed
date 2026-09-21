@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T11:14:44+05:30",
+  "generated_at": "2026-09-21T12:40:26+05:30",
   "business_score": 19.3,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -12,7 +12,7 @@
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
   "critical_issues_count": 9,
-  "checkout_failures_today": 4,
+  "checkout_failures_today": 5,
   "pages_slower_than_yesterday": 8,
   "most_common_issue": {
     "title": "Initial server response time was short",
@@ -52,6 +52,11 @@
   ],
   "top_failed_journeys": [
     {
+      "run_id": "86dc975b",
+      "finished_at": "2026-09-21T12:40:25+05:30",
+      "failed_step": "Images Loaded"
+    },
+    {
       "run_id": "7f1f7cd7",
       "finished_at": "2026-09-21T07:11:24+05:30",
       "failed_step": "Images Loaded"
@@ -69,11 +74,6 @@
     {
       "run_id": "8ea54391",
       "finished_at": "2026-09-21T00:57:44+05:30",
-      "failed_step": "Images Loaded"
-    },
-    {
-      "run_id": "dfc6e82e",
-      "finished_at": "2026-09-20T22:37:46+05:30",
       "failed_step": "Images Loaded"
     }
   ],
@@ -1146,7 +1146,7 @@
       "average_score": 36.92,
       "critical_count": 9,
       "journey_success_pct": 0.0,
-      "checkout_failures_today": 4,
+      "checkout_failures_today": 5,
       "page_scores": {
         "Homepage": 43,
         "Shop All": 38,
@@ -1330,7 +1330,7 @@
       "average_score": 36.92,
       "critical_count": 9,
       "journey_success_pct": 0.0,
-      "checkout_failures_today": 4,
+      "checkout_failures_today": 5,
       "page_scores": {
         "Homepage": 43,
         "Shop All": 38,
