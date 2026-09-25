@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T05:11:04+05:30",
+  "generated_at": "2026-09-25T05:43:46+05:30",
   "business_score": 19.3,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,12 +11,12 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 7,
+  "critical_issues_count": 8,
   "checkout_failures_today": 2,
-  "pages_slower_than_yesterday": 5,
+  "pages_slower_than_yesterday": 6,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 9
+    "page_count": 10
   },
   "top_slow_pages": [
     {
@@ -32,6 +32,12 @@
       "top_issue_title": "Initial server response time was short"
     },
     {
+      "name": "H50+",
+      "score": 22,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
+    },
+    {
       "name": "Milk Mix Strawberry",
       "score": 28,
       "status_color": "red",
@@ -40,12 +46,6 @@
     {
       "name": "Slimbiotics",
       "score": 31,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Fiber Fix",
-      "score": 33,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     }
@@ -1248,14 +1248,14 @@
       "date": "2026-09-25",
       "business_score": 19.3,
       "average_score": 37.02,
-      "critical_count": 7,
+      "critical_count": 8,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 2,
       "page_scores": {
         "Homepage": 41,
-        "Shop All": 55,
+        "Shop All": 49,
         "FNM": 37,
-        "H50+": 45,
+        "H50+": 22,
         "Fiber Fix": 33,
         "Plant Protein Roti": 18,
         "Berries": 52,
@@ -1432,14 +1432,14 @@
       "date": "2026-09-25",
       "business_score": 19.3,
       "average_score": 37.02,
-      "critical_count": 7,
+      "critical_count": 8,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 2,
       "page_scores": {
         "Homepage": 41,
-        "Shop All": 55,
+        "Shop All": 49,
         "FNM": 37,
-        "H50+": 45,
+        "H50+": 22,
         "Fiber Fix": 33,
         "Plant Protein Roti": 18,
         "Berries": 52,
