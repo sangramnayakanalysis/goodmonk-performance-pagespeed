@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T04:36:34+05:30",
+  "generated_at": "2026-09-27T05:37:04+05:30",
   "business_score": 19.3,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,12 +11,12 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 10,
+  "critical_issues_count": 11,
   "checkout_failures_today": 2,
-  "pages_slower_than_yesterday": 6,
+  "pages_slower_than_yesterday": 7,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 11
+    "page_count": 9
   },
   "top_slow_pages": [
     {
@@ -44,10 +44,10 @@
       "top_issue_title": "Initial server response time was short"
     },
     {
-      "name": "Assorted",
-      "score": 31,
+      "name": "FNM",
+      "score": 27,
       "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
+      "top_issue_title": "Initial server response time was short"
     }
   ],
   "top_failed_journeys": [
@@ -1300,15 +1300,15 @@
       "date": "2026-09-27",
       "business_score": 19.3,
       "average_score": 37.08,
-      "critical_count": 10,
+      "critical_count": 11,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 2,
       "page_scores": {
-        "Homepage": 49,
+        "Homepage": 41,
         "Shop All": 42,
-        "FNM": 55,
+        "FNM": 27,
         "H50+": 35,
-        "Fiber Fix": 51,
+        "Fiber Fix": 55,
         "Plant Protein Roti": 17,
         "Berries": 35,
         "Orange": 21,
@@ -1484,15 +1484,15 @@
       "date": "2026-09-27",
       "business_score": 19.3,
       "average_score": 37.08,
-      "critical_count": 10,
+      "critical_count": 11,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 2,
       "page_scores": {
-        "Homepage": 49,
+        "Homepage": 41,
         "Shop All": 42,
-        "FNM": 55,
+        "FNM": 27,
         "H50+": 35,
-        "Fiber Fix": 51,
+        "Fiber Fix": 55,
         "Plant Protein Roti": 17,
         "Berries": 35,
         "Orange": 21,
