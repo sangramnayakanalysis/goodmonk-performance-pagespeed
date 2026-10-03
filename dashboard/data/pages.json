@@ -50,8 +50,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 706,
-    "failed_runs": 232
+    "total_runs": 707,
+    "failed_runs": 233
   },
   {
     "name": "Shop All",
@@ -98,8 +98,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 709,
-    "failed_runs": 235
+    "total_runs": 710,
+    "failed_runs": 236
   },
   {
     "name": "FNM",
@@ -158,8 +158,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 704,
-    "failed_runs": 284
+    "total_runs": 705,
+    "failed_runs": 285
   },
   {
     "name": "H50+",
@@ -200,8 +200,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 698,
-    "failed_runs": 272
+    "total_runs": 699,
+    "failed_runs": 273
   },
   {
     "name": "Fiber Fix",
@@ -248,8 +248,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 704,
-    "failed_runs": 257
+    "total_runs": 705,
+    "failed_runs": 258
   },
   {
     "name": "Plant Protein Roti",
@@ -308,8 +308,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 702,
-    "failed_runs": 274
+    "total_runs": 703,
+    "failed_runs": 275
   },
   {
     "name": "Berries",
@@ -705,43 +705,19 @@
     "name": "Slimbiotics",
     "sheet_name": "Slimbiotics",
     "url": "https://www.goodmonk.in/products/good-monk-slimbiotics",
-    "latest": {
-      "Date": "2026-10-03",
-      "Time": "05:28:59",
-      "Performance Score": 53,
-      "Grade": "D",
-      "LCP": 6.68,
-      "Onload": 2.86,
-      "Fully Loaded": 6.38,
-      "TTFB": 0.02,
-      "CLS": 0.164,
-      "TBT": 0.31,
-      "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-slimbiotics&form_factor=mobile",
-      "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 16, \"unit\": \"millisecond\"}]",
-      "_page_name": "Slimbiotics",
-      "_sheet_name": "Slimbiotics",
-      "_url": "https://www.goodmonk.in/products/good-monk-slimbiotics"
-    },
-    "status_color": "yellow",
+    "latest": null,
+    "status_color": "grey",
     "metric_tiers": {
-      "score": "yellow",
-      "lcp": "red",
-      "cls": "yellow",
-      "ttfb": "green",
-      "tbt": "yellow"
+      "score": "grey",
+      "lcp": "grey",
+      "cls": "grey",
+      "ttfb": "grey",
+      "tbt": "grey"
     },
-    "score_trend": 22,
-    "top_opportunities": [
-      {
-        "title": "Initial server response time was short",
-        "display_value": "Root document took 20\u00a0ms",
-        "savings": 16,
-        "unit": "millisecond"
-      }
-    ],
-    "total_runs": 78,
-    "failed_runs": 18
+    "score_trend": null,
+    "top_opportunities": [],
+    "total_runs": 0,
+    "failed_runs": 0
   },
   {
     "name": "Weight Management",
