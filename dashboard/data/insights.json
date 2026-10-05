@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T07:42:01+05:30",
+  "generated_at": "2026-10-05T13:31:10+05:30",
   "business_score": 19.4,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -13,10 +13,10 @@
   "customer_journey_health": "red",
   "critical_issues_count": 5,
   "checkout_failures_today": 3,
-  "pages_slower_than_yesterday": 8,
+  "pages_slower_than_yesterday": 7,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 13
+    "page_count": 12
   },
   "top_slow_pages": [
     {
@@ -1507,16 +1507,16 @@
     {
       "date": "2026-10-05",
       "business_score": 19.4,
-      "average_score": 37.33,
+      "average_score": 37.34,
       "critical_count": 5,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 3,
       "page_scores": {
-        "Homepage": 43,
-        "Shop All": 44,
+        "Homepage": 52,
+        "Shop All": 50,
         "FNM": 37,
         "H50+": 34,
-        "Fiber Fix": 53,
+        "Fiber Fix": 47,
         "Plant Protein Roti": 34,
         "Berries": 50,
         "Orange": 39,
@@ -1691,16 +1691,16 @@
     {
       "date": "2026-10-05",
       "business_score": 19.4,
-      "average_score": 37.33,
+      "average_score": 37.34,
       "critical_count": 5,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 3,
       "page_scores": {
-        "Homepage": 43,
-        "Shop All": 44,
+        "Homepage": 52,
+        "Shop All": 50,
         "FNM": 37,
         "H50+": 34,
-        "Fiber Fix": 53,
+        "Fiber Fix": 47,
         "Plant Protein Roti": 34,
         "Berries": 50,
         "Orange": 39,
