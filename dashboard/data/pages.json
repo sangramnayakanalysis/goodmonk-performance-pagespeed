@@ -332,8 +332,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 82,
-    "failed_runs": 23
+    "total_runs": 83,
+    "failed_runs": 24
   },
   {
     "name": "Orange",
@@ -380,8 +380,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 82,
-    "failed_runs": 27
+    "total_runs": 83,
+    "failed_runs": 28
   },
   {
     "name": "Pineapple",
@@ -428,27 +428,27 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 82,
-    "failed_runs": 26
+    "total_runs": 83,
+    "failed_runs": 27
   },
   {
     "name": "Mango",
     "sheet_name": "Mango",
     "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-natural-mango-powder-50-less-sugar-with-8-vitamins-minerals",
     "latest": {
-      "Date": "2026-10-06",
-      "Time": "06:53:02",
-      "Performance Score": 26,
+      "Date": "2026-10-07",
+      "Time": "05:28:11",
+      "Performance Score": 33,
       "Grade": "F",
-      "LCP": 9.6,
-      "Onload": 3.24,
-      "Fully Loaded": 8.12,
+      "LCP": 7.32,
+      "Onload": 3.01,
+      "Fully Loaded": 7.37,
       "TTFB": 0.01,
-      "CLS": 0.709,
-      "TBT": 0.47,
+      "CLS": 1.128,
+      "TBT": 0.28,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Finstant-fruit-drink-mix-natural-mango-powder-50-less-sugar-with-8-vitamins-minerals&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,489\\u00a0KiB\", \"savings\": 450, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 10\\u00a0ms\", \"savings\": 14, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 10\\u00a0ms\", \"savings\": 14, \"unit\": \"millisecond\"}]",
       "_page_name": "Mango",
       "_sheet_name": "Mango",
       "_url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-natural-mango-powder-50-less-sugar-with-8-vitamins-minerals"
@@ -461,14 +461,8 @@
       "ttfb": "green",
       "tbt": "yellow"
     },
-    "score_trend": -13,
+    "score_trend": -14,
     "top_opportunities": [
-      {
-        "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 1,489\u00a0KiB",
-        "savings": 450,
-        "unit": "millisecond"
-      },
       {
         "title": "Initial server response time was short",
         "display_value": "Root document took 10\u00a0ms",
@@ -476,7 +470,7 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 81,
+    "total_runs": 82,
     "failed_runs": 19
   },
   {
@@ -484,37 +478,79 @@
     "sheet_name": "Assorted",
     "url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-assorted",
     "latest": {
-      "Date": "2026-10-06",
-      "Time": "06:54:17",
-      "Performance Score": 42,
+      "Date": "2026-10-07",
+      "Time": "05:29:24",
+      "Performance Score": 39,
       "Grade": "F",
-      "LCP": 24.59,
-      "Onload": 14.97,
-      "Fully Loaded": 14.97,
-      "TTFB": 0.01,
-      "CLS": 0,
-      "TBT": 0.51,
+      "LCP": 8.72,
+      "Onload": 3.24,
+      "Fully Loaded": 8.6,
+      "TTFB": 0.02,
+      "CLS": 0.15,
+      "TBT": 0.65,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Finstant-fruit-drink-mix-assorted&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,509\\u00a0KiB\", \"savings\": 9110, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 15, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 18, \"unit\": \"millisecond\"}]",
       "_page_name": "Assorted",
       "_sheet_name": "Assorted",
       "_url": "https://www.goodmonk.in/products/instant-fruit-drink-mix-assorted"
+    },
+    "status_color": "red",
+    "metric_tiers": {
+      "score": "red",
+      "lcp": "red",
+      "cls": "yellow",
+      "ttfb": "green",
+      "tbt": "red"
+    },
+    "score_trend": 29,
+    "top_opportunities": [
+      {
+        "title": "Initial server response time was short",
+        "display_value": "Root document took 20\u00a0ms",
+        "savings": 18,
+        "unit": "millisecond"
+      }
+    ],
+    "total_runs": 84,
+    "failed_runs": 18
+  },
+  {
+    "name": "Milk Mix Strawberry",
+    "sheet_name": "MM_Strawberry",
+    "url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-strawberry",
+    "latest": {
+      "Date": "2026-10-07",
+      "Time": "05:30:57",
+      "Performance Score": 50,
+      "Grade": "D",
+      "LCP": 7.13,
+      "Onload": 2.78,
+      "Fully Loaded": 6.54,
+      "TTFB": 0.01,
+      "CLS": 0.242,
+      "TBT": 0.22,
+      "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-superhero-milk-mix-strawberry&form_factor=mobile",
+      "Status": "OK",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,514\\u00a0KiB\", \"savings\": 450, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 15, \"unit\": \"millisecond\"}]",
+      "_page_name": "Milk Mix Strawberry",
+      "_sheet_name": "MM_Strawberry",
+      "_url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-strawberry"
     },
     "status_color": "yellow",
     "metric_tiers": {
       "score": "yellow",
       "lcp": "red",
-      "cls": "green",
+      "cls": "yellow",
       "ttfb": "green",
       "tbt": "yellow"
     },
-    "score_trend": 6,
+    "score_trend": 7,
     "top_opportunities": [
       {
         "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 1,509\u00a0KiB",
-        "savings": 9110,
+        "display_value": "Est savings of 1,514\u00a0KiB",
+        "savings": 450,
         "unit": "millisecond"
       },
       {
@@ -524,49 +560,7 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 83,
-    "failed_runs": 18
-  },
-  {
-    "name": "Milk Mix Strawberry",
-    "sheet_name": "MM_Strawberry",
-    "url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-strawberry",
-    "latest": {
-      "Date": "2026-10-06",
-      "Time": "06:53:57",
-      "Performance Score": 39,
-      "Grade": "F",
-      "LCP": 7.95,
-      "Onload": 2.86,
-      "Fully Loaded": 6.98,
-      "TTFB": 0.01,
-      "CLS": 0.009,
-      "TBT": 1.41,
-      "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-superhero-milk-mix-strawberry&form_factor=mobile",
-      "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 10\\u00a0ms\", \"savings\": 14, \"unit\": \"millisecond\"}]",
-      "_page_name": "Milk Mix Strawberry",
-      "_sheet_name": "MM_Strawberry",
-      "_url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-strawberry"
-    },
-    "status_color": "red",
-    "metric_tiers": {
-      "score": "red",
-      "lcp": "red",
-      "cls": "green",
-      "ttfb": "green",
-      "tbt": "red"
-    },
-    "score_trend": -1,
-    "top_opportunities": [
-      {
-        "title": "Initial server response time was short",
-        "display_value": "Root document took 10\u00a0ms",
-        "savings": 14,
-        "unit": "millisecond"
-      }
-    ],
-    "total_runs": 83,
+    "total_runs": 84,
     "failed_runs": 22
   },
   {
@@ -574,19 +568,19 @@
     "sheet_name": "MM_Vanilla",
     "url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-vanilla",
     "latest": {
-      "Date": "2026-10-06",
-      "Time": "06:54:10",
-      "Performance Score": 35,
+      "Date": "2026-10-07",
+      "Time": "05:30:29",
+      "Performance Score": 26,
       "Grade": "F",
-      "LCP": 22.49,
-      "Onload": 6.15,
-      "Fully Loaded": 11.14,
-      "TTFB": 0.02,
-      "CLS": 0,
-      "TBT": 0.92,
+      "LCP": 7.25,
+      "Onload": 2.93,
+      "Fully Loaded": 7.31,
+      "TTFB": 0.01,
+      "CLS": 0.251,
+      "TBT": 1.56,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-superhero-milk-mix-vanilla&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,513\\u00a0KiB\", \"savings\": 1620, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 43\\u00a0KiB\", \"savings\": 300, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 16, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 15, \"unit\": \"millisecond\"}]",
       "_page_name": "Milk Mix Vanilla",
       "_sheet_name": "MM_Vanilla",
       "_url": "https://www.goodmonk.in/products/good-monk-superhero-milk-mix-vanilla"
@@ -595,32 +589,20 @@
     "metric_tiers": {
       "score": "red",
       "lcp": "red",
-      "cls": "green",
+      "cls": "red",
       "ttfb": "green",
       "tbt": "red"
     },
-    "score_trend": -5,
+    "score_trend": -6,
     "top_opportunities": [
-      {
-        "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 1,513\u00a0KiB",
-        "savings": 1620,
-        "unit": "millisecond"
-      },
-      {
-        "title": "Reduce unused CSS",
-        "display_value": "Est savings of 43\u00a0KiB",
-        "savings": 300,
-        "unit": "millisecond"
-      },
       {
         "title": "Initial server response time was short",
         "display_value": "Root document took 20\u00a0ms",
-        "savings": 16,
+        "savings": 15,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 79,
+    "total_runs": 80,
     "failed_runs": 27
   },
   {
@@ -668,8 +650,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 82,
-    "failed_runs": 21
+    "total_runs": 83,
+    "failed_runs": 22
   },
   {
     "name": "Slimbiotics",
@@ -716,61 +698,55 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 81,
-    "failed_runs": 18
+    "total_runs": 82,
+    "failed_runs": 19
   },
   {
     "name": "Weight Management",
     "sheet_name": "Weight Management",
     "url": "https://www.goodmonk.in/products/good-monk-weight-management-program",
     "latest": {
-      "Date": "2026-10-05",
-      "Time": "04:58:31",
-      "Performance Score": 55,
-      "Grade": "D",
-      "LCP": 7.78,
-      "Onload": 3.36,
-      "Fully Loaded": 5.93,
-      "TTFB": 0.02,
-      "CLS": 0,
-      "TBT": 0.37,
+      "Date": "2026-10-07",
+      "Time": "05:31:05",
+      "Performance Score": 29,
+      "Grade": "F",
+      "LCP": 7.55,
+      "Onload": 3.37,
+      "Fully Loaded": 5.75,
+      "TTFB": 0.01,
+      "CLS": 0.686,
+      "TBT": 0.48,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-weight-management-program&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Avoid multiple page redirects\", \"display_value\": \"Est savings of 760\\u00a0ms\", \"savings\": 756.58, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,488\\u00a0KiB\", \"savings\": 450, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 16, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Avoid multiple page redirects\", \"display_value\": \"Est savings of 750\\u00a0ms\", \"savings\": 754.82, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 10\\u00a0ms\", \"savings\": 14, \"unit\": \"millisecond\"}]",
       "_page_name": "Weight Management",
       "_sheet_name": "Weight Management",
       "_url": "https://www.goodmonk.in/products/good-monk-weight-management-program"
     },
-    "status_color": "yellow",
+    "status_color": "red",
     "metric_tiers": {
-      "score": "yellow",
+      "score": "red",
       "lcp": "red",
-      "cls": "green",
+      "cls": "red",
       "ttfb": "green",
       "tbt": "yellow"
     },
-    "score_trend": 37,
+    "score_trend": 6,
     "top_opportunities": [
       {
         "title": "Avoid multiple page redirects",
-        "display_value": "Est savings of 760\u00a0ms",
-        "savings": 756.58,
-        "unit": "millisecond"
-      },
-      {
-        "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 1,488\u00a0KiB",
-        "savings": 450,
+        "display_value": "Est savings of 750\u00a0ms",
+        "savings": 754.82,
         "unit": "millisecond"
       },
       {
         "title": "Initial server response time was short",
-        "display_value": "Root document took 20\u00a0ms",
-        "savings": 16,
+        "display_value": "Root document took 10\u00a0ms",
+        "savings": 14,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 83,
+    "total_runs": 84,
     "failed_runs": 24
   }
 ]
