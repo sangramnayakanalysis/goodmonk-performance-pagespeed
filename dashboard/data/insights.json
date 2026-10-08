@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-10-08T16:19:39+05:30",
-  "business_score": 22.0,
+  "generated_at": "2026-10-08T19:47:31+05:30",
+  "business_score": 19.5,
   "business_score_color": "red",
   "business_score_label": "Critical",
   "components": {
     "performance": 37.4,
     "journey": 0.0,
     "alerts": 0.0,
-    "availability": 70.0
+    "availability": 45.0
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 12,
+  "critical_issues_count": 11,
   "checkout_failures_today": 4,
   "pages_slower_than_yesterday": 5,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 12
+    "page_count": 11
   },
   "top_slow_pages": [
     {
@@ -38,16 +38,16 @@
       "top_issue_title": "Avoid multiple page redirects"
     },
     {
-      "name": "Shop All",
+      "name": "Orange",
       "score": 30,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Orange",
-      "score": 30,
+      "name": "H50+",
+      "score": 31,
       "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
+      "top_issue_title": "Initial server response time was short"
     }
   ],
   "top_failed_journeys": [
@@ -1584,14 +1584,14 @@
     },
     {
       "date": "2026-10-08",
-      "business_score": 22.0,
+      "business_score": 19.5,
       "average_score": 37.42,
-      "critical_count": 12,
+      "critical_count": 11,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 4,
       "page_scores": {
-        "Homepage": 31,
-        "Shop All": 30,
+        "Homepage": 36,
+        "Shop All": 52,
         "FNM": 16,
         "H50+": 31,
         "Fiber Fix": 50,
@@ -1768,14 +1768,14 @@
     },
     {
       "date": "2026-10-08",
-      "business_score": 22.0,
+      "business_score": 19.5,
       "average_score": 37.42,
-      "critical_count": 12,
+      "critical_count": 11,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 4,
       "page_scores": {
-        "Homepage": 31,
-        "Shop All": 30,
+        "Homepage": 36,
+        "Shop All": 52,
         "FNM": 16,
         "H50+": 31,
         "Fiber Fix": 50,
