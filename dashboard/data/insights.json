@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T14:12:04+05:30",
+  "generated_at": "2026-10-13T17:53:59+05:30",
   "business_score": 19.5,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -13,14 +13,20 @@
   "customer_journey_health": "red",
   "critical_issues_count": 7,
   "checkout_failures_today": 3,
-  "pages_slower_than_yesterday": 7,
+  "pages_slower_than_yesterday": 6,
   "most_common_issue": {
     "title": "Initial server response time was short",
-    "page_count": 10
+    "page_count": 9
   },
   "top_slow_pages": [
     {
       "name": "H50+",
+      "score": 10,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
+    },
+    {
+      "name": "Plant Protein Roti",
       "score": 10,
       "status_color": "red",
       "top_issue_title": "Initial server response time was short"
@@ -38,14 +44,8 @@
       "top_issue_title": "Initial server response time was short"
     },
     {
-      "name": "Fiber Fix",
-      "score": 26,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
-    },
-    {
       "name": "FNM",
-      "score": 30,
+      "score": 29,
       "status_color": "red",
       "top_issue_title": "Initial server response time was short"
     }
@@ -1722,10 +1722,10 @@
       "page_scores": {
         "Homepage": 45,
         "Shop All": 24,
-        "FNM": 30,
+        "FNM": 29,
         "H50+": 10,
-        "Fiber Fix": 26,
-        "Plant Protein Roti": 46,
+        "Fiber Fix": 55,
+        "Plant Protein Roti": 10,
         "Berries": 56,
         "Orange": 14,
         "Pineapple": 31,
@@ -1906,10 +1906,10 @@
       "page_scores": {
         "Homepage": 45,
         "Shop All": 24,
-        "FNM": 30,
+        "FNM": 29,
         "H50+": 10,
-        "Fiber Fix": 26,
-        "Plant Protein Roti": 46,
+        "Fiber Fix": 55,
+        "Plant Protein Roti": 10,
         "Berries": 56,
         "Orange": 14,
         "Pineapple": 31,
