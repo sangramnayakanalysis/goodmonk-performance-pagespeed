@@ -38,8 +38,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 762,
-    "failed_runs": 242
+    "total_runs": 763,
+    "failed_runs": 243
   },
   {
     "name": "Shop All",
@@ -47,18 +47,18 @@
     "url": "https://www.goodmonk.in/collections/all",
     "latest": {
       "Date": "2026-10-16",
-      "Time": "04:57:23",
-      "Performance Score": 55,
-      "Grade": "D",
-      "LCP": 6.38,
-      "Onload": 3.02,
-      "Fully Loaded": 5.16,
-      "TTFB": 0.01,
+      "Time": "13:12:43",
+      "Performance Score": 43,
+      "Grade": "F",
+      "LCP": 6.5,
+      "Onload": 2.63,
+      "Fully Loaded": 5.96,
+      "TTFB": 0.02,
       "CLS": 0.001,
-      "TBT": 0.52,
+      "TBT": 1.4,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fcollections%2Fall&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 10\\u00a0ms\", \"savings\": 14, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 17, \"unit\": \"millisecond\"}]",
       "_page_name": "Shop All",
       "_sheet_name": "Shop_All",
       "_url": "https://www.goodmonk.in/collections/all"
@@ -69,18 +69,18 @@
       "lcp": "red",
       "cls": "green",
       "ttfb": "green",
-      "tbt": "yellow"
+      "tbt": "red"
     },
-    "score_trend": 18,
+    "score_trend": 6,
     "top_opportunities": [
       {
         "title": "Initial server response time was short",
-        "display_value": "Root document took 10\u00a0ms",
-        "savings": 14,
+        "display_value": "Root document took 20\u00a0ms",
+        "savings": 17,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 765,
+    "total_runs": 766,
     "failed_runs": 247
   },
   {
@@ -134,8 +134,8 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 760,
-    "failed_runs": 306
+    "total_runs": 761,
+    "failed_runs": 307
   },
   {
     "name": "H50+",
@@ -143,18 +143,18 @@
     "url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix",
     "latest": {
       "Date": "2026-10-16",
-      "Time": "07:50:44",
-      "Performance Score": 42,
-      "Grade": "F",
-      "LCP": 18.83,
-      "Onload": 5.65,
-      "Fully Loaded": 10.49,
+      "Time": "13:12:26",
+      "Performance Score": 58,
+      "Grade": "D",
+      "LCP": 7.6,
+      "Onload": 4.15,
+      "Fully Loaded": 6.85,
       "TTFB": 0.02,
       "CLS": 0,
-      "TBT": 0.59,
+      "TBT": 0.2,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fgood-monk-50-nutrition-mix&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,502\\u00a0KiB\", \"savings\": 1200, \"unit\": \"millisecond\"}, {\"title\": \"Reduce unused CSS\", \"display_value\": \"Est savings of 44\\u00a0KiB\", \"savings\": 50, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 21, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,524\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 22, \"unit\": \"millisecond\"}]",
       "_page_name": "H50+",
       "_sheet_name": "H50+",
       "_url": "https://www.goodmonk.in/products/good-monk-50-nutrition-mix"
@@ -167,28 +167,22 @@
       "ttfb": "green",
       "tbt": "yellow"
     },
-    "score_trend": 27,
+    "score_trend": 43,
     "top_opportunities": [
       {
         "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 1,502\u00a0KiB",
-        "savings": 1200,
-        "unit": "millisecond"
-      },
-      {
-        "title": "Reduce unused CSS",
-        "display_value": "Est savings of 44\u00a0KiB",
-        "savings": 50,
+        "display_value": "Est savings of 1,524\u00a0KiB",
+        "savings": 150,
         "unit": "millisecond"
       },
       {
         "title": "Initial server response time was short",
         "display_value": "Root document took 20\u00a0ms",
-        "savings": 21,
+        "savings": 22,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 754,
+    "total_runs": 755,
     "failed_runs": 291
   },
   {
@@ -197,44 +191,32 @@
     "url": "https://www.goodmonk.in/products/fiber-fix",
     "latest": {
       "Date": "2026-10-16",
-      "Time": "04:57:30",
-      "Performance Score": 46,
+      "Time": "13:12:59",
+      "Performance Score": 37,
       "Grade": "F",
-      "LCP": 20.76,
-      "Onload": 6.87,
-      "Fully Loaded": 10.73,
+      "LCP": 7.2,
+      "Onload": 2.93,
+      "Fully Loaded": 7.62,
       "TTFB": 0.02,
-      "CLS": 0,
-      "TBT": 0.4,
+      "CLS": 0.725,
+      "TBT": 0.22,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Ffiber-fix&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Reduce unused JavaScript\", \"display_value\": \"Est savings of 1,527\\u00a0KiB\", \"savings\": 1330, \"unit\": \"millisecond\"}, {\"title\": \"Minify JavaScript\", \"display_value\": \"Est savings of 19\\u00a0KiB\", \"savings\": 150, \"unit\": \"millisecond\"}, {\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 17, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 17, \"unit\": \"millisecond\"}]",
       "_page_name": "Fiber Fix",
       "_sheet_name": "FF",
       "_url": "https://www.goodmonk.in/products/fiber-fix"
     },
-    "status_color": "yellow",
+    "status_color": "red",
     "metric_tiers": {
-      "score": "yellow",
+      "score": "red",
       "lcp": "red",
-      "cls": "green",
+      "cls": "red",
       "ttfb": "green",
       "tbt": "yellow"
     },
-    "score_trend": 28,
+    "score_trend": 19,
     "top_opportunities": [
-      {
-        "title": "Reduce unused JavaScript",
-        "display_value": "Est savings of 1,527\u00a0KiB",
-        "savings": 1330,
-        "unit": "millisecond"
-      },
-      {
-        "title": "Minify JavaScript",
-        "display_value": "Est savings of 19\u00a0KiB",
-        "savings": 150,
-        "unit": "millisecond"
-      },
       {
         "title": "Initial server response time was short",
         "display_value": "Root document took 20\u00a0ms",
@@ -242,7 +224,7 @@
         "unit": "millisecond"
       }
     ],
-    "total_runs": 760,
+    "total_runs": 761,
     "failed_runs": 274
   },
   {
@@ -251,18 +233,18 @@
     "url": "https://www.goodmonk.in/products/plant-protein-for-rotis",
     "latest": {
       "Date": "2026-10-16",
-      "Time": "07:52:39",
-      "Performance Score": 11,
+      "Time": "13:13:42",
+      "Performance Score": 13,
       "Grade": "F",
-      "LCP": 7.22,
+      "LCP": 7.39,
       "Onload": 3.16,
-      "Fully Loaded": 7.54,
-      "TTFB": 0.02,
-      "CLS": 0.601,
-      "TBT": 3.69,
+      "Fully Loaded": 7.35,
+      "TTFB": 0.01,
+      "CLS": 0.613,
+      "TBT": 1.89,
       "Report URL": "https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.goodmonk.in%2Fproducts%2Fplant-protein-for-rotis&form_factor=mobile",
       "Status": "OK",
-      "Top Opportunities": "[{\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 17, \"unit\": \"millisecond\"}]",
+      "Top Opportunities": "[{\"title\": \"Initial server response time was short\", \"display_value\": \"Root document took 20\\u00a0ms\", \"savings\": 15, \"unit\": \"millisecond\"}]",
       "_page_name": "Plant Protein Roti",
       "_sheet_name": "Plant Protein Roti",
       "_url": "https://www.goodmonk.in/products/plant-protein-for-rotis"
@@ -275,16 +257,16 @@
       "ttfb": "green",
       "tbt": "red"
     },
-    "score_trend": -42,
+    "score_trend": -40,
     "top_opportunities": [
       {
         "title": "Initial server response time was short",
         "display_value": "Root document took 20\u00a0ms",
-        "savings": 17,
+        "savings": 15,
         "unit": "millisecond"
       }
     ],
-    "total_runs": 758,
+    "total_runs": 759,
     "failed_runs": 291
   },
   {
