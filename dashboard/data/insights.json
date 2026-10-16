@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T08:23:10+05:30",
+  "generated_at": "2026-10-16T13:09:44+05:30",
   "business_score": 19.5,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -12,7 +12,7 @@
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
   "critical_issues_count": 5,
-  "checkout_failures_today": 4,
+  "checkout_failures_today": 5,
   "pages_slower_than_yesterday": 5,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
@@ -52,6 +52,11 @@
   ],
   "top_failed_journeys": [
     {
+      "run_id": "d951ceda",
+      "finished_at": "2026-10-16T13:09:43+05:30",
+      "failed_step": "Images Loaded"
+    },
+    {
       "run_id": "91286c27",
       "finished_at": "2026-10-16T08:23:09+05:30",
       "failed_step": "Images Loaded"
@@ -69,11 +74,6 @@
     {
       "run_id": "a7ae7044",
       "finished_at": "2026-10-16T00:10:00+05:30",
-      "failed_step": "Images Loaded"
-    },
-    {
-      "run_id": "2ccd3607",
-      "finished_at": "2026-10-15T20:03:41+05:30",
       "failed_step": "Images Loaded"
     }
   ],
@@ -1796,7 +1796,7 @@
       "average_score": 37.56,
       "critical_count": 5,
       "journey_success_pct": 0.0,
-      "checkout_failures_today": 4,
+      "checkout_failures_today": 5,
       "page_scores": {
         "Homepage": 53,
         "Shop All": 55,
@@ -1980,7 +1980,7 @@
       "average_score": 37.56,
       "critical_count": 5,
       "journey_success_pct": 0.0,
-      "checkout_failures_today": 4,
+      "checkout_failures_today": 5,
       "page_scores": {
         "Homepage": 53,
         "Shop All": 55,
