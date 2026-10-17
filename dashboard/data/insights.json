@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-10-18T03:25:22+05:30",
-  "business_score": 22.0,
+  "generated_at": "2026-10-18T04:04:31+05:30",
+  "business_score": 19.5,
   "business_score_color": "red",
   "business_score_label": "Critical",
   "components": {
     "performance": 37.6,
     "journey": 0.0,
     "alerts": 0.0,
-    "availability": 70.0
+    "availability": 45.0
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 11,
+  "critical_issues_count": 8,
   "checkout_failures_today": 1,
-  "pages_slower_than_yesterday": 3,
+  "pages_slower_than_yesterday": 4,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 10
+    "page_count": 7
   },
   "top_slow_pages": [
     {
@@ -1844,9 +1844,9 @@
     },
     {
       "date": "2026-10-18",
-      "business_score": 22.0,
-      "average_score": 37.58,
-      "critical_count": 11,
+      "business_score": 19.5,
+      "average_score": 37.59,
+      "critical_count": 8,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 1,
       "page_scores": {
@@ -1856,15 +1856,15 @@
         "H50+": 33,
         "Fiber Fix": 24,
         "Plant Protein Roti": 55,
-        "Berries": 31,
+        "Berries": 41,
         "Orange": 49,
         "Pineapple": 27,
-        "Mango": 36,
+        "Mango": 48,
         "Assorted": 29,
-        "Milk Mix Strawberry": 38,
+        "Milk Mix Strawberry": 60,
         "Milk Mix Vanilla": 30,
-        "Milk Mix Chocolate": 54,
-        "Slimbiotics": 34,
+        "Milk Mix Chocolate": 46,
+        "Slimbiotics": 35,
         "Weight Management": 18
       }
     }
@@ -2028,9 +2028,9 @@
     },
     {
       "date": "2026-10-18",
-      "business_score": 22.0,
-      "average_score": 37.58,
-      "critical_count": 11,
+      "business_score": 19.5,
+      "average_score": 37.59,
+      "critical_count": 8,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 1,
       "page_scores": {
@@ -2040,15 +2040,15 @@
         "H50+": 33,
         "Fiber Fix": 24,
         "Plant Protein Roti": 55,
-        "Berries": 31,
+        "Berries": 41,
         "Orange": 49,
         "Pineapple": 27,
-        "Mango": 36,
+        "Mango": 48,
         "Assorted": 29,
-        "Milk Mix Strawberry": 38,
+        "Milk Mix Strawberry": 60,
         "Milk Mix Vanilla": 30,
-        "Milk Mix Chocolate": 54,
-        "Slimbiotics": 34,
+        "Milk Mix Chocolate": 46,
+        "Slimbiotics": 35,
         "Weight Management": 18
       }
     }
