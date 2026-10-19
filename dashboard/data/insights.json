@@ -1,42 +1,24 @@
 {
-  "generated_at": "2026-10-19T04:39:23+05:30",
-  "business_score": 19.5,
+  "generated_at": "2026-10-19T06:09:44+05:30",
+  "business_score": 21.6,
   "business_score_color": "red",
   "business_score_label": "Critical",
   "components": {
     "performance": 37.6,
     "journey": 0.0,
-    "alerts": 0.0,
+    "alerts": 10.0,
     "availability": 45.0
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 10,
+  "critical_issues_count": 5,
   "checkout_failures_today": 3,
-  "pages_slower_than_yesterday": 6,
+  "pages_slower_than_yesterday": 3,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 12
+    "page_count": 9
   },
   "top_slow_pages": [
-    {
-      "name": "Plant Protein Roti",
-      "score": 16,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
-    },
-    {
-      "name": "Milk Mix Strawberry",
-      "score": 16,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
-    },
-    {
-      "name": "Weight Management",
-      "score": 18,
-      "status_color": "red",
-      "top_issue_title": "Avoid multiple page redirects"
-    },
     {
       "name": "Orange",
       "score": 24,
@@ -44,8 +26,26 @@
       "top_issue_title": "Initial server response time was short"
     },
     {
-      "name": "Milk Mix Vanilla",
-      "score": 31,
+      "name": "FNM",
+      "score": 32,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Assorted",
+      "score": 32,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Fiber Fix",
+      "score": 37,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Homepage",
+      "score": 38,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     }
@@ -1870,28 +1870,22 @@
     },
     {
       "date": "2026-10-19",
-      "business_score": 19.5,
-      "average_score": 37.62,
-      "critical_count": 10,
+      "business_score": 21.6,
+      "average_score": 37.65,
+      "critical_count": 5,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 3,
       "page_scores": {
-        "Homepage": 51,
-        "Shop All": 58,
+        "Homepage": 38,
+        "Shop All": 64,
         "FNM": 32,
         "H50+": 50,
         "Fiber Fix": 37,
-        "Plant Protein Roti": 16,
+        "Plant Protein Roti": 48,
         "Berries": 51,
         "Orange": 24,
         "Pineapple": 60,
-        "Mango": 34,
-        "Assorted": 32,
-        "Milk Mix Strawberry": 16,
-        "Milk Mix Vanilla": 31,
-        "Milk Mix Chocolate": 38,
-        "Slimbiotics": 50,
-        "Weight Management": 18
+        "Assorted": 32
       }
     }
   ],
@@ -2054,28 +2048,22 @@
     },
     {
       "date": "2026-10-19",
-      "business_score": 19.5,
-      "average_score": 37.62,
-      "critical_count": 10,
+      "business_score": 21.6,
+      "average_score": 37.65,
+      "critical_count": 5,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 3,
       "page_scores": {
-        "Homepage": 51,
-        "Shop All": 58,
+        "Homepage": 38,
+        "Shop All": 64,
         "FNM": 32,
         "H50+": 50,
         "Fiber Fix": 37,
-        "Plant Protein Roti": 16,
+        "Plant Protein Roti": 48,
         "Berries": 51,
         "Orange": 24,
         "Pineapple": 60,
-        "Mango": 34,
-        "Assorted": 32,
-        "Milk Mix Strawberry": 16,
-        "Milk Mix Vanilla": 31,
-        "Milk Mix Chocolate": 38,
-        "Slimbiotics": 50,
-        "Weight Management": 18
+        "Assorted": 32
       }
     }
   ]
