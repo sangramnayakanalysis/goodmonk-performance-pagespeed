@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T01:21:45+05:30",
+  "generated_at": "2026-10-21T02:33:52+05:30",
   "business_score": 19.6,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -11,9 +11,9 @@
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 6,
+  "critical_issues_count": 5,
   "checkout_failures_today": 1,
-  "pages_slower_than_yesterday": 0,
+  "pages_slower_than_yesterday": 1,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
     "page_count": 12
@@ -38,14 +38,14 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Homepage",
-      "score": 33,
+      "name": "Mango",
+      "score": 36,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Mango",
-      "score": 36,
+      "name": "Orange",
+      "score": 37,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     }
@@ -1922,13 +1922,13 @@
       "date": "2026-10-21",
       "business_score": 19.6,
       "average_score": 37.73,
-      "critical_count": 6,
+      "critical_count": 5,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 1,
       "page_scores": {
-        "Homepage": 33,
+        "Homepage": 53,
         "Shop All": 58,
-        "FNM": 41,
+        "FNM": 40,
         "H50+": 15,
         "Fiber Fix": 25,
         "Plant Protein Roti": 62,
@@ -2104,13 +2104,13 @@
       "date": "2026-10-21",
       "business_score": 19.6,
       "average_score": 37.73,
-      "critical_count": 6,
+      "critical_count": 5,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 1,
       "page_scores": {
-        "Homepage": 33,
+        "Homepage": 53,
         "Shop All": 58,
-        "FNM": 41,
+        "FNM": 40,
         "H50+": 15,
         "Fiber Fix": 25,
         "Plant Protein Roti": 62,
