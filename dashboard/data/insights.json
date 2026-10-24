@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T15:29:49+05:30",
+  "generated_at": "2026-10-24T15:32:37+05:30",
   "business_score": 19.6,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -16,7 +16,7 @@
   "pages_slower_than_yesterday": 7,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 11
+    "page_count": 12
   },
   "top_slow_pages": [
     {
@@ -32,6 +32,12 @@
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
+      "name": "FNM",
+      "score": 33,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
       "name": "Pineapple",
       "score": 34,
       "status_color": "red",
@@ -42,12 +48,6 @@
       "score": 35,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Milk Mix Chocolate",
-      "score": 35,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
     }
   ],
   "top_failed_journeys": [
@@ -2005,11 +2005,11 @@
       "checkout_failures_today": 5,
       "page_scores": {
         "Homepage": 49,
-        "Shop All": 39,
-        "FNM": 52,
-        "H50+": 46,
-        "Fiber Fix": 53,
-        "Plant Protein Roti": 46,
+        "Shop All": 40,
+        "FNM": 33,
+        "H50+": 49,
+        "Fiber Fix": 41,
+        "Plant Protein Roti": 48,
         "Berries": 40,
         "Orange": 35,
         "Pineapple": 34,
@@ -2187,11 +2187,11 @@
       "checkout_failures_today": 5,
       "page_scores": {
         "Homepage": 49,
-        "Shop All": 39,
-        "FNM": 52,
-        "H50+": 46,
-        "Fiber Fix": 53,
-        "Plant Protein Roti": 46,
+        "Shop All": 40,
+        "FNM": 33,
+        "H50+": 49,
+        "Fiber Fix": 41,
+        "Plant Protein Roti": 48,
         "Berries": 40,
         "Orange": 35,
         "Pineapple": 34,
