@@ -1,5 +1,7 @@
 [
   "[pageerror] Unexpected token 'export'",
+  "[error] Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+  "[error] Failed to load resource: the server responded with a status of 403 ()",
   "[pageerror] Unexpected token 'export'",
   "[error] Failed to load resource: the server responded with a status of 404 ()",
   "[pageerror] t.fetchAvailability is not a function",
