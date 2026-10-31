@@ -1,36 +1,24 @@
 {
-  "generated_at": "2026-10-31T23:34:07+05:30",
-  "business_score": 22.2,
+  "generated_at": "2026-11-01T00:27:59+05:30",
+  "business_score": 19.7,
   "business_score_color": "red",
   "business_score_label": "Critical",
   "components": {
     "performance": 38.1,
     "journey": 0.0,
     "alerts": 0.0,
-    "availability": 70.0
+    "availability": 45.0
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 11,
+  "critical_issues_count": 9,
   "checkout_failures_today": 6,
-  "pages_slower_than_yesterday": 9,
+  "pages_slower_than_yesterday": 0,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 13
+    "page_count": 14
   },
   "top_slow_pages": [
-    {
-      "name": "Plant Protein Roti",
-      "score": 18,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
-    },
-    {
-      "name": "Fiber Fix",
-      "score": 21,
-      "status_color": "red",
-      "top_issue_title": "Initial server response time was short"
-    },
     {
       "name": "Shop All",
       "score": 28,
@@ -38,14 +26,26 @@
       "top_issue_title": "Reduce unused CSS"
     },
     {
-      "name": "Homepage",
-      "score": 34,
+      "name": "Fiber Fix",
+      "score": 29,
+      "status_color": "red",
+      "top_issue_title": "Initial server response time was short"
+    },
+    {
+      "name": "Berries",
+      "score": 35,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "H50+",
-      "score": 35,
+      "name": "Milk Mix Chocolate",
+      "score": 36,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Weight Management",
+      "score": 36,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     }
@@ -2203,35 +2203,35 @@
         "Slimbiotics": 39,
         "Weight Management": 36
       }
+    },
+    {
+      "date": "2026-11-01",
+      "business_score": 19.7,
+      "average_score": 38.1,
+      "critical_count": 9,
+      "journey_success_pct": 0.0,
+      "checkout_failures_today": 6,
+      "page_scores": {
+        "Homepage": 57,
+        "Shop All": 28,
+        "FNM": 39,
+        "H50+": 38,
+        "Fiber Fix": 29,
+        "Plant Protein Roti": 52,
+        "Berries": 35,
+        "Orange": 46,
+        "Pineapple": 51,
+        "Mango": 53,
+        "Assorted": 39,
+        "Milk Mix Strawberry": 43,
+        "Milk Mix Vanilla": 48,
+        "Milk Mix Chocolate": 36,
+        "Slimbiotics": 39,
+        "Weight Management": 36
+      }
     }
   ],
   "weekly_trend": [
-    {
-      "date": "2026-10-25",
-      "business_score": 22.2,
-      "average_score": 37.95,
-      "critical_count": 7,
-      "journey_success_pct": 0.0,
-      "checkout_failures_today": 7,
-      "page_scores": {
-        "Homepage": 42,
-        "Shop All": 43,
-        "FNM": 42,
-        "H50+": 36,
-        "Fiber Fix": 38,
-        "Plant Protein Roti": 54,
-        "Berries": 62,
-        "Orange": 47,
-        "Pineapple": 53,
-        "Mango": 35,
-        "Assorted": 34,
-        "Milk Mix Strawberry": 27,
-        "Milk Mix Vanilla": 30,
-        "Milk Mix Chocolate": 52,
-        "Slimbiotics": 49,
-        "Weight Management": 26
-      }
-    },
     {
       "date": "2026-10-26",
       "business_score": 19.7,
@@ -2376,6 +2376,32 @@
         "H50+": 35,
         "Fiber Fix": 21,
         "Plant Protein Roti": 18,
+        "Berries": 35,
+        "Orange": 46,
+        "Pineapple": 51,
+        "Mango": 53,
+        "Assorted": 39,
+        "Milk Mix Strawberry": 43,
+        "Milk Mix Vanilla": 48,
+        "Milk Mix Chocolate": 36,
+        "Slimbiotics": 39,
+        "Weight Management": 36
+      }
+    },
+    {
+      "date": "2026-11-01",
+      "business_score": 19.7,
+      "average_score": 38.1,
+      "critical_count": 9,
+      "journey_success_pct": 0.0,
+      "checkout_failures_today": 6,
+      "page_scores": {
+        "Homepage": 57,
+        "Shop All": 28,
+        "FNM": 39,
+        "H50+": 38,
+        "Fiber Fix": 29,
+        "Plant Protein Roti": 52,
         "Berries": 35,
         "Orange": 46,
         "Pineapple": 51,
