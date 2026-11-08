@@ -1,33 +1,27 @@
 {
-  "generated_at": "2026-11-08T07:14:23+05:30",
-  "business_score": 22.3,
+  "generated_at": "2026-11-08T09:00:32+05:30",
+  "business_score": 19.8,
   "business_score_color": "red",
   "business_score_label": "Critical",
   "components": {
-    "performance": 38.3,
+    "performance": 38.4,
     "journey": 0.0,
     "alerts": 0.0,
-    "availability": 70.0
+    "availability": 45.0
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 5,
+  "critical_issues_count": 4,
   "checkout_failures_today": 3,
-  "pages_slower_than_yesterday": 5,
+  "pages_slower_than_yesterday": 3,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
-    "page_count": 15
+    "page_count": 12
   },
   "top_slow_pages": [
     {
       "name": "Milk Mix Strawberry",
       "score": 33,
-      "status_color": "red",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Plant Protein Roti",
-      "score": 36,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
@@ -48,6 +42,12 @@
       "score": 38,
       "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Orange",
+      "score": 40,
+      "status_color": "yellow",
+      "top_issue_title": "Initial server response time was short"
     }
   ],
   "top_failed_journeys": [
@@ -2362,18 +2362,18 @@
     },
     {
       "date": "2026-11-08",
-      "business_score": 22.3,
-      "average_score": 38.33,
-      "critical_count": 5,
+      "business_score": 19.8,
+      "average_score": 38.35,
+      "critical_count": 4,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 3,
       "page_scores": {
-        "Homepage": 42,
-        "Shop All": 50,
-        "FNM": 51,
-        "H50+": 51,
+        "Homepage": 67,
+        "Shop All": 60,
+        "FNM": 46,
+        "H50+": 46,
         "Fiber Fix": 52,
-        "Plant Protein Roti": 36,
+        "Plant Protein Roti": 55,
         "Berries": 63,
         "Orange": 40,
         "Pineapple": 36,
@@ -2546,18 +2546,18 @@
     },
     {
       "date": "2026-11-08",
-      "business_score": 22.3,
-      "average_score": 38.33,
-      "critical_count": 5,
+      "business_score": 19.8,
+      "average_score": 38.35,
+      "critical_count": 4,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 3,
       "page_scores": {
-        "Homepage": 42,
-        "Shop All": 50,
-        "FNM": 51,
-        "H50+": 51,
+        "Homepage": 67,
+        "Shop All": 60,
+        "FNM": 46,
+        "H50+": 46,
         "Fiber Fix": 52,
-        "Plant Protein Roti": 36,
+        "Plant Protein Roti": 55,
         "Berries": 63,
         "Orange": 40,
         "Pineapple": 36,
