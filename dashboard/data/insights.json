@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T23:45:42+05:30",
+  "generated_at": "2026-11-12T05:14:44+05:30",
   "business_score": 22.4,
   "business_score_color": "red",
   "business_score_label": "Critical",
@@ -12,8 +12,8 @@
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
   "critical_issues_count": 7,
-  "checkout_failures_today": 4,
-  "pages_slower_than_yesterday": 7,
+  "checkout_failures_today": 1,
+  "pages_slower_than_yesterday": 0,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
     "page_count": 14
@@ -52,6 +52,11 @@
   ],
   "top_failed_journeys": [
     {
+      "run_id": "23831920",
+      "finished_at": "2026-11-12T05:14:43+05:30",
+      "failed_step": "Images Loaded"
+    },
+    {
       "run_id": "8ef62c70",
       "finished_at": "2026-11-11T23:13:14+05:30",
       "failed_step": "Images Loaded"
@@ -70,40 +75,9 @@
       "run_id": "dc616087",
       "finished_at": "2026-11-11T04:47:11+05:30",
       "failed_step": "Images Loaded"
-    },
-    {
-      "run_id": "00f43c5c",
-      "finished_at": "2026-11-10T23:34:10+05:30",
-      "failed_step": "Images Loaded"
     }
   ],
   "daily_history": [
-    {
-      "date": "2026-08-14",
-      "business_score": 19.6,
-      "average_score": 37.75,
-      "critical_count": 13,
-      "journey_success_pct": 0.0,
-      "checkout_failures_today": 23,
-      "page_scores": {
-        "Homepage": 35,
-        "Shop All": 28,
-        "FNM": 38,
-        "H50+": 21,
-        "Fiber Fix": 28,
-        "Plant Protein Roti": 48,
-        "Berries": 29,
-        "Orange": 36,
-        "Pineapple": 14,
-        "Mango": 47,
-        "Assorted": 38,
-        "Milk Mix Strawberry": 42,
-        "Milk Mix Vanilla": 27,
-        "Milk Mix Chocolate": 36,
-        "Slimbiotics": 24,
-        "Weight Management": 18
-      }
-    },
     {
       "date": "2026-08-15",
       "business_score": 19.6,
@@ -2385,35 +2359,35 @@
         "Slimbiotics": 49,
         "Weight Management": 37
       }
+    },
+    {
+      "date": "2026-11-12",
+      "business_score": 22.4,
+      "average_score": 38.45,
+      "critical_count": 7,
+      "journey_success_pct": 0.0,
+      "checkout_failures_today": 1,
+      "page_scores": {
+        "Homepage": 45,
+        "Shop All": 37,
+        "FNM": 38,
+        "H50+": 36,
+        "Fiber Fix": 57,
+        "Plant Protein Roti": 44,
+        "Berries": 46,
+        "Orange": 36,
+        "Pineapple": 53,
+        "Mango": 36,
+        "Assorted": 48,
+        "Milk Mix Strawberry": 37,
+        "Milk Mix Vanilla": 47,
+        "Milk Mix Chocolate": 49,
+        "Slimbiotics": 49,
+        "Weight Management": 37
+      }
     }
   ],
   "weekly_trend": [
-    {
-      "date": "2026-11-05",
-      "business_score": 22.3,
-      "average_score": 38.2,
-      "critical_count": 7,
-      "journey_success_pct": 0.0,
-      "checkout_failures_today": 4,
-      "page_scores": {
-        "Homepage": 39,
-        "Shop All": 46,
-        "FNM": 48,
-        "H50+": 26,
-        "Fiber Fix": 53,
-        "Plant Protein Roti": 21,
-        "Berries": 55,
-        "Orange": 26,
-        "Pineapple": 44,
-        "Mango": 36,
-        "Assorted": 17,
-        "Milk Mix Strawberry": 44,
-        "Milk Mix Vanilla": 47,
-        "Milk Mix Chocolate": 52,
-        "Slimbiotics": 29,
-        "Weight Management": 50
-      }
-    },
     {
       "date": "2026-11-06",
       "business_score": 20.8,
@@ -2551,6 +2525,32 @@
       "critical_count": 7,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 4,
+      "page_scores": {
+        "Homepage": 45,
+        "Shop All": 37,
+        "FNM": 38,
+        "H50+": 36,
+        "Fiber Fix": 57,
+        "Plant Protein Roti": 44,
+        "Berries": 46,
+        "Orange": 36,
+        "Pineapple": 53,
+        "Mango": 36,
+        "Assorted": 48,
+        "Milk Mix Strawberry": 37,
+        "Milk Mix Vanilla": 47,
+        "Milk Mix Chocolate": 49,
+        "Slimbiotics": 49,
+        "Weight Management": 37
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "business_score": 22.4,
+      "average_score": 38.45,
+      "critical_count": 7,
+      "journey_success_pct": 0.0,
+      "checkout_failures_today": 1,
       "page_scores": {
         "Homepage": 45,
         "Shop All": 37,
