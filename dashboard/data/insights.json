@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-11-22T07:17:46+05:30",
-  "business_score": 24.5,
+  "generated_at": "2026-11-22T07:20:53+05:30",
+  "business_score": 20.0,
   "business_score_color": "red",
   "business_score_label": "Critical",
   "components": {
     "performance": 38.9,
     "journey": 0.0,
-    "alerts": 10.0,
-    "availability": 70.0
+    "alerts": 0.0,
+    "availability": 45.0
   },
   "overall_website_health": "Critical",
   "customer_journey_health": "red",
-  "critical_issues_count": 1,
-  "checkout_failures_today": 2,
-  "pages_slower_than_yesterday": 8,
+  "critical_issues_count": 3,
+  "checkout_failures_today": 1,
+  "pages_slower_than_yesterday": 9,
   "most_common_issue": {
     "title": "Reduce unused JavaScript",
     "page_count": 16
@@ -27,25 +27,25 @@
     },
     {
       "name": "H50+",
-      "score": 40,
-      "status_color": "yellow",
+      "score": 36,
+      "status_color": "red",
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
-      "name": "Fiber Fix",
-      "score": 40,
+      "name": "FNM",
+      "score": 39,
+      "status_color": "red",
+      "top_issue_title": "Reduce unused JavaScript"
+    },
+    {
+      "name": "Shop All",
+      "score": 41,
       "status_color": "yellow",
       "top_issue_title": "Reduce unused JavaScript"
     },
     {
       "name": "Milk Mix Strawberry",
       "score": 41,
-      "status_color": "yellow",
-      "top_issue_title": "Reduce unused JavaScript"
-    },
-    {
-      "name": "Pineapple",
-      "score": 43,
       "status_color": "yellow",
       "top_issue_title": "Reduce unused JavaScript"
     }
@@ -2362,17 +2362,17 @@
     },
     {
       "date": "2026-11-22",
-      "business_score": 24.5,
+      "business_score": 20.0,
       "average_score": 38.86,
-      "critical_count": 1,
+      "critical_count": 3,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 2,
       "page_scores": {
-        "Homepage": 47,
-        "Shop All": 45,
-        "FNM": 54,
-        "H50+": 40,
-        "Fiber Fix": 40,
+        "Homepage": 55,
+        "Shop All": 41,
+        "FNM": 39,
+        "H50+": 36,
+        "Fiber Fix": 54,
         "Plant Protein Roti": 53,
         "Berries": 33,
         "Orange": 45,
@@ -2546,17 +2546,17 @@
     },
     {
       "date": "2026-11-22",
-      "business_score": 24.5,
+      "business_score": 20.0,
       "average_score": 38.86,
-      "critical_count": 1,
+      "critical_count": 3,
       "journey_success_pct": 0.0,
       "checkout_failures_today": 2,
       "page_scores": {
-        "Homepage": 47,
-        "Shop All": 45,
-        "FNM": 54,
-        "H50+": 40,
-        "Fiber Fix": 40,
+        "Homepage": 55,
+        "Shop All": 41,
+        "FNM": 39,
+        "H50+": 36,
+        "Fiber Fix": 54,
         "Plant Protein Roti": 53,
         "Berries": 33,
         "Orange": 45,
